@@ -1,0 +1,38 @@
+.picture-and-circle-1-wrapper {
+  display: inline-block;
+}
+
+.picture-and-circle-1 {
+  position: relative;
+  display: inline-block;
+}
+
+.picture-and-circle-1-image {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  display: block;
+}
+
+.picture-and-circle-1-circle {
+  position: absolute;
+  right: -20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.picture-and-circle-1-content {
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
