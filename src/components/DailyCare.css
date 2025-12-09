@@ -1,14 +1,16 @@
 /**
  * DailyCare Styles
  *
- * Two-column layout with background image.
- * Left: Teal boxes (50% width) with absolutely positioned text.
- * Right: Product showcase (~45% width).
+ * CSS Grid layout for desktop (two columns), flexbox for mobile.
+ * Desktop: Teal boxes in left column, header + products in right column.
+ * Mobile: Alternating order - header, product1, teal1, product2, teal2.
  * Text uses vw units to scale with viewport.
  */
 
 .daily-care-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -18,12 +20,31 @@
     box-sizing: border-box;
 }
 
-/* Left Column */
-.daily-care-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
+/* Desktop Grid Placement */
+.daily-care-header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.product-1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.product-2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.teal-1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.teal-2 {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 /* Teal Box Wrapper - positions text over image */
@@ -54,43 +75,36 @@
 .teal-box-header {
     font-size: 2.5vw;
     font-weight: 600;
-    color: #1a4a4a;
+    color: #fff;
     margin: 0 0 0.5vw 0;
 }
 
 .teal-box-subheader {
     font-size: 1.8vw;
     font-weight: 500;
-    color: #1a4a4a;
+    color: #fff;
     margin: 0 0 1vw 0;
 }
 
 .teal-box-text {
     font-size: 1vw;
-    color: #2a5a5a;
+    color: #fff;
     line-height: 1.6;
     margin: 0;
 }
 
 .teal-box-content .highlight {
-    color: #0d8585;
+    color: #fff;
     font-weight: 700;
 }
 
-/* Right Column */
-.daily-care-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    padding-top: 2vw;
-}
-
+/* Daily Care Header */
 .daily-care-header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 1vw;
+    padding-top: 2vw;
 }
 
 .daily-care-header-content {
@@ -144,7 +158,7 @@
 
 .product-label {
     font-size: 1vw;
-    color: #1a4a4a;
+    color: #fff;
     margin: 0 0 0.3vw 0;
     letter-spacing: 0.1em;
 }
@@ -153,27 +167,38 @@
     font-family: "Playfair Display", Georgia, serif;
     font-size: 1.8vw;
     font-weight: 400;
-    color: #1a4a4a;
+    color: #fff;
     margin: 0 0 0.5vw 0;
     line-height: 1.3;
 }
 
 .product-subtitle {
     font-size: 0.9vw;
-    color: #3a6a6a;
+    color: #fff;
     margin: 0;
     line-height: 1.5;
 }
 
-/* Responsive: Stack on mobile */
+/* Responsive: Stack on mobile with custom order */
 @media (max-width: 768px) {
     .daily-care-section {
+        display: flex;
         flex-direction: column;
-        padding: 6vw 4vw;
+        padding: 6vw 0;
     }
 
-    .daily-care-left,
-    .daily-care-right {
+    /* Mobile ordering */
+    .daily-care-header { order: 1; }
+    .product-1 { order: 2; }
+    .teal-1 { order: 3; }
+    .product-2 { order: 4; }
+    .teal-2 { order: 5; }
+
+    .teal-box-wrapper {
+        width: 85%;
+    }
+
+    .product-box-wrapper {
         width: 100%;
     }
 
@@ -187,6 +212,19 @@
 
     .teal-box-text {
         font-size: 2.5vw;
+    }
+
+    .daily-care-header {
+        padding: 0 4vw;
+    }
+
+    .daily-care-header-content {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .header-underline {
+        width: 60%;
     }
 
     .daily-care-header h2 {
@@ -205,4 +243,3 @@
         font-size: 2.2vw;
     }
 }
-
