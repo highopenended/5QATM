@@ -55,8 +55,10 @@ const DailyCare = () => {
             {/* Right Column - Product Showcase */}
             <div className="daily-care-right">
                 <div className="daily-care-header">
-                    <h2>Daily Care</h2>
-                    <div className="header-underline"></div>
+                    <div className="daily-care-header-content">
+                        <h2>Daily Care</h2>
+                        <div className="header-underline"></div>
+                    </div>
                 </div>
 
                 <div className="product-box-wrapper">

@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     padding: 4vw 0;
     box-sizing: border-box;
-    gap: 2vw;
 }
 
 /* Left Column */
@@ -80,7 +79,7 @@
 
 /* Right Column */
 .daily-care-right {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -88,9 +87,17 @@
 }
 
 .daily-care-header {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-bottom: 1vw;
-    position: relative;
+}
+
+.daily-care-header-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .daily-care-header h2 {
@@ -103,11 +110,10 @@
 }
 
 .header-underline {
-    width: 50%;
+    width: 100%;
     height: 2px;
     background-color: #fff;
     margin-top: 0.5vw;
-    margin-left: auto;
 }
 
 /* Product Box Wrapper - positions text over image */
