@@ -71,7 +71,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 17%;
+    padding: 15%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@
 
 .teal-box-highlight-line {
     font-size: 4vw;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
     margin: 0 0 1vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
@@ -151,9 +151,9 @@
 }
 
 .teal-box-text {
-    font-size: 1.5vw;
+    font-size: 1.65vw;
     color: #fff;
-    line-height: 2;
+    line-height: 1.8;
     margin: 0 0 1.5vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
 }
@@ -223,7 +223,7 @@
 }
 
 .product-label {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 400;
     color: #fff;
     margin: 0 0 0.3vw 0;
@@ -263,6 +263,13 @@
     line-height: 1.5;
 }
 
+.product-2 .product-subtitle {
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: left;
+}
+
+
 /* Product 1 specific styling */
 .product-1 .product-box-content {
     align-items: center;
@@ -297,14 +304,20 @@
 /* Product 2 specific styling - everything centered */
 .product-2 .product-box-content {
     align-items: center;
-    right: 10%;
+    right:5%;
+    top:2%;
+    width: 65%;
 }
 
 .product-2 .product-label,
-.product-2 .product-title,
-.product-2 .product-subtitle {
+.product-2 .product-title {
     text-align: center;
     width: 100%;
+}
+
+.product-2 .product-title {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
 }
 
 .product-2 .product-label {
@@ -358,6 +371,6 @@
     }
 
     .product-subtitle {
-        font-size: 2.2vw;
+        font-size: 2vw;
     }
 }
