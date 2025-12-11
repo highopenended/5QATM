@@ -224,6 +224,7 @@
 
 .product-label {
     font-size: 2vw;
+    font-weight: 400;
     color: #fff;
     margin: 0 0 0.3vw 0;
     letter-spacing: 0.1em;
@@ -231,6 +232,7 @@
 
 .product-label .qatm-text {
     font-size: 0.75em;
+    font-weight: 700;
     vertical-align: baseline;
 }
 
@@ -265,13 +267,14 @@
 .product-1 .product-box-content {
     align-items: center;
     justify-content: flex-start;
-    top: 24%;
+    top: 28%;
     padding-top: 0;
 }
 
 .product-1 .product-label {
     text-align: center;
     width: 100%;
+    font-weight: 400;
 }
 
 .product-1 .product-title-shampoo {
@@ -282,11 +285,13 @@
 .product-1 .product-title-treatment {
     text-align: left;
     width: 100%;
+    margin-bottom: 1vw;
 }
 
 .product-1 .product-subtitle {
-    text-align: center;
+    text-align: left;
     width: 100%;
+    margin-left: 30%;
 }
 
 /* Product 2 specific styling - everything centered */
@@ -300,6 +305,10 @@
 .product-2 .product-subtitle {
     text-align: center;
     width: 100%;
+}
+
+.product-2 .product-label {
+    font-weight: 400;
 }
 
 /* Responsive: Stack on mobile with custom order */
