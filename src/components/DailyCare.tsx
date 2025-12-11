@@ -43,12 +43,13 @@ const DailyCare = () => {
                 <img src={tealBox1} alt="" className="teal-box-image" />
                 <div className="teal-box-content">
                     <h3 className="teal-box-header">速乾 × 美髪</h3>
-                    <p className="teal-box-subheader">
-                        毎日のドライヤー時間を<span className="highlight">30%</span>短縮
-                    </p>
+                    <p className="teal-box-subheader">毎日のドライヤー時間を</p>
+                    <p className="teal-box-highlight-line"><span className="highlight">30%</span>短縮</p>
                     <p className="teal-box-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        クァンタムシリーズ（ストレート、トリートメント、シャンプー）は脂質を極力使うことなく、
+                        アクアミストの保湿力を使う事で『早く乾く』を実現しています。 超純水にブラックシリカを漬け込むことにより、
+                        浸透力を高め、髪や肌の水分量をあげます。２４アクアミストの保湿力により、さらなる速乾を実現し、
+                        驚くほどみずみずしいサラッと艶やかな質感を生み出します。
                     </p>
                 </div>
             </div>
@@ -74,8 +75,9 @@ const DailyCare = () => {
                         徹底した<span className="highlight">髪質改善</span>成分を配合
                     </p>
                     <p className="teal-box-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut enim ad minim veniam, quis nostrud exercitation.
+                    ダメージによって硬くなった髪に、しなやかさと潤いを与える天然由来の脂質成分をたっぷり配合。
+                    また、近年多く見られるシリコーンの過剰蓄積（ビルドアップ）を防止しながら、ツヤと手触りをしっかりアップ。
+                    褪色防止効果も期待できるため、カラーをした髪にもおすすめです。
                     </p>
                 </div>
             </div>

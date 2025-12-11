@@ -40,6 +40,7 @@
     grid-column: 1;
     grid-row: 1 / 3;
     align-self: center;
+    margin-bottom: 2vw;
 }
 
 .teal-2 {
@@ -72,22 +73,35 @@
     justify-content: center;
 }
 
+/* First teal box: right-aligned text */
+.teal-1 .teal-box-content {
+    align-items: flex-end;
+    text-align: right;
+}
+
 .teal-box-header {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 600;
     color: #fff;
     margin: 0 0 0.5vw 0;
 }
 
 .teal-box-subheader {
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.teal-box-highlight-line {
+    font-size: 2.8vw;
+    font-weight: 700;
     color: #fff;
     margin: 0 0 1vw 0;
 }
 
 .teal-box-text {
-    font-size: 1vw;
+    font-size: 1.2vw;
     color: #fff;
     line-height: 1.6;
     margin: 0;
@@ -203,15 +217,19 @@
     }
 
     .teal-box-header {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .teal-box-subheader {
-        font-size: 3.5vw;
+        font-size: 4vw;
+    }
+
+    .teal-box-highlight-line {
+        font-size: 5.5vw;
     }
 
     .teal-box-text {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .daily-care-header {
