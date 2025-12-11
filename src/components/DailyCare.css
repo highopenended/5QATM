@@ -174,17 +174,17 @@
 
 /* Daily Care Header */
 .daily-care-header-content {
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .daily-care-header h2 {
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 3vw;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-size: 6.5vw;
+    font-weight: 200;
+    font-style: normal;
     color: #fff;
     margin: 0;
 }
@@ -193,7 +193,7 @@
     width: 100%;
     height: 2px;
     background-color: #fff;
-    margin-top: 0.5vw;
+    margin-top: 0.2vw;
 }
 
 /* Product Box Wrapper - positions text over image */
@@ -212,7 +212,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 55%;
     height: 100%;
     padding: 5%;
     box-sizing: border-box;
@@ -242,7 +242,7 @@
 
 .product-title {
     font-family: "Poppins", sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     font-weight: 200;
     color: #fff;
     margin: 0;
@@ -346,10 +346,6 @@
 
     .product-label {
         font-size: 2.5vw;
-    }
-
-    .product-title {
-        font-size: 3vw;
     }
 
     .product-subtitle {
