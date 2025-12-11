@@ -1,13 +1,21 @@
 /**
  * DailyCare Styles
  *
- * CSS Grid layout for desktop (two columns), flexbox for mobile.
- * Desktop: Teal boxes in left column, header + products in right column.
- * Mobile: Alternating order - header, product1, teal1, product2, teal2.
+ * Desktop: CSS Grid (two columns)
+ *   - Teal boxes in left column
+ *   - Header + products in right column
+ *
+ * Mobile: Flex column
+ *   - Order: header, product1, teal1, product2, teal2
+ *
  * Text uses vw units to scale with viewport.
  */
 
-.daily-care-section {
+/* =========================
+   LAYOUT: DESKTOP GRID
+   ========================= */
+
+   .daily-care-section {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
@@ -18,10 +26,11 @@
     background-repeat: no-repeat;
     padding: 4vw 0;
     box-sizing: border-box;
-}
-
-/* Desktop Grid Placement */
-.daily-care-header {
+  }
+  
+  /* Grid placement */
+  
+  .daily-care-header {
     grid-column: 2;
     grid-row: 1;
     display: flex;
@@ -29,43 +38,51 @@
     align-items: flex-end;
     margin-bottom: 1vw;
     padding-top: 2vw;
-}
-
-.product-1 {
+  }
+  
+  .product-1 {
     grid-column: 2;
     grid-row: 2;
-}
-
-.product-2 {
+  }
+  
+  .product-2 {
     grid-column: 2;
     grid-row: 3;
-}
-
-.teal-1 {
+  }
+  
+  .teal-1 {
     grid-column: 1;
     grid-row: 1 / 3;
-    align-self: center;
     margin-bottom: 2vw;
-}
-
-.teal-2 {
+  }
+  
+  .teal-2 {
     grid-column: 1;
     grid-row: 3;
-}
-
-/* Teal Box Wrapper - positions text over image */
-.teal-box-wrapper {
+  }
+  
+  /* =========================
+     TEAL BOXES
+     ========================= */
+  
+  /* Wrappers & images (shared) */
+  
+  .teal-box-wrapper,
+  .product-box-wrapper {
     position: relative;
     width: 100%;
-}
-
-.teal-box-image {
+  }
+  
+  .teal-box-image,
+  .product-box-image {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.teal-box-content {
+  }
+  
+  /* Teal box content positioning */
+  
+  .teal-box-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,173 +93,176 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* First teal box: right-aligned headers, left-aligned body text */
-.teal-1 .teal-box-content {
-    align-items: flex-end;
-}
-
-.teal-1 .teal-box-header,
-.teal-1 .teal-box-subheader,
-.teal-1 .teal-box-highlight-line {
-    text-align: right;
-}
-
-/* Second teal box: smaller header text */
-.teal-1 .teal-box-header {
-    font-weight: 400;
-}
-
-.teal-1 .teal-box-text {
-    text-align: left;
-    align-self: flex-start;
-}
-
-
-.teal-2 .teal-box-content{
-    padding: 10%;
-}
-
-
-/* Second teal box: smaller header text */
-.teal-2 .teal-box-header {
-    font-size: 2.8vw;
-    font-weight: 400;
-}
-
-.teal-2 .teal-box-subheader {
-    font-size: 2.8vw;
-    font-weight: 400;
-    margin-bottom: 1.5vw;
-}
-
-.teal-box-header {
+  }
+  
+  /* Teal box typography (base) */
+  
+  .teal-box-header {
     font-size: 5.5vw;
     color: #fff;
     margin: 0 0 0.5vw 0;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.3);
-}
-
-.teal-box-header .header-x {
+  }
+  
+  .teal-box-header .header-x {
     margin: 0 1.5vw;
-}
-
-.teal-box-subheader {
+  }
+  
+  .teal-box-subheader {
     font-size: 2.3vw;
     font-weight: 500;
     color: #fff;
     margin: 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
-}
-
-
-.teal-box-highlight-line {
+  }
+  
+  .teal-box-highlight-line {
     font-size: 4vw;
     font-weight: 500;
     color: #fff;
     margin: 0 0 1vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
-}
-.teal-box-content .teal-box-highlight-line .highlight {
+  }
+  
+  .teal-box-content .teal-box-highlight-line .highlight {
     font-weight: 600;
-}
-
-.teal-box-text {
+  }
+  
+  .teal-box-text {
     font-size: 1.65vw;
     color: #fff;
     line-height: 1.8;
     margin: 0 0 1.5vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
-}
-
-.teal-box-text:last-child {
+  }
+  
+  .teal-box-text:last-child {
     margin-bottom: 0;
-}
-
-.teal-box-content .highlight {
+  }
+  
+  .teal-box-content .highlight {
     color: #fff;
     font-weight: 500;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
-}
-
-.teal-box-content .percent-symbol {
+  }
+  
+  .teal-box-content .percent-symbol {
     font-size: 0.7em;
-}
-
-/* Daily Care Header */
-.daily-care-header-content {
+  }
+  
+  /* Teal-1 specific: layout & alignment */
+  
+  .teal-1 .teal-box-content {
+    align-items: flex-end;
+  }
+  
+  .teal-1 .teal-box-header,
+  .teal-1 .teal-box-subheader,
+  .teal-1 .teal-box-highlight-line {
+    text-align: right;
+  }
+  
+  /* Teal-1 headers: lighter weight */
+  
+  .teal-1 .teal-box-header {
+    font-weight: 400;
+  }
+  
+  /* Teal-1 body text alignment */
+  
+  .teal-1 .teal-box-text {
+    text-align: left;
+    align-self: flex-start;
+  }
+  
+  /* Teal-2 specific: padding & font sizes */
+  
+  .teal-2 .teal-box-content {
+    padding: 10%;
+  }
+  
+  .teal-2 .teal-box-header {
+    font-size: 2.8vw;
+    font-weight: 400;
+  }
+  
+  .teal-2 .teal-box-subheader {
+    font-size: 2.8vw;
+    font-weight: 400;
+    margin-bottom: 1.5vw;
+  }
+  
+  /* =========================
+     DAILY CARE HEADER
+     ========================= */
+  
+  .daily-care-header-content {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.daily-care-header h2 {
+  }
+  
+  .daily-care-header h2 {
     font-family: "Poppins", sans-serif;
     font-size: 6.5vw;
     font-weight: 200;
     font-style: normal;
     color: #fff;
     margin: 0;
-}
-
-.header-underline {
+  }
+  
+  .header-underline {
     width: 100%;
     height: 2px;
     background-color: #fff;
     margin-top: 0.2vw;
-}
-
-/* Product Box Wrapper - positions text over image */
-.product-box-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.product-box-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.product-box-content {
+  }
+  
+  /* =========================
+     PRODUCT BOXES
+     ========================= */
+  
+  /* Product content positioning */
+  
+  .product-box-content {
     position: absolute;
     top: 0;
     right: 0;
     width: 55%;
-    height: 100%;
     padding: 5%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.product-label {
+  }
+  
+  /* Product typography (base) */
+  
+  .product-label {
     font-size: 2.5vw;
     font-weight: 400;
     color: #fff;
     margin: 0 0 0.3vw 0;
     letter-spacing: 0.1em;
-}
-
-.product-label .qatm-text {
+  }
+  
+  .product-label .qatm-text {
     font-size: 0.75em;
     font-weight: 700;
     vertical-align: baseline;
-}
-
-.product-title-wrapper {
+  }
+  
+  .product-title-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.product-title {
+  }
+  
+  .product-title {
     font-family: "Poppins", sans-serif;
     font-size: 3.2vw;
     font-weight: 200;
@@ -250,141 +270,161 @@
     margin: 0;
     line-height: 1.0;
     font-style: normal;
-}
-
-.product-title-shampoo {
+  }
+  
+  .product-title-shampoo {
     margin-bottom: 0.2vw;
-}
-
-.product-subtitle {
+  }
+  
+  .product-subtitle {
     font-size: 1.4vw;
     color: #fff;
     margin: 0;
     line-height: 1.5;
-}
-
-.product-2 .product-subtitle {
+  }
+  
+  /* Product-2 subtitle tweaks */
+  
+  .product-2 .product-subtitle {
     font-size: 2vw;
     font-weight: 300;
     text-align: left;
-}
-
-
-/* Product 1 specific styling */
-.product-1 .product-box-content {
+  }
+  
+  /* Product-1 specific layout */
+  
+  .product-1 .product-box-content {
     align-items: center;
     justify-content: flex-start;
     top: 28%;
     padding-top: 0;
-}
-
-.product-1 .product-label {
+  }
+  
+  .product-1 .product-label {
     text-align: center;
     width: 100%;
     font-weight: 400;
-}
-
-.product-1 .product-title-shampoo {
+  }
+  
+  .product-1 .product-title-shampoo {
     text-align: center;
     width: 100%;
-}
-
-.product-1 .product-title-treatment {
+  }
+  
+  .product-1 .product-title-treatment {
     text-align: left;
     width: 100%;
     margin-bottom: 1vw;
-}
-
-.product-1 .product-subtitle {
+  }
+  
+  .product-1 .product-subtitle {
     text-align: left;
     width: 100%;
     margin-left: 30%;
-}
-
-/* Product 2 specific styling - everything centered */
-.product-2 .product-box-content {
+  }
+  
+  /* Product-2 specific layout (centered) */
+  
+  .product-2 .product-box-content {
     align-items: center;
-    right:5%;
-    top:2%;
+    justify-content: flex-start;
+    right: 5%;
+    top: 33%;
     width: 65%;
-}
-
-.product-2 .product-label,
-.product-2 .product-title {
+    padding-top: 0;
+  }
+  
+  .product-2 .product-label,
+  .product-2 .product-title {
     text-align: center;
     width: 100%;
-}
-
-.product-2 .product-title {
+  }
+  
+  .product-2 .product-title {
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
-}
-
-.product-2 .product-label {
+  }
+  
+  .product-2 .product-label {
     font-weight: 400;
-}
-
-/* Responsive: Stack on mobile with custom order */
-@media (max-width: 768px) {
+  }
+  
+  /* =========================
+     RESPONSIVE: MOBILE STACK
+     ========================= */
+  
+  @media (max-width: 768px) {
     .daily-care-section {
-        display: flex;
-        flex-direction: column;
-        padding: 6vw 0;
+      display: flex;
+      flex-direction: column;
+      padding: 6vw 0;
     }
-
+  
     /* Mobile ordering */
+  
     .daily-care-header {
-        order: 1;
-        padding: 0 4vw;
+      order: 1;
+      padding: 0 4vw;
     }
-
+  
     .product-1 { order: 2; }
-    .teal-1 { order: 3; }
+    .teal-1    { order: 3; }
     .product-2 { order: 4; }
-    .teal-2 { order: 5; }
-
+    .teal-2    { order: 5; }
+  
+    /* Width adjustments */
+  
     .teal-box-wrapper {
-        width: 85%;
+      width: 85%;
     }
-
+  
     .product-box-wrapper {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .product-box-content {
-        width: 58%;
+      width: 58%;
     }
-
+  
     .product-1 .product-box-content {
-        top:30%;
+      top: 30%;
     }
 
-
+    .product-2 .product-box-content {
+      top: 40%;
+    }
 
     .daily-care-header-content {
-        width: 100%;
-        align-items: flex-end;
+      width: 100%;
+      align-items: flex-end;
     }
-
+  
     .header-underline {
-        width: 60%;
+      width: 60%;
     }
-
+  
+    /* Mobile typography */
+  
     .daily-care-header h2 {
-        font-size: 6vw;
+      font-size: 6vw;
     }
-
+  
     .product-label {
-        font-size: 4.5vw;
+      font-size: 4.5vw;
     }
-
+  
     .product-title {
-        font-size: 6.5vw;
+      font-size: 6.5vw;
+    }
+  
+    .product-subtitle {
+      font-size: 3.2vw;
+      font-weight: 300;
+      margin-left: -5%;
     }
 
-    .product-subtitle {
-        font-size: 3.2vw;
-        font-weight: 300;
-        margin-left: -5%;
+    .product-2 .product-subtitle {
+      font-size: 3.2vw;
     }
-}
+  }
+  
