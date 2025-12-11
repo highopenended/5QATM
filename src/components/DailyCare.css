@@ -71,7 +71,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20%;
+    padding: 17%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -89,10 +89,21 @@
     text-align: right;
 }
 
+/* Second teal box: smaller header text */
+.teal-1 .teal-box-header {
+    font-weight: 400;
+}
+
 .teal-1 .teal-box-text {
     text-align: left;
     align-self: flex-start;
 }
+
+
+.teal-2 .teal-box-content{
+    padding: 10%;
+}
+
 
 /* Second teal box: smaller header text */
 .teal-2 .teal-box-header {
@@ -110,7 +121,7 @@
     font-size: 5.5vw;
     color: #fff;
     margin: 0 0 0.5vw 0;
-    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.3);
 }
 
 .teal-box-header .header-x {
@@ -125,6 +136,7 @@
     font-family: "Zen Kaku Gothic New", sans-serif;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
 }
+
 
 .teal-box-highlight-line {
     font-size: 4vw;
@@ -142,8 +154,12 @@
     font-size: 1.5vw;
     color: #fff;
     line-height: 2;
-    margin: 0;
+    margin: 0 0 1.5vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.teal-box-text:last-child {
+    margin-bottom: 0;
 }
 
 .teal-box-content .highlight {
@@ -151,6 +167,7 @@
     font-weight: 500;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
 }
+
 .teal-box-content .percent-symbol {
     font-size: 0.7em;
 }
@@ -206,10 +223,16 @@
 }
 
 .product-label {
-    font-size: 1vw;
+    font-size: 2vw;
     color: #fff;
     margin: 0 0 0.3vw 0;
     letter-spacing: 0.1em;
+}
+
+.product-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .product-title {
@@ -226,6 +249,44 @@
     color: #fff;
     margin: 0;
     line-height: 1.5;
+}
+
+/* Product 1 specific styling */
+.product-1 .product-box-content {
+    align-items: center;
+}
+
+.product-1 .product-label {
+    text-align: center;
+    width: 100%;
+}
+
+.product-1 .product-title-shampoo {
+    text-align: center;
+    width: 100%;
+}
+
+.product-1 .product-title-treatment {
+    text-align: left;
+    width: 100%;
+}
+
+.product-1 .product-subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+/* Product 2 specific styling - everything centered */
+.product-2 .product-box-content {
+    align-items: center;
+    right: 10%;
+}
+
+.product-2 .product-label,
+.product-2 .product-title,
+.product-2 .product-subtitle {
+    text-align: center;
+    width: 100%;
 }
 
 /* Responsive: Stack on mobile with custom order */

@@ -33,7 +33,10 @@ const DailyCare = () => {
                 <img src={productImage1} alt="Shampoo and Treatment" className="product-box-image" />
                 <div className="product-box-content">
                     <p className="product-label">5QATM</p>
-                    <h4 className="product-title">Shampoo<br />Treatment</h4>
+                    <div className="product-title-wrapper">
+                        <h4 className="product-title product-title-shampoo">Shampoo</h4>
+                        <h4 className="product-title product-title-treatment">Treatment</h4>
+                    </div>
                     <p className="product-subtitle">5クァンタムシャンプー<br />5クァンタムトリートメント</p>
                 </div>
             </div>
@@ -47,10 +50,13 @@ const DailyCare = () => {
                     <p className="teal-box-highlight-line"><span className="highlight">30<span className="percent-symbol">%</span></span>短縮</p>
                     <p className="teal-box-text">
                         クァンタムシリーズ（ストレート、トリートメント、シャンプー）は
-                        <span className="highlight">質を極力使うことなく</span>
-                        、アクアミストの保湿力を使う事で『早く乾く』を実現しています。 超純水にブラックシリカを漬け込むことにより、
-                        浸透力を高め、髪や肌の水分量をあげます。２４アクアミストの保湿力により、さらなる速乾を実現し、
-                        驚くほどみずみずしいサラッと艶やかな質感を生み出します。
+                        <span className="highlight">脂質を極力使うことなく</span>
+                        、アクアミストの保湿力を使う事で『早く乾く』を実現しています。
+                    </p>
+                    <p className="teal-box-text">
+                        超純水にブラックシリカを漬け込むことにより、浸透力を高め、髪や肌の水分量をあげます。
+                        <span className="highlight">２４アクアミスト</span>
+                        の保湿力により、さらなる速乾を実現し、驚くほどみずみずしいサラッと艶やかな質感を生み出します。
                     </p>
                 </div>
             </div>
