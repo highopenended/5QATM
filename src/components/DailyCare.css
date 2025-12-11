@@ -24,6 +24,11 @@
 .daily-care-header {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1vw;
+    padding-top: 2vw;
 }
 
 .product-1 {
@@ -66,61 +71,91 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 6%;
+    padding: 20%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* First teal box: right-aligned text */
+/* First teal box: right-aligned headers, left-aligned body text */
 .teal-1 .teal-box-content {
     align-items: flex-end;
+}
+
+.teal-1 .teal-box-header,
+.teal-1 .teal-box-subheader,
+.teal-1 .teal-box-highlight-line {
     text-align: right;
 }
 
+.teal-1 .teal-box-text {
+    text-align: left;
+    align-self: flex-start;
+}
+
+/* Second teal box: smaller header text */
+.teal-2 .teal-box-header {
+    font-size: 2.8vw;
+    font-weight: 400;
+}
+
+.teal-2 .teal-box-subheader {
+    font-size: 2.8vw;
+    font-weight: 400;
+    margin-bottom: 1.5vw;
+}
+
 .teal-box-header {
-    font-size: 3vw;
-    font-weight: 600;
+    font-size: 5.5vw;
     color: #fff;
     margin: 0 0 0.5vw 0;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
+}
+
+.teal-box-header .header-x {
+    margin: 0 1.5vw;
 }
 
 .teal-box-subheader {
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-weight: 500;
     color: #fff;
     margin: 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
 }
 
 .teal-box-highlight-line {
-    font-size: 2.8vw;
-    font-weight: 700;
+    font-size: 4vw;
+    font-weight: 400;
     color: #fff;
     margin: 0 0 1vw 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
+}
+.teal-box-content .teal-box-highlight-line .highlight {
+    font-weight: 600;
 }
 
 .teal-box-text {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     color: #fff;
-    line-height: 1.6;
+    line-height: 2;
     margin: 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .teal-box-content .highlight {
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
+}
+.teal-box-content .percent-symbol {
+    font-size: 0.7em;
 }
 
 /* Daily Care Header */
-.daily-care-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: 1vw;
-    padding-top: 2vw;
-}
-
 .daily-care-header-content {
     width: 50%;
     display: flex;
@@ -202,7 +237,11 @@
     }
 
     /* Mobile ordering */
-    .daily-care-header { order: 1; }
+    .daily-care-header {
+        order: 1;
+        padding: 0 4vw;
+    }
+
     .product-1 { order: 2; }
     .teal-1 { order: 3; }
     .product-2 { order: 4; }
@@ -216,25 +255,7 @@
         width: 100%;
     }
 
-    .teal-box-header {
-        font-size: 6vw;
-    }
 
-    .teal-box-subheader {
-        font-size: 4vw;
-    }
-
-    .teal-box-highlight-line {
-        font-size: 5.5vw;
-    }
-
-    .teal-box-text {
-        font-size: 3vw;
-    }
-
-    .daily-care-header {
-        padding: 0 4vw;
-    }
 
     .daily-care-header-content {
         width: 100%;
