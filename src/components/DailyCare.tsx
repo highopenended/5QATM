@@ -32,7 +32,7 @@ const DailyCare = () => {
             <div className="product-box-wrapper product-1">
                 <img src={productImage1} alt="Shampoo and Treatment" className="product-box-image" />
                 <div className="product-box-content">
-                    <p className="product-label">5QATM</p>
+                    <p className="product-label">5<span className="qatm-text">QATM</span></p>
                     <div className="product-title-wrapper">
                         <h4 className="product-title product-title-shampoo">Shampoo</h4>
                         <h4 className="product-title product-title-treatment">Treatment</h4>
@@ -65,7 +65,7 @@ const DailyCare = () => {
             <div className="product-box-wrapper product-2">
                 <img src={productImage2} alt="Emulsion" className="product-box-image" />
                 <div className="product-box-content">
-                    <p className="product-label">5QATM</p>
+                    <p className="product-label">5<span className="qatm-text">QATM</span></p>
                     <h4 className="product-title">Emulsion</h4>
                     <p className="product-subtitle">5クァンタムエマルジョン<br />洗い流さないトリートメント</p>
                 </div>

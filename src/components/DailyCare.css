@@ -229,6 +229,11 @@
     letter-spacing: 0.1em;
 }
 
+.product-label .qatm-text {
+    font-size: 0.75em;
+    vertical-align: baseline;
+}
+
 .product-title-wrapper {
     display: flex;
     flex-direction: column;
@@ -236,16 +241,21 @@
 }
 
 .product-title {
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 1.8vw;
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 200;
     color: #fff;
-    margin: 0 0 0.5vw 0;
-    line-height: 1.3;
+    margin: 0;
+    line-height: 1.0;
+    font-style: normal;
+}
+
+.product-title-shampoo {
+    margin-bottom: 0.2vw;
 }
 
 .product-subtitle {
-    font-size: 0.9vw;
+    font-size: 1.4vw;
     color: #fff;
     margin: 0;
     line-height: 1.5;
@@ -254,6 +264,9 @@
 /* Product 1 specific styling */
 .product-1 .product-box-content {
     align-items: center;
+    justify-content: flex-start;
+    top: 24%;
+    padding-top: 0;
 }
 
 .product-1 .product-label {
@@ -336,7 +349,7 @@
     }
 
     .product-title {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .product-subtitle {
