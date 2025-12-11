@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 0rem; /* Offset for fixed navbar */
+}
+
 #root {
   width: 100%;
   margin: 0;

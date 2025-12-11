@@ -9,8 +9,10 @@ import './NavBar.css';
 
 const NavBar = () => {
   const handleNavClick = (section: string) => {
-    // Placeholder for scroll functionality
-    console.log(`Navigate to ${section} section`);
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (

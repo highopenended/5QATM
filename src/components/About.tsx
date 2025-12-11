@@ -11,7 +11,7 @@ import aboutSectionImage from "../assets/about-section.png";
 
 const About = () => {
     return (
-        <section className="about-section">
+        <section id="about" className="about-section">
             <div className="about-left">
                 <img src={section2Image} alt="Product showcase" className="about-image" />
             </div>

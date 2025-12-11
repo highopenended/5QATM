@@ -71,6 +71,10 @@
   .product-box-wrapper {
     position: relative;
     width: 100%;
+    z-index: 2;
+  }  
+  .teal-box-wrapper {
+    z-index: 1;
   }
   
   .teal-box-image,
@@ -357,20 +361,38 @@
     .daily-care-section {
       display: flex;
       flex-direction: column;
-      padding: 6vw 0;
+      padding: 3vw 0;
     }
   
     /* Mobile ordering */
   
     .daily-care-header {
       order: 1;
-      padding: 0 4vw;
+      /* padding: 0 4vw; */
     }
   
     .product-1 { order: 2; }
     .teal-1    { order: 3; }
     .product-2 { order: 4; }
     .teal-2    { order: 5; }
+  
+    /* Reduce gaps between items */
+    
+    .product-1 {
+      margin-bottom: -11vw;
+    }
+    
+    .teal-1 {
+      margin-bottom: -4vw;
+    }
+    
+    .product-2 {
+      margin-bottom: -8vw;
+    }
+    
+    .teal-2 {
+      margin-top: -2vw;
+    }
   
     /* Width adjustments */
   
@@ -395,18 +417,21 @@
     }
 
     .daily-care-header-content {
-      width: 100%;
-      align-items: flex-end;
+      width: 70%;
+      align-items: flex-start;
+      align-self: flex-end;
+      margin-bottom: -2vh;
     }
   
     .header-underline {
-      width: 60%;
+      width: 100%
+      /* margin-right: -4vw; */
     }
   
     /* Mobile typography */
   
     .daily-care-header h2 {
-      font-size: 6vw;
+      font-size: 7vw;
     }
   
     .product-label {
@@ -425,6 +450,32 @@
 
     .product-2 .product-subtitle {
       font-size: 3.2vw;
+    }
+
+    /* Mobile teal box typography */
+    
+    .teal-box-header {
+      font-size: 8vw;
+    }
+    
+    .teal-box-subheader {
+      font-size: 3.5vw;
+    }
+    
+    .teal-box-highlight-line {
+      font-size: 6.5vw;
+    }
+    
+    .teal-box-text {
+      font-size: 2.8vw;
+    }
+    
+    .teal-2 .teal-box-header {
+      font-size: 4.5vw;
+    }
+    
+    .teal-2 .teal-box-subheader {
+      font-size: 4.5vw;
     }
   }
   

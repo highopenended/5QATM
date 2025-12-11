@@ -78,7 +78,8 @@ const DailyCare = () => {
                     <h3 className="teal-box-header">
                         <span className="highlight">髪</span>
                         の
-                        <span className="highlight">内側・外側</span>から
+                        <span className="highlight">内側・外側</span>
+                        から
                     </h3>
                     <p className="teal-box-subheader">
                         徹底した<span className="highlight">髪質改善</span>成分を配合
@@ -92,6 +93,19 @@ const DailyCare = () => {
                     褪色防止効果も期待できるため、カラーをした髪にもおすすめです。
                     </p>
                 </div>
+            </div>
+
+            {/* Product Page Button - Order 6 on mobile */}
+            <div className="product-page-button-wrapper">
+                <a 
+                    href="https://www.rakuten.co.jp/24quantum/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="product-page-button"
+                >
+                    商品ページへ
+                    <span className="button-arrow"></span>
+                </a>
             </div>
         </section>
     );
