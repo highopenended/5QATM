@@ -351,6 +351,14 @@
         width: 100%;
     }
 
+    .product-box-content {
+        width: 58%;
+    }
+
+    .product-1 .product-box-content {
+        top:30%;
+    }
+
 
 
     .daily-care-header-content {
@@ -367,10 +375,16 @@
     }
 
     .product-label {
-        font-size: 2.5vw;
+        font-size: 4.5vw;
+    }
+
+    .product-title {
+        font-size: 6.5vw;
     }
 
     .product-subtitle {
-        font-size: 2vw;
+        font-size: 3.2vw;
+        font-weight: 300;
+        margin-left: -5%;
     }
 }

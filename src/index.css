@@ -1,0 +1,24 @@
+/**
+ * Global CSS Reset
+ * 
+ * Removes default browser margins/padding and ensures full-width layout.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
