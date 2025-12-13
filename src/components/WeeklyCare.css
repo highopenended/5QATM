@@ -1,0 +1,361 @@
+/**
+ * WeeklyCare Styles
+ *
+ * Desktop: Vertical stack with product row (image left, teal box right)
+ * Mobile: Full-width stacked layout
+ *
+ * Mirrors DailyCare patterns: vw typography, teal box styling, responsive breakpoints.
+ */
+
+/* =========================
+   LAYOUT: SECTION CONTAINER
+   ========================= */
+
+.weekly-care-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4vw 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   SECTION HEADER
+   ========================= */
+
+.weekly-care-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3vw;
+}
+
+.weekly-care-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weekly-care-header h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.5vw;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Underline extends from left edge to center of title */
+.weekly-header-underline {
+    width: 55%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 0.2vw;
+    align-self: flex-start;
+}
+
+/* =========================
+   PRODUCT ROW: IMAGE + TEAL BOX
+   ========================= */
+
+.weekly-product-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+/* Left Image */
+.weekly-left-image-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.weekly-left-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right Teal Box */
+.weekly-teal-box {
+    width: 50%;
+    background-color: rgba(111, 179, 175, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    box-sizing: border-box;
+}
+
+.weekly-teal-content {
+    width: 100%;
+    max-width: 90%;
+}
+
+/* Teal box typography - mirrors DailyCare patterns */
+.weekly-teal-content .teal-box-header {
+    font-size: 3.5vw;
+    color: #fff;
+    margin: 0 0 1vw 0;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+
+.weekly-teal-content .teal-box-subheader {
+    font-size: 2vw;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 1.5vw 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+}
+
+.weekly-teal-content .teal-box-list {
+    font-size: 1.4vw;
+    color: #fff;
+    line-height: 1.8;
+    margin: 0 0 1.5vw 1.2vw;
+    padding-left: 1vw;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.weekly-teal-content .teal-box-list li {
+    margin-bottom: 0.8vw;
+}
+
+.weekly-teal-content .teal-box-text {
+    font-size: 1.4vw;
+    color: #fff;
+    line-height: 1.8;
+    margin: 0 0 1vw 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.weekly-teal-content .teal-box-text:last-child {
+    margin-bottom: 0;
+}
+
+.weekly-teal-content .highlight {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   HOW TO USE SECTION
+   ========================= */
+
+.how-to-use-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.how-to-use-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+
+.how-to-use-header h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4vw;
+    font-weight: 200;
+    font-style: italic;
+    color: #6fb3af;
+    margin: 0;
+    text-align: center;
+}
+
+.how-to-use-underline {
+    width: 100%;
+    height: 2px;
+    background-color: #6fb3af;
+    margin-top: 0.3vw;
+}
+
+.how-to-use-subtext {
+    font-size: 1.4vw;
+    color: #555;
+    text-align: center;
+    margin: 0 0 2vw 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* =========================
+   VIDEO CONTAINER
+   ========================= */
+
+.video-container {
+    width: 60%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 4vw auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* =========================
+   NEW PRODUCT SPLASH
+   ========================= */
+
+.new-product-splash {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.new-product-image {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   CTA BUTTON
+   ========================= */
+
+.weekly-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.weekly-care-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1em 3em;
+    font-size: 1.2vw;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: #6fb3af;
+    background-color: transparent;
+    border: 2px solid #6fb3af;
+    border-radius: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.weekly-care-button:hover {
+    background-color: #6fb3af;
+    color: #fff;
+}
+
+.weekly-care-button .button-arrow {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+/* =========================
+   RESPONSIVE: MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+    .weekly-care-section {
+        padding: 6vw 0;
+    }
+
+    /* Header */
+    .weekly-care-header {
+        margin-bottom: 4vw;
+    }
+
+    .weekly-care-header h2 {
+        font-size: 7vw;
+    }
+
+    .weekly-header-underline {
+        width: 70%;
+    }
+
+    /* Product row stacks vertically */
+    .weekly-product-row {
+        flex-direction: column;
+        margin-bottom: 6vw;
+    }
+
+    .weekly-left-image-wrapper {
+        width: 100%;
+        order: 1;
+    }
+
+    .weekly-teal-box {
+        width: 85%;
+        align-self: flex-end;
+        order: 2;
+        padding: 5vw;
+        margin-top: -5vw;
+    }
+
+    .weekly-teal-content .teal-box-header {
+        font-size: 5.5vw;
+    }
+
+    .weekly-teal-content .teal-box-subheader {
+        font-size: 3.5vw;
+    }
+
+    .weekly-teal-content .teal-box-list {
+        font-size: 2.8vw;
+        margin-left: 2vw;
+        padding-left: 2vw;
+    }
+
+    .weekly-teal-content .teal-box-text {
+        font-size: 2.8vw;
+    }
+
+    /* How to use */
+    .how-to-use-header h3 {
+        font-size: 6vw;
+    }
+
+    .how-to-use-subtext {
+        font-size: 2.8vw;
+        padding: 0 4vw;
+    }
+
+    /* Video */
+    .video-container {
+        width: 90%;
+        margin-bottom: 6vw;
+    }
+
+    /* New product splash */
+    .new-product-image {
+        width: 95%;
+    }
+
+    /* Button */
+    .weekly-care-button {
+        font-size: 3.5vw;
+        padding: 1em 2.5em;
+    }
+}
+
