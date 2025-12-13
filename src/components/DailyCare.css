@@ -54,7 +54,8 @@
   .teal-1 {
     grid-column: 1;
     grid-row: 1 / 3;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
+    margin-top:3vw;
   }
   
   .teal-2 {
@@ -83,6 +84,9 @@
     width: 100%;
     height: auto;
     display: block;
+  }
+  .teal-box-image{    
+    height: 100%;
   }
   
   /* Teal box content positioning */
