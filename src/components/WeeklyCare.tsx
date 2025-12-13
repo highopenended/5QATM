@@ -30,6 +30,18 @@ const WeeklyCare = () => {
             <div className="weekly-product-row">
                 <div className="weekly-left-image-wrapper">
                     <img src={leftImage} alt="Rebirth Core Treatment" className="weekly-left-image" />
+                    <div className="product-box-content">
+                        <p className="product-label">5<span className="qatm-text">QATM</span></p>
+                        <div className="product-title-wrapper">
+                            <h4 className="product-title product-title-rebirth">Rebirth</h4>
+                            <h4 className="product-title product-title-core">Core</h4>
+                        </div>
+                        <p className="product-subtitle">
+                            5クァンタムリバース
+                            <br />
+                            5クァンタムコア
+                        </p>
+                    </div>
                 </div>
                 <div className="weekly-teal-box">
                     <div className="weekly-teal-content">
@@ -39,15 +51,15 @@ const WeeklyCare = () => {
                             <span className="highlight">極上の髪質</span>に
                         </p>
                         <ul className="teal-box-list">
-                            <li>ホエイケラチン、ヘプリン類がしっとり艶やかで弾力のあるツヤ髪へ導きます。</li>
-                            <li>プラセンタエキスやドクダミエキスが、頭皮環境を整えながら内部の潤いを補い、健康的な髪を育みます。</li>
-                            <li>シアバターやアルガンオイルが髪の保湿と艶を与え、まとまりのある質感に仕上げます。</li>
+                            <li>エルカラクトン、レブリン酸がしっとり感とツヤを与え、ドライヤー やアイロンの熱と反応して毛髪を修復</li>
+                            <li>キュアテイン、ファイバーハンスがダメージ部分に吸着し内部補修、強化</li>
+                            <li>シアバター、24アクアミストが毛髪の水分量を上げる事でツヤとしなやかさをアップ</li>
                         </ul>
                         <p className="teal-box-text">
-                            これらを叶える５感動のパラダイスウールインワントリートメント、それがの５クァンタムリバースです。
+                            これらを考えうる最高のバランスでオールインワンにできるのが5クァンタムリバースです。
                         </p>
                         <p className="teal-box-text">
-                            ５クァンタムコア／抜き取り不要２１分放置だけの簡単工程で上質な髪の手触りに♡
+                            また5クァンタムコアと併用する事でより効果を上げる事ができます。
                         </p>
                     </div>
                 </div>
@@ -59,7 +71,7 @@ const WeeklyCare = () => {
                     <h3>How to use</h3>
                     <div className="how-to-use-underline"></div>
                 </div>
-                <p className="how-to-use-subtext">シャンプー後の水気を軽く切り、毛先を中心に塗りトリートメント</p>
+                <p className="how-to-use-subtext">シャンプーからの流れを動画で紹介しています</p>
 
                 {/* Embedded Video */}
                 <div className="video-container">

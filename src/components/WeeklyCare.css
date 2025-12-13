@@ -79,13 +79,88 @@
 .weekly-left-image-wrapper {
     width: 50%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    position: relative;
 }
 
 .weekly-left-image {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Product content positioning - matches DailyCare product-1 */
+.weekly-left-image-wrapper .product-box-content {
+    position: absolute;
+    top: 0;
+    right: 42%;
+    width: 55%;
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 58%;
+    padding-top: 0;
+}
+
+/* Product typography - matches DailyCare */
+.weekly-left-image-wrapper .product-label {
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 0.3vw 0;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+}
+
+.weekly-left-image-wrapper .product-label .qatm-text {
+    font-size: 0.75em;
+    font-weight: 700;
+    vertical-align: baseline;
+}
+
+.weekly-left-image-wrapper .product-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.weekly-left-image-wrapper .product-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2vw;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+    line-height: 1.0;
+    font-style: normal;
+}
+
+.weekly-left-image-wrapper .product-title-rebirth {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.2vw;
+    margin-left: 40%;
+}
+
+.weekly-left-image-wrapper .product-title-core {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1vw;
+    margin-left: 25%;
+}
+
+.weekly-left-image-wrapper .product-subtitle {
+    font-size: 1.4vw;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin-left: 40%;
 }
 
 /* Right Teal Box */
@@ -206,8 +281,8 @@
    ========================= */
 
 .video-container {
-    width: 60%;
-    max-width: 800px;
+    width: 80%;
+    /* max-width: 800px; */
     aspect-ratio: 16 / 9;
     margin: 0 auto 4vw auto;
 }
@@ -275,6 +350,25 @@
     .weekly-left-image-wrapper {
         width: 100%;
         order: 1;
+        position: relative;
+    }
+
+    .weekly-left-image-wrapper .product-box-content {
+        width: 58%;
+        top: 30%;
+    }
+
+    .weekly-left-image-wrapper .product-label {
+        font-size: 4.5vw;
+    }
+
+    .weekly-left-image-wrapper .product-title {
+        font-size: 6.5vw;
+    }
+
+    .weekly-left-image-wrapper .product-subtitle {
+        font-size: 3.2vw;
+        font-weight: 300;
     }
 
     .weekly-teal-box {
