@@ -10,6 +10,7 @@ import "./WeeklyCare.css";
 import backgroundImage from "../assets/weekly-care-background.png";
 import leftImage from "../assets/weekly-care-left-image.png";
 import newProductImage from "../assets/weekly-care-new-image.png";
+import Button_Rakuten from "./Button_Rakuten";
 
 const WeeklyCare = () => {
     return (
@@ -21,8 +22,8 @@ const WeeklyCare = () => {
             <div className="weekly-care-header">
                 <div className="weekly-care-header-content">
                     <h2>Weekly Special Care</h2>
+                    <div className="weekly-header-underline"></div>
                 </div>
-                <div className="weekly-header-underline"></div>
             </div>
 
             {/* Product Row: Left Image + Right Teal Box */}
@@ -77,15 +78,7 @@ const WeeklyCare = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="weekly-button-wrapper">
-                <a
-                    href="#"
-                    className="weekly-care-button"
-                >
-                    購入ページへ
-                    <span className="button-arrow"></span>
-                </a>
-            </div>
+            <Button_Rakuten />
         </section>
     );
 };

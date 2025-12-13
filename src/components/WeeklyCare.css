@@ -14,10 +14,11 @@
 .weekly-care-section {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     width: 100%;
-    min-height: 100vh;
+    aspect-ratio: 2730 / 7339;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     padding: 4vw 0;
     box-sizing: border-box;
@@ -30,15 +31,16 @@
 .weekly-care-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: flex-end;
+    width: 80%;
     margin-bottom: 3vw;
 }
 
 .weekly-care-header-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    width: 100%;
 }
 
 .weekly-care-header h2 {
@@ -48,16 +50,18 @@
     font-style: normal;
     color: #fff;
     margin: 0;
-    text-align: center;
+    text-align: right;
 }
 
-/* Underline extends from left edge to center of title */
+/* Underline extends from left edge of screen to end of title */
 .weekly-header-underline {
-    width: 55%;
+    position: relative;
+    width: 100vw;
+    right: 0;
+    margin-left: calc(-100vw + 100%);
     height: 2px;
     background-color: #fff;
     margin-top: 0.2vw;
-    align-self: flex-start;
 }
 
 /* =========================
@@ -107,6 +111,7 @@
     margin: 0 0 1vw 0;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.3);
     font-weight: 400;
+    text-align: center;
 }
 
 .weekly-teal-content .teal-box-subheader {
@@ -117,6 +122,7 @@
     font-family: "Zen Kaku Gothic New", sans-serif;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.7);
     line-height: 1.6;
+    text-align: center;
 }
 
 .weekly-teal-content .teal-box-list {
@@ -138,6 +144,7 @@
     line-height: 1.8;
     margin: 0 0 1vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
+    padding-left: 2vw;
 }
 
 .weekly-teal-content .teal-box-text:last-child {
@@ -171,10 +178,10 @@
 
 .how-to-use-header h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 4vw;
+    font-size: 6.5vw;
     font-weight: 200;
-    font-style: italic;
-    color: #6fb3af;
+    font-style: normal;
+    color: #fff;
     margin: 0;
     text-align: center;
 }
@@ -182,13 +189,13 @@
 .how-to-use-underline {
     width: 100%;
     height: 2px;
-    background-color: #6fb3af;
-    margin-top: 0.3vw;
+    background-color: #fff;
+    margin-top: 0.2vw;
 }
 
 .how-to-use-subtext {
     font-size: 1.4vw;
-    color: #555;
+    color: #fff;
     text-align: center;
     margin: 0 0 2vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
@@ -231,54 +238,14 @@
 }
 
 /* =========================
-   CTA BUTTON
-   ========================= */
-
-.weekly-button-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 2vw;
-}
-
-.weekly-care-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    padding: 1em 3em;
-    font-size: 1.2vw;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    color: #6fb3af;
-    background-color: transparent;
-    border: 2px solid #6fb3af;
-    border-radius: 2em;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.weekly-care-button:hover {
-    background-color: #6fb3af;
-    color: #fff;
-}
-
-.weekly-care-button .button-arrow {
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(-45deg);
-}
-
-/* =========================
    RESPONSIVE: MOBILE
    ========================= */
 
 @media (max-width: 768px) {
     .weekly-care-section {
         padding: 6vw 0;
+        aspect-ratio: unset;
+        min-height: auto;
     }
 
     /* Header */
@@ -290,8 +257,13 @@
         font-size: 7vw;
     }
 
+    .weekly-care-header-content {
+        width: 75%;
+    }
+    
     .weekly-header-underline {
-        width: 70%;
+        width: 100vw;
+        margin-left: calc(-100vw + 100%);
     }
 
     /* Product row stacks vertically */
@@ -333,7 +305,11 @@
 
     /* How to use */
     .how-to-use-header h3 {
-        font-size: 6vw;
+        font-size: 7vw;
+    }
+    
+    .weekly-teal-content .teal-box-text {
+        padding-left: 3vw;
     }
 
     .how-to-use-subtext {
@@ -350,12 +326,6 @@
     /* New product splash */
     .new-product-image {
         width: 95%;
-    }
-
-    /* Button */
-    .weekly-care-button {
-        font-size: 3.5vw;
-        padding: 1em 2.5em;
     }
 }
 

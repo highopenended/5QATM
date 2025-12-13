@@ -13,6 +13,7 @@ import tealBox1 from "../assets/daily-care-left-teal-1.png";
 import tealBox2 from "../assets/daily-care-left-teal-2.png";
 import productImage1 from "../assets/daily-care-right-image1.png";
 import productImage2 from "../assets/daily-care-right-image2.png";
+import Button_Rakuten from "./Button_Rakuten";
 
 const DailyCare = () => {
     return (
@@ -96,17 +97,7 @@ const DailyCare = () => {
             </div>
 
             {/* Product Page Button - Order 6 on mobile */}
-            <div className="product-page-button-wrapper">
-                <a 
-                    href="https://www.rakuten.co.jp/24quantum/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="product-page-button"
-                >
-                    商品ページへ
-                    <span className="button-arrow"></span>
-                </a>
-            </div>
+            <Button_Rakuten wrapperClassName="daily-care-button" />
         </section>
     );
 };
