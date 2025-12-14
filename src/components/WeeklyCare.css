@@ -16,7 +16,6 @@
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    aspect-ratio: 2730 / 7339;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -41,6 +40,7 @@
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
 .weekly-care-header h2 {
@@ -219,7 +219,7 @@
     line-height: 1.8;
     margin: 0 0 1vw 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
-    padding-left: 2vw;
+    padding-left: 10%;
 }
 
 .weekly-teal-content .teal-box-text:last-child {
@@ -258,6 +258,7 @@
     font-style: normal;
     color: #fff;
     margin: 0;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
@@ -269,12 +270,14 @@
 }
 
 .how-to-use-subtext {
-    font-size: 1.4vw;
+    font-size: 2.2vw;
     color: #fff;
     text-align: center;
-    margin: 0 0 2vw 0;
+    margin: 0 0 5vw 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-family: "Zen Kaku Gothic New", sans-serif;
 }
+
 
 /* =========================
    VIDEO CONTAINER
@@ -319,8 +322,6 @@
 @media (max-width: 768px) {
     .weekly-care-section {
         padding: 6vw 0;
-        aspect-ratio: unset;
-        min-height: auto;
     }
 
     /* Header */
@@ -400,6 +401,7 @@
     /* How to use */
     .how-to-use-header h3 {
         font-size: 7vw;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
     
     .weekly-teal-content .teal-box-text {
