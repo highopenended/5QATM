@@ -1,0 +1,28 @@
+/* ClickableProduct.css */
+/* DEBUG OUTLINE — remove or replace later */
+
+.clickable-product {
+    display: inline-block;
+    outline: 2px solid #ff00ff; /* loud magenta */
+    outline-offset: 0;
+    background: rgba(255, 0, 255, 0.05);
+  }
+  
+  .clickable-product img {
+    display: block;
+  }
+  
+  /* Optional: show bounding box clearly */
+  .clickable-product::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border: 1px dashed rgba(255, 0, 255, 0.6);
+  }
+  
+  /* .clickable-product {
+    background: rgba(255, 0, 255, 0.05);
+    width: 18vw;
+  }
+   */
