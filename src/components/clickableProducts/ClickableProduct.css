@@ -1,45 +1,22 @@
 /* ClickableProduct.css */
+/* DEBUG OUTLINE — remove or replace later */
 
-/* The <a> is the positioned/scaled product */
 .clickable-product {
-    position: absolute;                 /* REQUIRED for left/top to work */
-    display: block;
-  
-    /* scale system driven by props */
-    --cp-scale: 1;
-    --cp-hover: 1.08;
-  
-    transform-origin: center;
-    transform: translate(-50%, -50%) scale(var(--cp-scale));
-    transition: transform 0.2s ease;
-  
-    cursor: pointer;
+    display: inline-block;
+    outline-offset: 0;
+    /* background: rgba(255, 0, 255, 0.05); */
   }
   
   .clickable-product img {
-    width: 100%;
-    height: auto;
     display: block;
   }
   
-  /* standardized hover */
-  .clickable-product:hover {
-    transform: translate(-50%, -50%)
-               scale(calc(var(--cp-scale) * var(--cp-hover)));
-    z-index: 20;
-  }
-  
-  /* DEBUG OUTLINE */
-  .clickable-product--debug {
-    outline: 2px solid #ff00ff;
-    outline-offset: 0;
-  }
-  
-  .clickable-product--debug::after {
+  /* Optional: show bounding box clearly */
+  .clickable-product::after {
     content: '';
     position: absolute;
     inset: 0;
     pointer-events: none;
-    border: 1px dashed rgba(255, 0, 255, 0.7);
+    /* border: 1px dashed rgba(255, 0, 255, 0.6); */
   }
   
