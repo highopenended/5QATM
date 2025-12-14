@@ -4,7 +4,6 @@
  * Products are centered and positioned using VW offsets for consistent scaling.
  * All products share base positioning and individual products get specific offsets.
  */
-
 /* =========================
    SECTION CONTAINER
    ========================= */
@@ -113,7 +112,7 @@
     z-index: 9;
   }
   
-
+  
 
 /* =========================
    RESPONSIVE: MOBILE
