@@ -76,7 +76,6 @@
   .pro-product-emulsion {
     left: 26.5%;
     top: 70%;
-    --scale: 1.3;
     z-index: 9;
   }
   
@@ -84,7 +83,6 @@
   .pro-product-shampoo {
     left: 37%;
     top: 60%;
-    --scale: 1.5;
     z-index: 8;
   }
   
@@ -92,7 +90,6 @@
   .pro-product-treatment {
     left: 50%;
     top: 70%;
-    --scale: 1.6;
     z-index: 9;
   }
   
@@ -100,7 +97,6 @@
   .pro-product-rebirth {
     left: 63%;
     top: 58%;
-    --scale: 1;
     z-index: 8;
   }
   
@@ -108,7 +104,6 @@
   .pro-product-core {
     left: 72.5%;
     top: 71.5%;
-    --scale: 1.2;
     z-index: 9;
   }
   
