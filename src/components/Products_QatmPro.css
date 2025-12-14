@@ -66,6 +66,14 @@
                scale(calc(var(--scale) * var(--hover-multiplier)));
     z-index: 20; /* bring hovered item to front */
   }
+
+  /* Only “hover pop” when pointer is on an opaque pixel */
+  /* .pro-product.clickable-product[data-hit="1"] {
+    transform: translate(-50%, -50%)
+              scale(calc(var(--scale) * var(--hover-multiplier)));
+    z-index: 20;
+  } */
+
   
   /* =========================
      INDIVIDUAL PRODUCT POSITIONS
