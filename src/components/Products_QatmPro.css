@@ -9,7 +9,9 @@
    ========================= */
 
    .products-qatm-pro-section {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -18,6 +20,31 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    padding: 4vw 0;
+  }
+  
+  /* =========================
+     PRODUCTS HEADER
+     ========================= */
+  
+  .products-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .products-header h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.5vw;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
   }
   
   /* =========================
@@ -124,6 +151,11 @@
 @media (max-width: 768px) {
     .products-qatm-pro-section {
         min-height: 80vh;
+        padding: 6vw 0;
+    }
+
+    .products-header h2 {
+        font-size: 7vw;
     }
 
     .products-container {
