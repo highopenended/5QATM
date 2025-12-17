@@ -17,9 +17,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #55aaa2, #bdd9d4);
     box-sizing: border-box;
 }
 
@@ -55,6 +53,22 @@
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+/* =========================
+   WHITE CIRCLE
+   ========================= */
+
+.light-circle {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 20vw;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 7;
 }
 
 /* =========================

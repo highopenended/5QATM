@@ -7,7 +7,6 @@
  */
 
 import "./Products_QatmLite.css";
-import backgroundImage from "../assets/light-products-background.png";
 import shampooImage from "../assets/light-products-shampoo.png";
 import treatmentImage from "../assets/light-products-treatment.png";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
@@ -16,7 +15,7 @@ import Button_Rakuten from "./Button_Rakuten";
 
 const Products_QatmLight = () => {
     return (
-        <section className="products-qatm-light-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <section className="products-qatm-light-section">
             {/* Main Header */}
             <div className="light-header">
                 <h2>5QATM LIGHT</h2>
@@ -24,6 +23,7 @@ const Products_QatmLight = () => {
 
             {/* Products Container */}
             <div className="light-products-container">
+                <div className="light-circle"></div>
                 <ClickableProduct
                     src={shampooImage}
                     alt="5QATM Light Shampoo"
