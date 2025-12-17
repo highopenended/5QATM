@@ -4,6 +4,7 @@ import About from './components/About';
 import DailyCare from './components/DailyCare';
 import WeeklyCare from './components/WeeklyCare';
 import Products_QatmPro from './components/Products_QatmPro';
+import Products_QatmPro_Details from './components/Products_QatmPro_Details';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <DailyCare />
         <WeeklyCare />
         <Products_QatmPro />
+        <Products_QatmPro_Details />
       </div>
     </div>
     // </div>

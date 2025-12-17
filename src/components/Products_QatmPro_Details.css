@@ -1,0 +1,39 @@
+/**
+ * Products_QatmPro_Details Styles
+ *
+ * Container for product detail blocks arranged in a single horizontal row on large screens.
+ * Text compresses rather than wrapping. Vertical stack on mobile.
+ */
+
+.products-qatm-pro-details-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 30vh;
+    background: linear-gradient(135deg, #8dd4cc 0%, #6fb8b0 100%);
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.products-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: nowrap; /* single row, no wrapping */
+    justify-content: center; /* 👈 center the group */
+}
+
+/* Responsive: Stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .products-qatm-pro-details-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .products-details-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}

@@ -1,0 +1,76 @@
+/**
+ * ProductDetailsBlock Styles
+ *
+ * Individual product information block with name, amount, and details.
+ * Designed to be flexible and compress in width when needed.
+ */
+
+.product-details-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    /* flex: 0 0 auto; */
+    min-width: 0; /* allows flex items to shrink below content size */
+    max-width: 20vw;
+}
+
+.product-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.product-amount {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    line-height: 1.3;
+    align-self: center;
+}
+
+.product-details {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+/* Responsive: Adjust font sizes on smaller screens */
+@media (max-width: 768px) {
+    .product-details-block {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 1rem;
+        margin: 0rem 8.8rem ;
+        flex: 1;
+        max-width: 100%;
+    }
+    .product-name {
+        font-size: 3.8rem;
+    }
+
+    .product-amount {
+        font-size: 2.5rem;
+    }
+
+    .product-details {
+        font-size: 1.8rem;
+    }
+}
