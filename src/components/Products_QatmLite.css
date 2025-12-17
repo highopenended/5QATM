@@ -131,29 +131,55 @@
 .light-details-container {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 33%;
     left: 0;
     z-index: 8;
 }
 
 .light-details-left {
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 0;
-    width: 25%;
+    width: 20%;
 }
 
 .light-details-right {
     position: absolute;
-    right: 15%;
+    right: 10%;
     top: 0;
-    width: 25%;
+    width: 20%;
 }
 
 /* Override ProductDetailsBlock max-width for absolute positioning */
 .light-details-left .product-details-block,
 .light-details-right .product-details-block {
     max-width: 100%;
+}
+
+/* Override ProductDetailsBlock styles for Light section - darker text and tighter spacing */
+.light-details-left .product-details-block,
+.light-details-right .product-details-block {
+    gap: 0.3rem;
+}
+
+.light-details-left .product-name,
+.light-details-right .product-name {
+    color: #2a6666;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.light-details-left .product-amount,
+.light-details-right .product-amount {
+    color: #2a6666;
+    line-height: 1.2;
+}
+
+.light-details-left .product-details,
+.light-details-right .product-details {
+    color: #2a6666;
+    line-height: 1.3;
 }
 
 /* =========================
