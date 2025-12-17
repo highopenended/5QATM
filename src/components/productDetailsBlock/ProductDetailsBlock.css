@@ -36,9 +36,16 @@
     align-self: center;
 }
 
+.amount-slash {
+    font-size: 1.2em;
+    padding: 0 0.3em;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
 .product-details {
     font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     font-weight: 300;
     color: #fff;
     margin: 0;
@@ -58,16 +65,30 @@
         flex-direction: column;
         align-self: center;
         gap: 1rem;
-        margin: 0rem 8.8rem ;
+        margin: 0rem 8.8rem;
         flex: 1;
         max-width: 100%;
+        position: relative;
     }
+
+    /* Add centered separator line after each block except the last */
+    .product-details-block:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        bottom: -2.25rem; /* centered in the gap between blocks */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+    }
+
     .product-name {
-        font-size: 3.8rem;
+        font-size: 3.3rem;
     }
 
     .product-amount {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .product-details {

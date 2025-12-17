@@ -5,11 +5,12 @@
  * Used as a reusable block in product detail sections.
  */
 
+import { type ReactNode } from "react";
 import "./ProductDetailsBlock.css";
 
 interface ProductDetailsBlockProps {
     name: string;
-    amount: string;
+    amount: string | ReactNode;
     details: string;
 }
 

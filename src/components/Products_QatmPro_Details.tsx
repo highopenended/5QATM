@@ -20,12 +20,12 @@ const Products_QatmPro_Details = () => {
                 />
                 <ProductDetailsBlock
                     name="シャンプー"
-                    amount="300ml / 500ml"
+                    amount={<>300ml<span className="amount-slash">/</span>500ml</>}
                     details="２種類のケラチンが毛髪に吸着することで補習効果と速乾効果を生み出し、さらにアクアミストで髪を保湿。無駄な脂質を抑えることで毎日のドライヤー時間を30％短縮できます。"
                 />
                 <ProductDetailsBlock
                     name="トリートメント"
-                    amount="300g / 500g"
+                    amount={<>300g<span className="amount-slash">/</span>500g</>}
                     details="脂質を極力使わず、アクアミストの保湿力を使う事で『早く乾く』を実現。熱保護、表面皮脂処理で、驚くほどみずみずしいサラッと艶やかな質感を生み出します。"
                 />
                 <ProductDetailsBlock
