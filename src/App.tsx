@@ -7,15 +7,19 @@ import Products_QatmPro from './components/Products_QatmPro';
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <HeroSection />
-      <About />
-      <DailyCare />
-      <WeeklyCare />
-      <Products_QatmPro />
-    </>
-  )
+    // <div className="site-viewport">
+    <div className="viewport-shell">
+      <div className="viewport-app">
+        <NavBar />
+        <HeroSection />
+        <About />
+        <DailyCare />
+        <WeeklyCare />
+        <Products_QatmPro />
+      </div>
+    </div>
+    // </div>
+  );
 }
 
-export default App
+export default App;

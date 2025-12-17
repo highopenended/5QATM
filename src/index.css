@@ -1,15 +1,4 @@
-/**
- * Global CSS Reset
- * 
- * Removes default browser margins/padding and ensures full-width layout.
- */
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -17,12 +6,43 @@ body {
 }
 
 body {
-  padding-top: 0rem; /* Offset for fixed navbar */
+  background: #000; /* side bars */
 }
 
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+/* Scale down on ultrawide so vw-based designs don't blow up */
+
+/* =========================================
+   Ultrawide VW Fix: pillarbox + scale
+   ========================================= */
+
+.viewport-shell {
+  width: 100vw;
+  min-height: 100vh;
+  background: #000;            
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
+/*
+  We compute a scale factor that:
+  - is 1 on normal screens
+  - shrinks the entire app on ultrawide so vw-based sizing doesn't explode
+
+  targetWidth = 100vh * (16/9)
+  scale       = min(1, targetWidth / 100vw)
+*/
+.viewport-app {
+  --targetWidth: calc(100vh * 14/ 9);
+  --scale: min(1, calc(var(--targetWidth) / 100vw));
+
+  transform: scale(var(--scale));
+  transform-origin: top center;
+
+  width: calc(100vw / var(--scale));
+  min-height: calc(100vh / var(--scale));
+
+  background: #fff;
+}
+
+  
