@@ -1,0 +1,261 @@
+/**
+ * Products_QatmLight Styles
+ *
+ * All elements use absolute positioning with vw/% units for consistent scaling.
+ * Desktop view only - no mobile media queries yet.
+ */
+
+/* =========================
+   SECTION CONTAINER
+   ========================= */
+
+.products-qatm-light-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+/* =========================
+   MAIN HEADER: 5QATM LIGHT
+   ========================= */
+
+.light-header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.light-header h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.8vw;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0;
+}
+
+/* =========================
+   PRODUCTS CONTAINER
+   ========================= */
+
+.light-products-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================
+   BASE PRODUCT STYLES
+   ========================= */
+
+.light-product {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+
+    /* ---- transform system ---- */
+    --scale: 1;
+    --hover-multiplier: 1.08;
+
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(var(--scale));
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.light-product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.light-product:hover {
+    transform: translate(-50%, -50%)
+               scale(calc(var(--scale) * var(--hover-multiplier)));
+    z-index: 20;
+}
+
+/* =========================
+   INDIVIDUAL PRODUCT POSITIONS
+   ========================= */
+
+/* Shampoo - Left */
+.light-product-shampoo {
+    left: 30%;
+    top: 35%;
+    z-index: 9;
+}
+
+/* Treatment - Right */
+.light-product-treatment {
+    left: 70%;
+    top: 35%;
+    z-index: 9;
+}
+
+/* =========================
+   PRODUCT DETAILS CONTAINER
+   ========================= */
+
+.light-details-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 8;
+}
+
+.light-details-left {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    width: 25%;
+}
+
+.light-details-right {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    width: 25%;
+}
+
+/* Override ProductDetailsBlock max-width for absolute positioning */
+.light-details-left .product-details-block,
+.light-details-right .product-details-block {
+    max-width: 100%;
+}
+
+/* =========================
+   FIRST BUTTON
+   ========================= */
+
+.light-button-1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+/* =========================
+   REFILL PACKS HEADER
+   ========================= */
+
+.refill-packs-header {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.refill-packs-header h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.8vw;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0;
+}
+
+/* =========================
+   REFILL PACKS CONTAINER
+   ========================= */
+
+.refill-packs-container {
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    left: 0;
+    z-index: 8;
+}
+
+/* Base styles for refill pack text blocks */
+.refill-pack-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.refill-pack-line-1 {
+    font-size: 1.8vw;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0.3vw;
+}
+
+.refill-pack-line-2 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0.3vw;
+}
+
+.refill-pack-line-3 {
+    font-size: 1.2vw;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+/* Individual refill pack positions (left to right) */
+.refill-pack-1 {
+    left: 10%;
+    top: 0;
+}
+
+.refill-pack-2 {
+    left: 26%;
+    top: 0;
+}
+
+.refill-pack-3 {
+    left: 42%;
+    top: 0;
+}
+
+.refill-pack-4 {
+    left: 58%;
+    top: 0;
+}
+
+.refill-pack-5 {
+    left: 74%;
+    top: 0;
+}
+
+/* =========================
+   SECOND BUTTON
+   ========================= */
+
+.light-button-2 {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
