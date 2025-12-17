@@ -327,6 +327,7 @@
     /* Header */
     .weekly-care-header {
         margin-bottom: 4vw;
+        white-space: nowrap;
     }
 
     .weekly-care-header h2 {
