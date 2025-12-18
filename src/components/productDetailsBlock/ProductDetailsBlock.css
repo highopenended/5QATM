@@ -13,11 +13,16 @@
     /* flex: 0 0 auto; */
     min-width: 0; /* allows flex items to shrink below content size */
     max-width: 20vw;
+    
+    /* CSS variables for font sizes - defaults to rem for backwards compatibility */
+    --product-name-size: 1.5rem;
+    --product-amount-size: 0.9rem;
+    --product-details-size: 1.1rem;
 }
 
 .product-name {
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
+    font-size: var(--product-name-size);
     font-weight: 400;
     color: #fff;
     margin: 0;
@@ -28,7 +33,7 @@
 
 .product-amount {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
+    font-size: var(--product-amount-size);
     font-weight: 300;
     color: #fff;
     margin: 0;
@@ -45,7 +50,7 @@
 
 .product-details {
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: var(--product-details-size);
     font-weight: 300;
     color: #fff;
     margin: 0;
@@ -61,6 +66,12 @@
 /* Responsive: Adjust font sizes on smaller screens */
 @media (max-width: 768px) {
     .product-details-block {
+        /* Override variables for mobile */
+        --product-name-size: 3.3rem;
+        --product-amount-size: 2.2rem;
+        --product-details-size: 1.8rem;
+        
+        /* Rest of mobile styles */
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -81,17 +92,5 @@
         width: 100%;
         height: 1px;
         background-color: #fff;
-    }
-
-    .product-name {
-        font-size: 3.3rem;
-    }
-
-    .product-amount {
-        font-size: 2.2rem;
-    }
-
-    .product-details {
-        font-size: 1.8rem;
     }
 }

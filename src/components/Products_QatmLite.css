@@ -50,11 +50,9 @@
    ========================= */
 
 .light-products-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 /* =========================
@@ -64,7 +62,7 @@
 .light-circle {
     position: absolute;
     left: 50%;
-    top: 42%;
+    top: 28%;
     transform: translate(-50%, -50%);
     width: 26vw;
     height: 26vw;
@@ -113,14 +111,14 @@
 .light-product-shampoo {
     width: 14.5vw;
     left: 44%;
-    top: 40%;
+    top: 26%;
     z-index: 9;
 }
 
 /* Treatment - Right */
 .light-product-treatment {
     left: 58%;
-    top: 49%;
+    top: 35%;
     z-index: 8;
 }
 
@@ -131,7 +129,7 @@
 .light-details-container {
     position: absolute;
     width: 100%;
-    top: 33%;
+    top: 20%;
     left: 0;
     z-index: 8;
 }
@@ -150,35 +148,65 @@
     width: 20%;
 }
 
-/* Override ProductDetailsBlock max-width for absolute positioning */
-.light-details-left .product-details-block,
-.light-details-right .product-details-block {
+/* Set CSS variables for scaling text */
+.light-details-left .product-details-block {
     max-width: 100%;
-}
-
-/* Override ProductDetailsBlock styles for Light section - darker text and tighter spacing */
-.light-details-left .product-details-block,
-.light-details-right .product-details-block {
     gap: 0.3rem;
+    
+    /* Use clamp() for proportional scaling while maintaining readability */
+    --product-name-size: clamp(1.2rem, 1.5vw, 2rem);
+    --product-amount-size: clamp(0.85rem, 0.9vw, 1.2rem);
+    --product-details-size: clamp(0.95rem, 1.1vw, 1.4rem);
 }
 
+/* Apply dark color scheme */
 .light-details-left .product-name,
-.light-details-right .product-name {
+.light-details-left .product-amount,
+.light-details-left .product-details {
     color: #2a6666;
-    font-size: 1.2rem;
+}
+
+.light-details-left .product-name {
     font-weight: 600;
     line-height: 1.1;
 }
 
-.light-details-left .product-amount,
-.light-details-right .product-amount {
-    color: #2a6666;
+.light-details-left .product-amount {
     line-height: 1.2;
 }
 
-.light-details-left .product-details,
+.light-details-left .product-details {
+    line-height: 1.3;
+}
+
+/* Set CSS variables for scaling text */
+.light-details-right .product-details-block {
+    max-width: 100%;
+    gap: 0.3rem;
+    
+    /* Use clamp() for proportional scaling while maintaining readability */
+    --product-name-size: clamp(1.2rem, 1.5vw, 2rem);
+    --product-amount-size: clamp(0.85rem, 0.9vw, 1.2rem);
+    --product-details-size: clamp(0.95rem, 1.1vw, 1.4rem);
+}
+
+/* Apply dark color scheme */
+.light-details-right .product-name,
+.light-details-right .product-amount,
 .light-details-right .product-details {
     color: #2a6666;
+}
+
+.light-details-right .product-name {
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.light-details-right .product-amount {
+    line-height: 1.2;
+}
+
+.light-details-right .product-details {
     line-height: 1.3;
 }
 
