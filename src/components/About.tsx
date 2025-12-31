@@ -3,6 +3,7 @@
  *
  * Two-section layout with product image on left and about image on right.
  * Responsive: side-by-side on larger screens, stacked on smaller screens.
+ * Needs cleaning up
  */
 
 import "./About.css";
