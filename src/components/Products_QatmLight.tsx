@@ -6,7 +6,7 @@
  * All elements use absolute positioning for consistent scaling across screen sizes.
  */
 
-import "./Products_QatmLite.css";
+import "./Products_QatmLight.css";
 import shampooImage from "../assets/light-products-shampoo.png";
 import treatmentImage from "../assets/light-products-treatment.png";
 import ClickableProduct from "./clickableProducts/ClickableProduct";

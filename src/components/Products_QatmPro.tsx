@@ -7,7 +7,6 @@
  */
 
 import "./Products_QatmPro.css";
-import backgroundImage from "../assets/pro-products-background.png";
 import emulsionImage from "../assets/pro-product-emission.png";
 import shampooImage from "../assets/pro-product-shampoo.png";
 import treatmentImage from "../assets/pro-product-treatment.png";
@@ -17,11 +16,17 @@ import ClickableProduct from "./clickableProducts/ClickableProduct";
 
 const Products_QatmPro = () => {
     return (
-        <section className="products-qatm-pro-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <section className="products-qatm-pro-section">
             <div className="products-header">
                 <h2>Products</h2>
             </div>
+            <div className="pro-title-header">
+                <span className="pro-title-5">5</span>
+                <span className="pro-title-qatm">QATM</span>
+                <span className="pro-title-pro"> PRO</span>
+            </div>
             <div className="products-container">
+                <div className="pro-circle"></div>
                 <ClickableProduct
                     src={emulsionImage}
                     alt="5QATM PRO Emulsion"
