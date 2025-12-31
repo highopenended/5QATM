@@ -13,7 +13,7 @@ const HeroSection = () => {
       <img 
         src={section1Image} 
         alt="Hero" 
-        className="hero-image hero-image2"
+        className="hero-image"
       />
     </section>
   );
