@@ -14,7 +14,7 @@ const About = () => {
     return (
         <section id="about" className="about-section">
             <div className="about-left">
-                <img src={section2Image} alt="Product showcase" className="about-image" />
+                <img src={section2Image} alt="Product showcase" className="about-image about-image2" />
             </div>
 
             <div className="about-right">
