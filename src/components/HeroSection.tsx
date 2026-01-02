@@ -1,6 +1,5 @@
 /**
  * HeroSection Component
- * 
  * Hero section displaying the main hero image.
  */
 
