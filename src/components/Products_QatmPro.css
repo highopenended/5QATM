@@ -200,8 +200,8 @@
   .pro-label {
     position: absolute;
     font-family: "Poppins", sans-serif;
-    font-size: 1.8vw;
-    font-weight: 400;
+    font-size: 2vw;
+    font-weight: 200;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     white-space: nowrap;
@@ -211,16 +211,16 @@
   
   /* Emulsion - Left side */
   .pro-label-emulsion {
-    left: 24%;
-    top: 69%;
+    left: 31%;
+    top: 58%;
     transform: translate(-100%, -50%);
     padding-right: 1.5vw;
   }
   
   /* Shampoo - Left side, above */
   .pro-label-shampoo {
-    left: 33%;
-    top: 50%;
+    left: 40%;
+    top: 42%;
     transform: translate(-100%, -50%);
     padding-right: 1.5vw;
   }
@@ -228,23 +228,23 @@
   /* Treatment - Bottom */
   .pro-label-treatment {
     left: 50%;
-    top: 82%;
+    top: 94.5%;
     transform: translate(-50%, 0);
     padding-top: 1vw;
   }
   
   /* Rebirth - Right side, above */
   .pro-label-rebirth {
-    left: 67%;
-    top: 50%;
+    left: 62%;
+    top: 45%;
     transform: translate(0, -50%);
     padding-left: 1.5vw;
   }
   
   /* Core - Right side */
   .pro-label-core {
-    left: 76%;
-    top: 70%;
+    left: 68%;
+    top: 59.5%;
     transform: translate(0, -50%);
     padding-left: 1.5vw;
   }
@@ -257,6 +257,7 @@
     .products-qatm-pro-section {
         min-height: auto;
         padding: 4vw 0;
+        padding-bottom: 5vh;
     }
 
     .products-header h2 {
@@ -275,7 +276,7 @@
     .pro-circle {
         width: 58vw;
         height: 58vw;
-        top: 65%;
+        top: 62%;
     }
 
     .products-container {
@@ -289,28 +290,28 @@
 
     /* Mobile product positions - wide arc matching desktop */
     .pro-product-emulsion {
-        left: 24%;
-        top: 72%;
+        left: 22%;
+        top: 67%;
     }
 
     .pro-product-shampoo {
-        left: 37%;
-        top: 58%;
+        left: 35%;
+        top: 51%;
     }
 
     .pro-product-treatment {
         left: 50%;
-        top: 74%;
+        top: 65%;
     }
 
     .pro-product-rebirth {
-        left: 63%;
-        top: 58%;
+        left: 65%;
+        top: 53%;
     }
 
     .pro-product-core {
         left: 76%;
-        top: 72%;
+        top: 67%;
     }
 
     /* Mobile label styles */
@@ -320,36 +321,36 @@
 
     /* Emulsion - Left side */
     .pro-label-emulsion {
-        left: 16%;
-        top: 72%;
+        left: 19%;
+        top: 50%;
         padding-right: 2vw;
     }
 
     /* Shampoo - Left side, above */
     .pro-label-shampoo {
-        left: 28%;
-        top: 50%;
+        left: 31%;
+        top: 31%;
         padding-right: 2vw;
     }
 
     /* Treatment - Bottom */
     .pro-label-treatment {
         left: 50%;
-        top: 86%;
+        top: 96%;
         padding-top: 2vw;
     }
 
     /* Rebirth - Right side, above */
     .pro-label-rebirth {
-        left: 72%;
-        top: 50%;
+        left: 69%;
+        top: 33%;
         padding-left: 2vw;
     }
 
     /* Core - Right side */
     .pro-label-core {
-        left: 84%;
-        top: 72%;
+        left: 82%;
+        top: 52%;
         padding-left: 2vw;
     }
 }
