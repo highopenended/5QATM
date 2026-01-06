@@ -193,7 +193,61 @@
     z-index: 9;
   }
   
+  /* =========================
+     PRODUCT LABELS
+     ========================= */
   
+  .pro-label {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  /* Emulsion - Left side */
+  .pro-label-emulsion {
+    left: 24%;
+    top: 69%;
+    transform: translate(-100%, -50%);
+    padding-right: 1.5vw;
+  }
+  
+  /* Shampoo - Left side, above */
+  .pro-label-shampoo {
+    left: 33%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    padding-right: 1.5vw;
+  }
+  
+  /* Treatment - Bottom */
+  .pro-label-treatment {
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%, 0);
+    padding-top: 1vw;
+  }
+  
+  /* Rebirth - Right side, above */
+  .pro-label-rebirth {
+    left: 67%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 1.5vw;
+  }
+  
+  /* Core - Right side */
+  .pro-label-core {
+    left: 76%;
+    top: 70%;
+    transform: translate(0, -50%);
+    padding-left: 1.5vw;
+  }
 
 /* =========================
    RESPONSIVE: MOBILE
@@ -257,6 +311,46 @@
     .pro-product-core {
         left: 76%;
         top: 72%;
+    }
+
+    /* Mobile label styles */
+    .pro-label {
+        font-size: 3.5vw;
+    }
+
+    /* Emulsion - Left side */
+    .pro-label-emulsion {
+        left: 16%;
+        top: 72%;
+        padding-right: 2vw;
+    }
+
+    /* Shampoo - Left side, above */
+    .pro-label-shampoo {
+        left: 28%;
+        top: 50%;
+        padding-right: 2vw;
+    }
+
+    /* Treatment - Bottom */
+    .pro-label-treatment {
+        left: 50%;
+        top: 86%;
+        padding-top: 2vw;
+    }
+
+    /* Rebirth - Right side, above */
+    .pro-label-rebirth {
+        left: 72%;
+        top: 50%;
+        padding-left: 2vw;
+    }
+
+    /* Core - Right side */
+    .pro-label-core {
+        left: 84%;
+        top: 72%;
+        padding-left: 2vw;
     }
 }
 

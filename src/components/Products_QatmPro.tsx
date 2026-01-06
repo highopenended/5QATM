@@ -34,6 +34,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-emulsion"
                     scale={1.3}
                 />
+                <span className="pro-label pro-label-emulsion">Emulsion</span>
 
                 <ClickableProduct
                     src={shampooImage}
@@ -42,6 +43,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-shampoo"
                     scale={1.5}
                 />
+                <span className="pro-label pro-label-shampoo">Shampoo</span>
 
                 <ClickableProduct
                     src={treatmentImage}
@@ -50,6 +52,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-treatment"
                     scale={1.6}
                 />
+                <span className="pro-label pro-label-treatment">Treatment</span>
 
                 <ClickableProduct
                     src={rebirthImage}
@@ -58,6 +61,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-rebirth"
                     scale={1.0}
                 />
+                <span className="pro-label pro-label-rebirth">Rebirth</span>
 
                 <ClickableProduct
                     src={coreImage}
@@ -66,6 +70,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-core"
                     scale={1.2}
                 />
+                <span className="pro-label pro-label-core">Core</span>
             </div>
         </section>
     );
