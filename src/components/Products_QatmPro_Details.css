@@ -28,7 +28,7 @@
 
 /* Use clamp() for ProductDetailsBlock text to scale with viewport while maintaining readability */
 .products-qatm-pro-details-section .product-details-block {
-    --product-name-size: clamp(1.5rem, 2vw, 2.5rem);
+    --product-name-size: clamp(2.2rem, 2vw, 2.5rem);
     --product-amount-size: clamp(1rem, 1.2vw, 1.5rem);
     --product-details-size: clamp(1.1rem, 1.4vw, 1.8rem);
 }
