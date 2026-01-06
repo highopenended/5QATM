@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
     background: linear-gradient(to bottom, #59aba3, #bdd9d4);
     box-sizing: border-box;
   }
@@ -90,7 +89,7 @@
   .products-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 0.55;
+    aspect-ratio: 1 / 0.65;
   }
 
   /* =========================
@@ -100,7 +99,7 @@
   .pro-circle {
     position: absolute;
     left: 50%;
-    top: 78%;
+    top: 68%;
     transform: translate(-50%, -50%);
     width: 37vw;
     height: 37vw;
@@ -162,35 +161,35 @@
   /* Emulsion - Left */
   .pro-product-emulsion {
     left: 34%;
-    top: 82%;
+    top: 69%;
     z-index: 9;
   }
   
   /* Shampoo - Left-Center */
   .pro-product-shampoo {
     left: 41%;
-    top: 68%;
+    top: 58%;
     z-index: 8;
   }
   
   /* Treatment - Center */
   .pro-product-treatment {
     left: 50%;
-    top: 82%;
+    top: 70%;
     z-index: 9;
   }
   
   /* Rebirth - Right-Center */
   .pro-product-rebirth {
     left: 58.8%;
-    top: 65.5%;
+    top: 55.5%;
     z-index: 8;
   }
   
   /* Core - Right */
   .pro-product-core {
     left: 65%;
-    top: 84.5%;
+    top: 70%;
     z-index: 9;
   }
   
@@ -202,8 +201,8 @@
 
 @media (max-width: 768px) {
     .products-qatm-pro-section {
-        min-height: 80vh;
-        padding: 6vw 0;
+        min-height: auto;
+        padding: 4vw 0;
     }
 
     .products-header h2 {
@@ -211,7 +210,7 @@
     }
 
     .pro-title-header {
-        top: 12%;
+        top: 10%;
     }
 
     .pro-title-qatm,
@@ -220,58 +219,44 @@
     }
 
     .pro-circle {
-        width: 28vw;
-        height: 28vw;
-        top: 54.5%;
+        width: 58vw;
+        height: 58vw;
+        top: 65%;
     }
 
     .products-container {
-        width: 95%;
+        width: 100%;
+        aspect-ratio: 1 / 0.85;
     }
 
     .pro-product {
-        width: 22vw;
+        width: 12vw;
     }
 
-    /* Adjust spacing for mobile */
+    /* Mobile product positions - wide arc matching desktop */
     .pro-product-emulsion {
-        transform: translate(calc(-50% - 25vw), calc(-50% + 5vw));
-    }
-
-    .pro-product-emulsion:hover {
-        transform: translate(calc(-50% - 25vw), calc(-50% + 5vw)) scale(1.05);
+        left: 24%;
+        top: 72%;
     }
 
     .pro-product-shampoo {
-        transform: translate(calc(-50% - 12vw), calc(-50% - 5vw));
-    }
-
-    .pro-product-shampoo:hover {
-        transform: translate(calc(-50% - 12vw), calc(-50% - 5vw)) scale(1.05);
+        left: 37%;
+        top: 58%;
     }
 
     .pro-product-treatment {
-        transform: translate(-50%, calc(-50% - 12vw));
-    }
-
-    .pro-product-treatment:hover {
-        transform: translate(-50%, calc(-50% - 12vw)) scale(1.05);
+        left: 50%;
+        top: 74%;
     }
 
     .pro-product-rebirth {
-        transform: translate(calc(-50% + 12vw), calc(-50% - 5vw));
-    }
-
-    .pro-product-rebirth:hover {
-        transform: translate(calc(-50% + 12vw), calc(-50% - 5vw)) scale(1.05);
+        left: 63%;
+        top: 58%;
     }
 
     .pro-product-core {
-        transform: translate(calc(-50% + 25vw), calc(-50% + 5vw));
-    }
-
-    .pro-product-core:hover {
-        transform: translate(calc(-50% + 25vw), calc(-50% + 5vw)) scale(1.05);
+        left: 76%;
+        top: 72%;
     }
 }
 
