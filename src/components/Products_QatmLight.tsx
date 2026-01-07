@@ -9,6 +9,11 @@
 import "./Products_QatmLight.css";
 import shampooImage from "../assets/light-products-shampoo.png";
 import treatmentImage from "../assets/light-products-treatment.png";
+import refillShampooImage from "../assets/refillpack-shampoo.png";
+import refillTreatmentImage from "../assets/refillpack-treatment.png";
+import refillRebirthImage from "../assets/refillpack-rebirth.png";
+import refillCoreImage from "../assets/refillpack-core.png";
+import refillEmulsionImage from "../assets/refillpack-emulsion.png";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 import ProductDetailsBlock from "./productDetailsBlock/ProductDetailsBlock";
 import Button_Rakuten from "./Button_Rakuten";
@@ -65,6 +70,51 @@ const Products_QatmLight = () => {
             {/* Refill Packs Header */}
             <div className="refill-packs-header">
                 <h2>REFILL PACKS</h2>
+            </div>
+
+            {/* Refill Pack Products */}
+            <div className="refill-products-container">
+                <div className="refill-circle refill-circle-1"></div>
+                <div className="refill-circle refill-circle-2"></div>
+                <div className="refill-circle refill-circle-3"></div>
+                <div className="refill-circle refill-circle-4"></div>
+                <div className="refill-circle refill-circle-5"></div>
+
+                <ClickableProduct
+                    src={refillShampooImage}
+                    alt="5QATM Refill Shampoo"
+                    href="https://google.com"
+                    className="refill-product refill-product-1"
+                    scale={1.0}
+                />
+                <ClickableProduct
+                    src={refillTreatmentImage}
+                    alt="5QATM Refill Treatment"
+                    href="https://google.com"
+                    className="refill-product refill-product-2"
+                    scale={1.0}
+                />
+                <ClickableProduct
+                    src={refillRebirthImage}
+                    alt="5QATM Refill Rebirth"
+                    href="https://google.com"
+                    className="refill-product refill-product-3"
+                    scale={1.0}
+                />
+                <ClickableProduct
+                    src={refillCoreImage}
+                    alt="5QATM Refill Core"
+                    href="https://google.com"
+                    className="refill-product refill-product-4"
+                    scale={1.0}
+                />
+                <ClickableProduct
+                    src={refillEmulsionImage}
+                    alt="5QATM Refill Emulsion"
+                    href="https://google.com"
+                    className="refill-product refill-product-5"
+                    scale={1.0}
+                />
             </div>
 
             {/* Refill Pack Text Blocks */}

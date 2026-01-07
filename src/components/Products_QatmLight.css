@@ -262,7 +262,81 @@
 }
 
 /* =========================
-   REFILL PACKS CONTAINER
+   REFILL PRODUCTS CONTAINER
+   ========================= */
+
+.refill-products-container {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 0;
+    z-index: 8;
+}
+
+/* =========================
+   REFILL CIRCLES (WHITE BACKGROUNDS)
+   ========================= */
+
+.refill-circle {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+
+/* Circle positions (centered on each product) */
+.refill-circle-1 { left: 13%; top: 50%; }
+.refill-circle-2 { left: 31%; top: 50%; }
+.refill-circle-3 { left: 50%; top: 50%; }
+.refill-circle-4 { left: 69%; top: 50%; }
+.refill-circle-5 { left: 87%; top: 50%; }
+
+/* =========================
+   REFILL PRODUCT BASE STYLES
+   ========================= */
+
+.refill-product {
+    position: absolute;
+    width: 9vw;
+    height: auto;
+
+    --scale: 1;
+    --hover-multiplier: 1.08;
+
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(var(--scale));
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.refill-product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.refill-product:hover {
+    transform: translate(-50%, -50%)
+               scale(calc(var(--scale) * var(--hover-multiplier)));
+    z-index: 20;
+}
+
+/* =========================
+   REFILL PRODUCT POSITIONS
+   ========================= */
+
+.refill-product-1 { left: 13%; top: 50%; z-index: 9; }
+.refill-product-2 { left: 31%; top: 50%; z-index: 9; }
+.refill-product-3 { left: 50%; top: 50%; z-index: 9; }
+.refill-product-4 { left: 69%; top: 50%; z-index: 9; }
+.refill-product-5 { left: 87%; top: 50%; z-index: 9; }
+
+/* =========================
+   REFILL PACKS TEXT CONTAINER
    ========================= */
 
 .refill-packs-container {
