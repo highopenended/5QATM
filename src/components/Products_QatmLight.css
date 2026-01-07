@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 130vh;
     background: linear-gradient(to bottom, #bdd9d4,#bdd9d4, #55aaa2);
     /* background: linear-gradient(to bottom, #55aaa2, #bdd9d4); */
     box-sizing: border-box;
@@ -268,7 +268,7 @@
 .refill-products-container {
     position: absolute;
     width: 100%;
-    top: 60%;
+    top: 72%;
     left: 0;
     z-index: 8;
 }
@@ -279,8 +279,8 @@
 
 .refill-circle {
     position: absolute;
-    width: 12vw;
-    height: 12vw;
+    width: 20vw;
+    height: 20vw;
     background-color: #fff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -300,7 +300,7 @@
 
 .refill-product {
     position: absolute;
-    width: 9vw;
+    width: 12vw;
     height: auto;
 
     --scale: 1;
@@ -342,7 +342,7 @@
 .refill-packs-container {
     position: absolute;
     width: 100%;
-    top: 80%;
+    top: 90%;
     left: 0;
     z-index: 8;
 }
