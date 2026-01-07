@@ -17,6 +17,7 @@
     width: 100%;
     background: linear-gradient(to bottom, #59aba3, #bdd9d4);
     box-sizing: border-box;
+        padding-bottom: 4vh;
   }
   
   /* =========================

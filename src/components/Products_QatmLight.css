@@ -17,7 +17,8 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #55aaa2, #bdd9d4);
+    background: linear-gradient(to bottom, #bdd9d4,#bdd9d4, #55aaa2);
+    /* background: linear-gradient(to bottom, #55aaa2, #bdd9d4); */
     box-sizing: border-box;
 }
 
@@ -211,16 +212,29 @@
 }
 
 /* =========================
-   FIRST BUTTON
+   BUTTONS (SHARED STYLES)
    ========================= */
 
-.light-button-1 {
+.light-button-1,
+.light-button-2 {
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    right: 10%;
+    width: auto;
     z-index: 10;
+}
+
+.light-button-1 {
+    top: 40%;
+}
+
+.light-button-2 {
+    top: 92%;
+}
+
+.light-button-1.rakuten-button-wrapper,
+.light-button-2.rakuten-button-wrapper {
+    justify-content: flex-end;
+    padding-right: 0;
 }
 
 /* =========================
@@ -229,7 +243,7 @@
 
 .refill-packs-header {
     position: absolute;
-    top: 75%;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -254,7 +268,7 @@
 .refill-packs-container {
     position: absolute;
     width: 100%;
-    top: 85%;
+    top: 80%;
     left: 0;
     z-index: 8;
 }
@@ -317,16 +331,4 @@
     top: 0;
 }
 
-/* =========================
-   SECOND BUTTON
-   ========================= */
-
-.light-button-2 {
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 10;
-}
 
