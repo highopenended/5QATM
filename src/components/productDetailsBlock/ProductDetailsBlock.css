@@ -13,7 +13,6 @@
     /* flex: 0 0 auto; */
     min-width: 0; /* allows flex items to shrink below content size */
     max-width: 20vw;
-    position: relative;
     
     /* CSS variables for font sizes */
     --product-name-size: 1.5rem;
@@ -27,8 +26,16 @@
     --product-image: none;
 }
 
-/* Faded background image styling */
-.product-details-block::before {
+.product-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    min-height: 0;
+}
+
+/* Faded background image styling - only on the wrapper containing amount and details */
+.product-content-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
@@ -39,12 +46,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.35;
     pointer-events: none;
     z-index: 0;
 }
 
-.product-name,
 .product-amount,
 .product-details {
     position: relative;
