@@ -44,6 +44,10 @@ const Products_QatmLight = () => {
                     className="light-product light-product-treatment"
                     scale={1.4}
                 />
+
+                {/* Product Labels */}
+                <div className="light-product-label light-label-shampoo">Light Shampoo</div>
+                <div className="light-product-label light-label-treatment">Light Treatment</div>
             </div>
 
             {/* Product Details Blocks */}

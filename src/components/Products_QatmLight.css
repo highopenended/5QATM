@@ -119,8 +119,34 @@
 /* Treatment - Right */
 .light-product-treatment {
     left: 58%;
-    top: 35%;
+    top: 32%;
     z-index: 8;
+}
+
+/* =========================
+   PRODUCT LABELS
+   ========================= */
+
+.light-product-label {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 200;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    z-index: 10;
+}
+
+/* Light Shampoo - Below and left of shampoo product */
+.light-label-shampoo {
+    left: 27.5%;
+    top: 39.5%;
+}
+
+/* Light Treatment - Above and right of treatment product */
+.light-label-treatment {
+    left: 58%;
+    top: 14%;
 }
 
 /* =========================
@@ -288,10 +314,10 @@
 }
 
 /* Circle positions (centered on each product) */
-.refill-circle-1 { left: 13%;  }
-.refill-circle-2 { left: 28%;  }
-.refill-circle-3 { left: 50%;  }
-.refill-circle-4 { left: 69%;  }
+.refill-circle-1 { left: 15%;  }
+.refill-circle-2 { left: 31%;  }
+.refill-circle-3 { left: 54%;  }
+.refill-circle-4 { left: 71%;  }
 .refill-circle-5 { left: 87%;  }
 
 /* =========================
@@ -300,7 +326,7 @@
 
 .refill-product {
     position: absolute;
-    width: 12vw;
+    width: 11vw;
     height: auto;
 
     --scale: 1;
@@ -329,10 +355,10 @@
    REFILL PRODUCT POSITIONS
    ========================= */
 
-.refill-product-1 { left: 13%; z-index: 9; width: 15.4vw; }
-.refill-product-2 { left: 28%; z-index: 9; width: 13.4vw; }
-.refill-product-3 { left: 50%; z-index: 9; }
-.refill-product-4 { left: 69%; z-index: 9; }
+.refill-product-1 { left: 15%; z-index: 9; width: 14.4vw; }
+.refill-product-2 { left: 31.5%; z-index: 9; width: 12.4vw; }
+.refill-product-3 { left: 54%; z-index: 9; }
+.refill-product-4 { left: 71%; z-index: 9; }
 .refill-product-5 { left: 87%; z-index: 9; }
 
 /* =========================
@@ -381,12 +407,12 @@
 
 /* Individual refill pack positions (left to right) */
 .refill-pack-1 {
-    left: 10%;
+    left: 8%;
     top: 0;
 }
 
 .refill-pack-2 {
-    left: 26%;
+    left: 25%;
     top: 0;
 }
 

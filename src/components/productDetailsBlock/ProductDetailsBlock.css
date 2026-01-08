@@ -14,10 +14,13 @@
     min-width: 0; /* allows flex items to shrink below content size */
     max-width: 20vw;
     
-    /* CSS variables for font sizes - defaults to rem for backwards compatibility */
+    /* CSS variables for font sizes */
     --product-name-size: 1.5rem;
     --product-amount-size: 0.9rem;
     --product-details-size: 1.1rem;
+    
+    /* Width variable for uniform product-details sizing */
+    --product-details-width: 12rem;
 }
 
 .product-name {
@@ -55,6 +58,8 @@
     color: #fff;
     margin: 0;
     line-height: 1.5;
+    width: var(--product-details-width);
+    align-self: center;
 }
 
 
@@ -70,6 +75,7 @@
         --product-name-size: 3.3rem;
         --product-amount-size: 2.2rem;
         --product-details-size: 1.8rem;
+        --product-details-width: 16rem;
         
         /* Rest of mobile styles */
         display: flex;

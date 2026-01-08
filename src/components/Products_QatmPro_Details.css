@@ -26,11 +26,12 @@
     justify-content: center; /* 👈 center the group */
 }
 
-/* Use clamp() for ProductDetailsBlock text to scale with viewport while maintaining readability */
-.products-qatm-pro-details-section .product-details-block {
-    --product-name-size: clamp(2.2rem, 2vw, 2.5rem);
-    --product-amount-size: clamp(1rem, 1.2vw, 1.5rem);
-    --product-details-size: clamp(1.1rem, 1.4vw, 1.8rem);
+/* Override font sizes and width for all product detail blocks */
+.products-details-container .product-details-block {
+    --product-name-size: 1.1rem;
+    --product-amount-size: 0.7rem;
+    --product-details-size: 0.85rem;
+    --product-details-width: 12rem;
 }
 
 /* Responsive: Stack vertically on smaller screens */
@@ -42,5 +43,13 @@
     .products-details-container {
         flex-direction: column;
         gap: 4.5rem;
+    }
+
+    /* Override font sizes and width for mobile */
+    .products-details-container .product-details-block {
+        --product-name-size: 2.2rem;
+        --product-amount-size: 1.5rem;
+        --product-details-size: 1.3rem;
+        --product-details-width: 16rem;
     }
 }
