@@ -13,6 +13,7 @@
     /* flex: 0 0 auto; */
     min-width: 0; /* allows flex items to shrink below content size */
     max-width: 20vw;
+    position: relative;
     
     /* CSS variables for font sizes */
     --product-name-size: 1.5rem;
@@ -21,6 +22,33 @@
     
     /* Width variable for uniform product-details sizing */
     --product-details-width: 12rem;
+    
+    /* Product background image variable */
+    --product-image: none;
+}
+
+/* Faded background image styling */
+.product-details-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--product-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.product-name,
+.product-amount,
+.product-details {
+    position: relative;
+    z-index: 1;
 }
 
 .product-name {
