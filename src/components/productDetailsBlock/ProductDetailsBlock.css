@@ -9,15 +9,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    flex: 1;
-    /* flex: 0 0 auto; */
+    flex: 1 1 0; /* Equal width distribution for desktop */
     min-width: 0; /* allows flex items to shrink below content size */
-    max-width: 20vw;
     
-    /* CSS variables for font sizes */
-    --product-name-size: 1.5rem;
-    --product-amount-size: 0.9rem;
-    --product-details-size: 1.1rem;
+    /* CSS variables for font sizes - desktop defaults */
+    --product-name-size: 1.8rem;
+    --product-amount-size: 1.1rem;
+    --product-details-size: 1.2rem;
     
     /* Width variable for uniform product-details sizing */
     --product-details-width: 12rem;
@@ -35,20 +33,9 @@
 }
 
 /* Faded background image styling - only on the wrapper containing amount and details */
+/* Hide background images on desktop, show only on mobile */
 .product-content-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--product-image);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.35;
-    pointer-events: none;
-    z-index: 0;
+    display: none;
 }
 
 .product-amount,
@@ -92,8 +79,9 @@
     color: #fff;
     margin: 0;
     line-height: 1.5;
-    width: var(--product-details-width);
+    width: 100%; /* Full width on desktop, allows text wrapping and height growth */
     align-self: center;
+    text-align: center; /* Center the text within the full-width container */
 }
 
 
@@ -120,6 +108,30 @@
         flex: 1;
         max-width: 100%;
         position: relative;
+    }
+
+    /* Restore width constraint for mobile */
+    .product-details {
+        width: var(--product-details-width);
+        text-align: left; /* Left align for mobile */
+    }
+
+    /* Show background images on mobile only */
+    .product-content-wrapper::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: var(--product-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.35;
+        pointer-events: none;
+        z-index: 0;
     }
 
     /* Add centered separator line after each block except the last */

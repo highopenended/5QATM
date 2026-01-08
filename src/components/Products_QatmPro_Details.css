@@ -20,18 +20,9 @@
 .products-details-container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     width: 100%;
     flex-wrap: nowrap; /* single row, no wrapping */
-    justify-content: center; /* 👈 center the group */
-}
-
-/* Override font sizes and width for all product detail blocks */
-.products-details-container .product-details-block {
-    --product-name-size: 1.1rem;
-    --product-amount-size: 0.7rem;
-    --product-details-size: 0.85rem;
-    --product-details-width: 12rem;
+    gap: 2vw; /* Fixed gap between blocks for consistent spacing */
 }
 
 /* Responsive: Stack vertically on smaller screens */
