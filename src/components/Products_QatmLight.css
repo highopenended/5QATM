@@ -2,7 +2,7 @@
  * Products_QatmLight Styles
  *
  * All elements use absolute positioning with vw/% units for consistent scaling.
- * Desktop view only - no mobile media queries yet.
+ * Desktop styles with mobile responsive overrides.
  */
 
 /* =========================
@@ -18,7 +18,6 @@
     width: 100%;
     min-height: 130vh;
     background: linear-gradient(to bottom, #bdd9d4,#bdd9d4, #55aaa2);
-    /* background: linear-gradient(to bottom, #55aaa2, #bdd9d4); */
     box-sizing: border-box;
 }
 
@@ -44,6 +43,10 @@
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin: 0;
+}
+
+.light-header h2 .header-light {
+    font-family: "Playfair Display", serif;
 }
 
 /* =========================
@@ -431,4 +434,238 @@
     top: 0;
 }
 
+/* =========================
+   RESPONSIVE: MOBILE
+   ========================= */
 
+@media (max-width: 768px) {
+    /* Section container - natural content flow */
+    .products-qatm-light-section {
+        min-height: auto;
+        padding: 8vw 0 6vw;
+    }
+
+    /* Main header */
+    .light-header {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 4vw;
+    }
+
+    .light-header h2 {
+        font-size: 12vw;
+        font-weight: 400;
+    }
+
+    .light-header h2 .header-bold {
+        font-weight: 600;
+    }
+
+    .light-header h2 .header-number {
+        font-size: 1.3em;
+        font-style: italic;
+        margin-right: 0.1em;
+    }
+
+    .light-header h2 .header-light {
+        font-family: "Playfair Display", serif;
+    }
+
+    /* Products container */
+    .light-products-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 0.9;
+    }
+
+    /* White circle - larger for mobile */
+    .light-circle {
+        width: 55vw;
+        height: 55vw;
+        top: 35%;
+    }
+
+    /* Base product sizing for mobile */
+    .light-product {
+        width: 28vw;
+    }
+
+    /* Shampoo position - mobile */
+    .light-product-shampoo {
+        width: 31vw;
+        left: 36%;
+        top: 28%;
+    }
+
+    /* Treatment position - mobile */
+    .light-product-treatment {
+        width: 33vw;
+        left: 65%;
+        top: 38%;
+    }
+
+    /* Product labels - mobile */
+    .light-product-label {
+        font-size: 4.2vw;
+    }
+
+    .light-label-shampoo {
+        left: 8%;
+        top: 62%;
+    }
+
+    .light-label-treatment {
+        left: 60%;
+        top: 0%;
+    }
+
+    /* =========================
+       PRODUCT DETAILS - MOBILE
+       ========================= */
+
+    .light-details-container {
+        position: relative;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding: 0 1.5rem;
+        margin-top: -8vw;
+    }
+
+    .light-details-left,
+    .light-details-right {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    .light-details-left .product-details-block,
+    .light-details-right .product-details-block {
+        --product-name-size: 1.8rem;
+        --product-amount-size: 1.5rem;
+        --product-details-size: 1.1rem;
+        --product-details-width: 100%;
+        gap: 0.8rem;
+        margin: 0 24vw;
+    }
+
+    .light-details-left .product-name,
+    .light-details-right .product-name {
+        text-align: center;
+    }
+
+    .light-details-left .product-amount,
+    .light-details-right .product-amount {
+        text-align: center;
+    }
+
+    .light-details-left .product-details,
+    .light-details-right .product-details {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* =========================
+       BUTTONS - MOBILE
+       ========================= */
+
+    .light-button-1,
+    .light-button-2 {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        padding: 3vw 5vw;
+    }
+
+    .light-button-1.rakuten-button-wrapper,
+    .light-button-2.rakuten-button-wrapper {
+        justify-content: flex-end;
+    }
+
+    /* =========================
+       REFILL PACKS HEADER - MOBILE
+       ========================= */
+
+    .refill-packs-header {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 6vw 0 4vw;
+    }
+
+    .refill-packs-header h2 {
+        font-size: 10vw;
+    }
+
+    /* =========================
+       REFILL PRODUCTS - MOBILE
+       Row 1: Shampoo + Treatment (2 items)
+       Row 2: Rebirth + Core + Emulsion (3 items)
+       ========================= */
+
+    .refill-products-container {
+        position: relative;
+        top: auto;
+        aspect-ratio: 1 / 0.8;
+    }
+
+    .refill-circle {
+        width: 32vw;
+        height: 32vw;
+    }
+
+    /* Row 1: 2 items centered */
+    .refill-circle-1 { left: 32%; top: 10%; }
+    .refill-circle-2 { left: 68%; top: 10%; }
+
+    /* Row 2: 3 items evenly distributed */
+    .refill-circle-3 { left: 20%; top: 58%; }
+    .refill-circle-4 { left: 50%; top: 58%; }
+    .refill-circle-5 { left: 80%; top: 58%; }
+
+    .refill-product {
+        width: 22vw;
+    }
+
+    /* Row 1 products */
+    .refill-product-1 { left: 32%; top: 10%; width: 28vw; }
+    .refill-product-2 { left: 68%; top: 10%; width: 24vw; }
+
+    /* Row 2 products */
+    .refill-product-3 { left: 20%; top: 58%; }
+    .refill-product-4 { left: 50%; top: 58%; }
+    .refill-product-5 { left: 80%; top: 58%; }
+
+    /* =========================
+       REFILL PACK TEXT - MOBILE
+       ========================= */
+
+    .refill-packs-container {
+        position: relative;
+        top: auto;
+        margin-top: -10vw;
+    }
+
+    .refill-pack-line-1 { font-size: 4vw; }
+    .refill-pack-line-2 { font-size: 3.5vw; }
+    .refill-pack-line-3 { font-size: 3vw; }
+
+    /* Row 1 text positions */
+    .refill-pack-1 { left: 18%; top: 0; }
+    .refill-pack-2 { left: 55%; top: 0; }
+
+    /* Row 2 text positions */
+    .refill-pack-3 { left: 6%; top: 48vw; }
+    .refill-pack-4 { left: 37%; top: 48vw; }
+    .refill-pack-5 { left: 67%; top: 48vw; }
+}

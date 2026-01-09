@@ -23,7 +23,7 @@ const Products_QatmLight = () => {
         <section className="products-qatm-light-section">
             {/* Main Header */}
             <div className="light-header">
-                <h2>5QATM LIGHT</h2>
+                <h2><span className="header-bold"><span className="header-number">5</span>QATM</span> <span className="header-light">LIGHT</span></h2>
             </div>
 
             {/* Products Container */}
