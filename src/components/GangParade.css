@@ -1,0 +1,253 @@
+/**
+ * Styles for the GangParade section, including custom offsets and outlined bubble text.
+ */
+
+.gang-parade {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0 4rem;
+  background-image: url('../assets/gang-parade-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.gang-parade__content-shell {
+  position: relative;
+  width: min(1200px, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.gang-parade__text-image {
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  z-index: 1;
+  display: block;
+  position: relative;
+  margin-bottom: -10%;
+}
+
+.gang-parade__title-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 100%;
+  justify-content: flex-start;
+  z-index: 2;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.gang-parade__title-main {
+  font-family: 'Noto Sans JP', 'Poppins', 'Zen Kaku Gothic New', sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+  color: #008c8e;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 28px #fff;
+  paint-order: stroke fill;
+  z-index: 2;
+  position: relative;
+}
+
+.gang-parade__title-main::before {
+  content: 'GANG PARADE';
+  font-family: 'Noto Sans JP', 'Poppins', 'Zen Kaku Gothic New', sans-serif;
+  font-size: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #008c8e;
+  -webkit-text-stroke: 50px #60b1af;
+  paint-order: stroke fill;
+}
+
+.gang-parade__title-sub {
+  font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke: 5px #686868;
+  paint-order: stroke fill;
+  margin-bottom: 0.9rem;
+  z-index: 2;
+  position: relative;
+}
+
+.gang-parade__title-sub::before {
+  content: 'による';
+  font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 12px #989898;
+  paint-order: stroke fill;
+}
+
+.gang-parade__subtitle-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.gang-parade__subtitle-highlight {
+  font-family: 'Noto Sans JP', 'Poppins', 'Zen Kaku Gothic New', sans-serif;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke: 4px #008c8e;
+  paint-order: stroke fill;
+  z-index: 2;
+  position: relative;
+}
+
+.gang-parade__subtitle-highlight::before {
+  content: attr(data-text);
+  font-family: 'Noto Sans JP', 'Poppins', 'Zen Kaku Gothic New', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 10px #60b1af;
+  paint-order: stroke fill;
+}
+
+.gang-parade__subtitle-divider,
+.gang-parade__subtitle-text {
+  font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke: 2.5px #686868;
+  paint-order: stroke fill;
+  z-index: 2;
+  position: relative;
+}
+
+.gang-parade__subtitle-divider::before {
+  content: '&';
+  font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 6px #989898;
+  paint-order: stroke fill;
+}
+
+.gang-parade__subtitle-text::before {
+  content: '紹介動画';
+  font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 6px #989898;
+  paint-order: stroke fill;
+}
+
+.gang-parade__iframe-wrapper {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  margin-top: 3rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  background: #000;
+  z-index: 3;
+}
+
+.gang-parade__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1rem;
+}
+
+.gang-parade__cta {
+  margin-top: 3.5rem;
+  padding: 2rem 5rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #004d4f;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  z-index: 4;
+  position: relative;
+}
+
+.gang-parade__cta:hover,
+.gang-parade__cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .gang-parade__title-main {
+    font-size: 6.7rem;
+    letter-spacing: 0.45rem;
+    -webkit-text-stroke: 18px #fff;
+  }
+
+  .gang-parade__title-main::before {
+    font-size: 6.7rem;
+    -webkit-text-stroke: 34px #60b1af;
+  }
+
+  .gang-parade__subtitle-highlight {
+    font-size: 3.5rem;
+  }
+
+  .gang-parade__title-sub {
+    font-size: 2.5rem;
+  }
+
+  .gang-parade__subtitle-divider,
+  .gang-parade__subtitle-text {
+    font-size: 2.2rem;
+  }
+
+  .gang-parade__cta {
+    font-size: 1.8rem;
+    padding: 1.5rem 3.5rem;
+  }
+
+  .gang-parade__content-shell {
+    gap: 0.75rem;
+  }
+
+  .gang-parade__text-image {
+    width: 80vw;
+    max-width: 80vw;
+    margin-bottom: -8%;
+  }
+}
