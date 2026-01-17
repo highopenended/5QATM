@@ -1,0 +1,160 @@
+/**
+ * ReviewSection Styles
+ *
+ * Desktop-only layout with professional reviews.
+ * Header with title text and decorative image, followed by three review boxes.
+ * Teal boxes are 75% width with overlapping staff images, alternating left/right alignment.
+ */
+
+/* =========================
+   LAYOUT: SECTION CONTAINER
+   ========================= */
+
+.review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #808080;
+    padding: 4vw 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   HEADER: TITLE + IMAGE
+   ========================= */
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.review-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-title-line1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.5vw;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.review-title-line2 {
+    font-family: "Playfair Display", serif;
+    font-size: 6.5vw;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.staff-excite-image {
+    width: 15vw;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   REVIEW ITEMS
+   ========================= */
+
+.review-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-bottom: 4vw;
+}
+
+/* Review 1: Teal box left, image right */
+.review-item-1 {
+    justify-content: flex-start;
+}
+
+.review-item-1 .review-teal-box {
+    margin-left: 0;
+}
+
+/* Review 2: Teal box right, image left */
+.review-item-2 {
+    justify-content: flex-end;
+}
+
+.review-item-2 .review-teal-box {
+    margin-right: 0;
+}
+
+/* Review 3: Teal box left, image right */
+.review-item-3 {
+    justify-content: flex-start;
+}
+
+.review-item-3 .review-teal-box {
+    margin-left: 0;
+}
+
+/* =========================
+   TEAL BOXES
+   ========================= */
+
+.review-teal-box {
+    width: 75%;
+    background-color: rgba(111, 179, 175, 0.85);
+    padding: 4vw;
+    box-sizing: border-box;
+    min-height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-content {
+    width: 100%;
+    color: #fff;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 1.8vw;
+    line-height: 1.8;
+}
+
+/* =========================
+   STAFF IMAGES (OVERLAPPING)
+   ========================= */
+
+.staff-image {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    z-index: 10;
+}
+
+/* Staff 1: Overlaps right side of teal box */
+.staff-image-1 {
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Staff 2: Overlaps left side of teal box */
+.staff-image-2 {
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Staff 3: Overlaps right side of teal box */
+.staff-image-3 {
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
