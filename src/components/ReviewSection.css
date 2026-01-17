@@ -43,7 +43,7 @@
 .review-title-line1 {
     font-family: "Poppins", sans-serif;
     font-size: 6.5vw;
-    font-weight: 200;
+    font-weight: 600;
     font-style: normal;
     color: #fff;
     margin: 0;
@@ -51,17 +51,17 @@
 }
 
 .review-title-line2 {
-    font-family: "Playfair Display", serif;
-    font-size: 6.5vw;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw;
+    font-weight: 600;
+    font-style: normal;
     color: #fff;
     margin: 0;
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
 .staff-excite-image {
-    width: 15vw;
+    width: 22vw;
     height: auto;
     display: block;
 }
@@ -133,28 +133,29 @@
 
 .staff-image {
     position: absolute;
-    width: 25vw;
+    width: 26vw;
     height: auto;
     z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Staff 1: Overlaps right side of teal box */
 .staff-image-1 {
-    right: 10%;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* Staff 2: Overlaps left side of teal box */
 .staff-image-2 {
-    left: 10%;
+    left: 15%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* Staff 3: Overlaps right side of teal box */
 .staff-image-3 {
-    right: 10%;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
 }
