@@ -228,21 +228,21 @@
 
 /* Staff 1: Overlaps right side of teal box */
 .staff-image-1 {
-    right: 15%;
+    right: 12%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* Staff 2: Overlaps left side of teal box */
 .staff-image-2 {
-    left: 15%;
+    left: 12%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* Staff 3: Overlaps right side of teal box */
 .staff-image-3 {
-    right: 15%;
+    right: 12%;
     top: 50%;
     transform: translateY(-50%);
 }

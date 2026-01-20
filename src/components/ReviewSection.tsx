@@ -90,7 +90,20 @@ const ReviewSection = () => {
             <div className="review-item review-item-3">
                 <div className="review-teal-box">
                     <div className="review-content">
-                        {/* Empty structure ready for content */}
+                        <div className="review-brand">Bellavita/松島塾</div>
+                        <div className="review-name">
+                            <span className="review-name-last">松島</span>
+                            <span className="review-name-first">智仁</span>
+                            <span className="review-name-honorific">様</span>
+                        </div>
+                        <div className="review-separator"></div>
+                        <div className="review-text-line review-text-thin">お客様からも大人気です。</div>
+                        <div className="review-text-line">
+                            <span className="review-text-big">リピート率９６％以上</span>
+                        </div>
+                        <div className="review-text-line">
+                            <span className="review-text-thin">の商品は初めてです！</span>
+                        </div>
                     </div>
                 </div>
                 <img src={staff3Image} alt="Professional review" className="staff-image staff-image-3" />
