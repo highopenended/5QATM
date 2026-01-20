@@ -166,7 +166,7 @@
 .review-name-last,
 .review-name-first {
     font-family: "Poppins", sans-serif;
-    font-size: 4.9vw;
+    font-size: 4.7vw;
     font-weight: 300;
     color: #fff;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
@@ -195,7 +195,7 @@
 }
 
 .review-text-thin {
-    font-size: 2.35vw;
+    font-size: 2.1vw;
     font-weight: 300;
     color: #fff;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
