@@ -42,12 +42,16 @@ const ReviewSection = () => {
                         <div className="review-text-line review-text-thin">ドライヤーの時間が</div>
                         <div className="review-text-line">
                             <span className="review-text-big">圧倒的</span>
+                            <span className="review-text-spacer"></span>
                             <span className="review-text-thin">に</span>
+                            <span className="review-text-spacer"></span>
                             <span className="review-text-big">短縮</span>
+                            <span className="review-text-spacer"></span>
                             <span className="review-text-thin">できるだけでなく、</span>
                         </div>
                         <div className="review-text-line">
                             <span className="review-text-big">素晴らしい質感</span>
+                            <span className="review-text-spacer"></span>
                             <span className="review-text-thin">です。</span>
                         </div>
                     </div>

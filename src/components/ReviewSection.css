@@ -146,8 +146,8 @@
     font-size: 2.8vw;
     font-weight: 200;
     color: #fff;
-    margin: 0 0 0.5vw 0;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 0 0.2vw 0;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
 }
 
@@ -155,7 +155,7 @@
     display: flex;
     align-items: baseline;
     gap: 2.8vw;
-    margin: 0 0 1vw 0;
+    margin: 0 0 0.5vw 0;
 }
 
 .review-name-last,
@@ -164,7 +164,7 @@
     font-size: 5vw;
     font-weight: 300;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .review-name-honorific {
@@ -172,28 +172,28 @@
     font-size: 2.5vw;
     font-weight: 100;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .review-separator {
     width: 75%;
     height: 1px;
     background-color: #fff;
-    margin: 0 0 1.5vw 0;
+    margin: 0 0 0.8vw 0;
     opacity: 0.8;
 }
 
 .review-text-line {
     white-space: nowrap;
-    line-height: 1.8;
-    margin: 0 0 0.5vw 0;
+    line-height: 1.4;
+    margin: 0 0 0.2vw 0;
 }
 
 .review-text-thin {
-    font-size: 2.4vw;
+    font-size: 2.35vw;
     font-weight: 300;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .review-text-big {
@@ -201,7 +201,12 @@
     font-size: 3.9vw;
     font-weight: 300;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.review-text-spacer {
+    display: inline-block;
+    width: 0.5vw;
 }
 
 /* =========================
