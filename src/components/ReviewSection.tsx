@@ -7,6 +7,7 @@
  */
 
 import "./ReviewSection.css";
+import reviewBackground from "../assets/review-background.png";
 import staffExciteText from "../assets/staff-excite-text.png";
 import staff1Image from "../assets/staff-1.png";
 import staff2Image from "../assets/staff-2.png";
@@ -14,7 +15,10 @@ import staff3Image from "../assets/staff-3.png";
 
 const ReviewSection = () => {
     return (
-        <section className="review-section">
+        <section 
+            className="review-section"
+            style={{ backgroundImage: `url(${reviewBackground})` }}
+        >
             {/* Header: Title + Excite Text Image */}
             <div className="review-header">
                 <div className="review-title-wrapper">
@@ -28,7 +32,24 @@ const ReviewSection = () => {
             <div className="review-item review-item-1">
                 <div className="review-teal-box">
                     <div className="review-content">
-                        {/* Empty structure ready for content */}
+                        <div className="review-brand">GRANMASH</div>
+                        <div className="review-name">
+                            <span className="review-name-last">小林</span>
+                            <span className="review-name-first">忠</span>
+                            <span className="review-name-honorific">様</span>
+                        </div>
+                        <div className="review-separator"></div>
+                        <div className="review-text-line review-text-thin">ドライヤーの時間が</div>
+                        <div className="review-text-line">
+                            <span className="review-text-big">圧倒的</span>
+                            <span className="review-text-thin">に</span>
+                            <span className="review-text-big">短縮</span>
+                            <span className="review-text-thin">できるだけでなく、</span>
+                        </div>
+                        <div className="review-text-line">
+                            <span className="review-text-big">素晴らしい質感</span>
+                            <span className="review-text-thin">です。</span>
+                        </div>
                     </div>
                 </div>
                 <img src={staff1Image} alt="Professional review" className="staff-image staff-image-1" />
