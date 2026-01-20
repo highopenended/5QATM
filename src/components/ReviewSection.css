@@ -129,6 +129,11 @@
     justify-content: center;
 }
 
+.review-teal-box-right .review-content {
+    align-items: flex-start;
+    padding-left: 20vw;
+}
+
 .review-content {
     width: 100%;
     color: #fff;

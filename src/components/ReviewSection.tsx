@@ -61,9 +61,26 @@ const ReviewSection = () => {
 
             {/* Review 2: Teal box right, staff-2 overlapping left */}
             <div className="review-item review-item-2">
-                <div className="review-teal-box">
+                <div className="review-teal-box review-teal-box-right">
                     <div className="review-content">
-                        {/* Empty structure ready for content */}
+                        <div className="review-brand">COURAGE</div>
+                        <div className="review-name">
+                            <span className="review-name-last">畑中</span>
+                            <span className="review-name-first">潤</span>
+                            <span className="review-name-honorific">様</span>
+                        </div>
+                        <div className="review-separator"></div>
+                        <div className="review-text-line review-text-thin">早く乾くだけじゃなく</div>
+                        <div className="review-text-line">
+                            <span className="review-text-big">毛先のまとまり</span>
+                            <span className="review-text-spacer"></span>
+                            <span className="review-text-thin">が</span>
+                        </div>
+                        <div className="review-text-line">
+                            <span className="review-text-big">最高に良い</span>
+                            <span className="review-text-spacer"></span>
+                            <span className="review-text-thin">ので驚きました！</span>
+                        </div>
                     </div>
                 </div>
                 <img src={staff2Image} alt="Professional review" className="staff-image staff-image-2" />
