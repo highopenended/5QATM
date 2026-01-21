@@ -246,3 +246,131 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* =========================
+   WHITE REVIEW SECTION
+   ========================= */
+
+.review-white-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 6vw;
+}
+
+.review-excite-image {
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin-bottom: 4vw;
+}
+
+/* =========================
+   WHITE REVIEW ITEMS
+   ========================= */
+
+.review-white-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vw;
+}
+
+/* =========================
+   WHITE BOXES
+   ========================= */
+
+.review-white-box {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3vw 6vw;
+    box-sizing: border-box;
+    min-height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.review-white-content {
+    width: 100%;
+    color: #333;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12vw;
+}
+
+.review-white-content-right {
+    align-items: flex-start;
+    padding-left: 4vw;
+}
+
+/* =========================
+   WHITE BOX TEXT STYLES
+   ========================= */
+
+.review-white-header {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 1vw 0;
+    white-space: nowrap;
+}
+
+.review-white-separator {
+    width: 80%;
+    height: 1px;
+    background-color: #666;
+    margin: 0 0 1.5vw 0;
+    opacity: 0.6;
+}
+
+.review-white-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.review-white-text-wrap,
+.review-white-text-line {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.review-white-text-line {
+    white-space: nowrap;
+}
+
+/* =========================
+   WHITE BOX IMAGES (OVERLAPPING)
+   ========================= */
+
+.review-white-image {
+    position: absolute;
+    width: 18vw;
+    height: auto;
+    z-index: 10;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* Lady 1: Overlaps left side of white box */
+.review-white-image-1 {
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Lady 2: Overlaps right side of white box */
+.review-white-image-2 {
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}

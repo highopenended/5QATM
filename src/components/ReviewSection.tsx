@@ -12,6 +12,9 @@ import staffExciteText from "../assets/staff-excite-text.png";
 import staff1Image from "../assets/staff-1.png";
 import staff2Image from "../assets/staff-2.png";
 import staff3Image from "../assets/staff-3.png";
+import reviewExciteText from "../assets/review-excite-text.png";
+import reviewLady1 from "../assets/review-lady1.png";
+import reviewLady2 from "../assets/review-lady2.png";
 
 const ReviewSection = () => {
     return (
@@ -107,6 +110,45 @@ const ReviewSection = () => {
                     </div>
                 </div>
                 <img src={staff3Image} alt="Professional review" className="staff-image staff-image-3" />
+            </div>
+
+            {/* Review Excite Text */}
+            <div className="review-white-section">
+                <img src={reviewExciteText} alt="" className="review-excite-image" />
+
+                {/* White Review Box 1: Left image overlap */}
+                <div className="review-white-item review-white-item-1">
+                    <div className="review-white-box">
+                        <div className="review-white-content">
+                            <h3 className="review-white-header">縮毛矯正のもちも良くなります！</h3>
+                            <div className="review-white-separator"></div>
+                            <div className="review-white-text">
+                                <p className="review-white-text-wrap">シャンプーの香りも良いし、泡立ちがもの凄く良くてモコモコになります。私はシャンプーを浸透させたいので、目の細かいコームで髪をといて、少し放置でその間頭皮マッサージをするようにしています。洗い流したら、シャンプーだけでも手ぐしが通るくらいになります。タオルドライを簡単に、ドライヤーも早く乾きます。本当に髪の毛に優しいシャンプーです。</p>
+                                <p className="review-white-text-line">縮毛矯正のもち、ダメージにも良い商品だと思います。</p>
+                                <p className="review-white-text-line">私はもう他のシャンプーは使えないと思っています。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src={reviewLady1} alt="Customer review" className="review-white-image review-white-image-1" />
+                </div>
+
+                {/* White Review Box 2: Right image overlap */}
+                <div className="review-white-item review-white-item-2">
+                    <div className="review-white-box">
+                        <div className="review-white-content review-white-content-right">
+                            <h3 className="review-white-header">髪がつるつるにまとまります</h3>
+                            <div className="review-white-separator"></div>
+                            <div className="review-white-text">
+                                <p className="review-white-text-wrap">シャンプーはいかにも栄養がたっぷりはいっていそうな"こってり"としたテクスチャーです。少量でも泡立ちが良いのでコスパが良いと思います。</p>
+                                <p className="review-white-text-wrap">泡を髪全体になじませてから、数分間泡パックをしてから洗い流すのですが、洗い流している段階ですでに違いを感じました！</p>
+                                <p className="review-white-text-line">トリートメントを併用すると、乾かすだけで髪がつるつるにまとまります</p>
+                                <p className="review-white-text-line">乾かす時間も短くて済むので、ドライヤーの熱による髪の痛みも避けられます。</p>
+                                <p className="review-white-text-line">使い続ける度に髪がきれいになるのが実感でき、周りにも褒められました！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src={reviewLady2} alt="Customer review" className="review-white-image review-white-image-2" />
+                </div>
             </div>
         </section>
     );
