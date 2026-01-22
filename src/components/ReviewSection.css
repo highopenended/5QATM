@@ -378,3 +378,39 @@
     transform: translateY(-50%);
     width: 22vw;
 }
+
+/* =========================
+   RESPONSIVE: MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+    /* Header: Stack excite image above title */
+    .review-header {
+        flex-direction: column;
+        gap: 0.5vw;
+        min-height: auto;
+    }
+
+    .review-title-wrapper {
+        position: static;
+        transform: none;
+    }
+
+    .staff-excite-image {
+        position: static;
+        width: 50vw;
+        order: -1;
+        align-self: flex-end;
+        margin-right: 5vw;
+        margin-top: -1vw;
+        margin-bottom: -1vw;
+    }
+
+    .review-title-line1 {
+        font-size: 8vw;
+    }
+
+    .review-title-line2 {
+        font-size: 7vw;
+    }
+}
