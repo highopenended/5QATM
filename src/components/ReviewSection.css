@@ -266,6 +266,10 @@
     margin-bottom: 4vw;
 }
 
+.review-excite-image-mobile {
+    display: none;
+}
+
 /* =========================
    WHITE REVIEW ITEMS
    ========================= */
@@ -412,5 +416,170 @@
 
     .review-title-line2 {
         font-size: 7vw;
+    }
+
+    /* =========================
+       WHITE REVIEW SECTION - MOBILE
+       ========================= */
+
+    .review-white-section {
+        margin-top: 8vw;
+    }
+
+    .review-excite-image-desktop {
+        display: none;
+    }
+
+    .review-excite-image-mobile {
+        display: block;
+        width: 75vw;
+        margin-bottom: 6vw;
+    }
+
+    /* Stack items: image+header row at top, then white box below */
+    .review-white-item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 8vw;
+    }
+
+    /* Images appear first (at top) using order */
+    .review-white-image {
+        position: absolute;
+        width: 30vw;
+        transform: none;
+        filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+        order: 1;
+        top: 0;
+    }
+
+    /* Lady 1: Image on left at top */
+    .review-white-image-1 {
+        left: 5vw;
+    }
+
+    /* Lady 2: Image on right at top */
+    .review-white-image-2 {
+        right: 5vw;
+        width: 35vw;
+    }
+
+    /* White box comes after image+header row */
+    .review-white-box {
+        width: 85%;
+        margin: 0 auto;
+        padding: 5vw 6vw;
+        min-height: auto;
+        order: 2;
+        margin-top: 40vw;
+    }
+
+    /* Header text styling - positioned next to image with grey lines */
+    .review-white-header {
+        white-space: normal;
+        font-size: 6.2vw;
+        font-weight: 700;
+        line-height: 1.4;
+        position: relative;
+        padding: 1.5vw 0;
+    }
+
+    /* Add grey lines above and below header */
+    .review-white-header::before,
+    .review-white-header::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #666;
+        opacity: 0.6;
+    }
+
+    .review-white-header::before {
+        top: 0;
+    }
+
+    .review-white-header::after {
+        bottom: 0;
+    }
+
+    /* For review 1: Image left, header right at top */
+    .review-white-item-1 {
+        position: relative;
+        min-height: 40vw;
+    }
+
+    /* Make box static so header can position relative to item container (outside box) */
+    .review-white-item-1 .review-white-box {
+        position: static;
+    }
+
+    /* Position header next to image on right - relative to item container */
+    .review-white-item-1 .review-white-box .review-white-content .review-white-header {
+        position: absolute;
+        left: 40vw;
+        top: 16vw;
+        right: 10vw;
+        margin: 0;
+        display: block !important;
+        z-index: 5;
+    }
+
+    /* For review 2: Image right, header left at top */
+    .review-white-item-2 {
+        position: relative;
+        min-height: 40vw;
+    }
+
+    /* Position header next to image on left - positioned relative to item container (outside box) */
+    .review-white-item-2 .review-white-box {
+        position: static;
+    }
+
+    .review-white-item-2 .review-white-box .review-white-content .review-white-header {
+        position: absolute;
+        left: 10vw;
+        top: 16vw;
+        right: 40vw;
+        margin: 0;
+        display: block !important;
+        z-index: 5;
+    }
+
+    /* Remove separator inside white boxes */
+    .review-white-separator {
+        display: none;
+    }
+
+    /* Content adjustments */
+    .review-white-content {
+        padding-left: 0;
+    }
+
+    .review-white-content-right {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    /* Separator */
+    .review-white-separator {
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+
+    /* Text wrapping and sizing */
+    .review-white-text-wrap,
+    .review-white-text-line {
+        font-size: 3.8vw;
+        line-height: 1.7;
+        margin-bottom: 2vw;
+        white-space: normal;
+    }
+
+    .review-white-text-line {
+        white-space: normal;
     }
 }

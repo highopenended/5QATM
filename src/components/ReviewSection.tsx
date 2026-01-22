@@ -13,6 +13,7 @@ import staff1Image from "../assets/staff-1.png";
 import staff2Image from "../assets/staff-2.png";
 import staff3Image from "../assets/staff-3.png";
 import reviewExciteText from "../assets/review-excite-text.png";
+import reviewExciteTextWrap from "../assets/review-excite-text-wrap.png";
 import reviewLady1 from "../assets/review-lady1.png";
 import reviewLady2 from "../assets/review-lady2.png";
 
@@ -114,7 +115,8 @@ const ReviewSection = () => {
 
             {/* Review Excite Text */}
             <div className="review-white-section">
-                <img src={reviewExciteText} alt="" className="review-excite-image" />
+                <img src={reviewExciteText} alt="" className="review-excite-image review-excite-image-desktop" />
+                <img src={reviewExciteTextWrap} alt="" className="review-excite-image review-excite-image-mobile" />
 
                 {/* White Review Box 1: Left image overlap */}
                 <div className="review-white-item review-white-item-1">
