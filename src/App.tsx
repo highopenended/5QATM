@@ -8,10 +8,18 @@ import Products_QatmPro_Details from './components/Products_QatmPro_Details';
 import Products_QatmLight from './components/Products_QatmLight';
 import GangParade from './components/GangParade';
 import ReviewSection from './components/ReviewSection';
+import Loader from './components/Loader';
+import { useImagePreloader } from './hooks/useImagePreloader';
+import { allImageUrls } from './utils/imageAssets';
 
 function App() {
+  const { isLoading } = useImagePreloader(allImageUrls);
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
-    // <div className="site-viewport">
     <div className="viewport-shell">
       <div className="viewport-app">
         <NavBar />
@@ -26,7 +34,6 @@ function App() {
         <ReviewSection />
       </div>
     </div>
-    // </div>
   );
 }
 
