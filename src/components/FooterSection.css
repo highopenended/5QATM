@@ -1,0 +1,144 @@
+/**
+ * FooterSection Styles
+ * 
+ * Footer with solid teal background, navigation links, brand logo, and social icons.
+ * Uses rem/em for spacing and typography, flexbox for layout.
+ */
+
+/* =========================
+   FOOTER CONTAINER
+   ========================= */
+
+.footer-section {
+  width: 100%;
+  background-color: #6fb3af;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+/* =========================
+   NAVIGATION LINKS
+   ========================= */
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-nav-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.footer-nav-link:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   BOTTOM ROW
+   ========================= */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.footer-social-link:hover {
+  opacity: 0.8;
+}
+
+.footer-social-link svg {
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 2rem 2rem;
+  }
+
+  .footer-nav {
+    gap: 1.5rem;
+  }
+
+  .footer-nav-link {
+    font-size: 1.2rem;
+  }
+
+  .footer-brand {
+    font-size: 1.5rem;
+  }
+
+  .footer-social {
+    gap: 1rem;
+  }
+
+  .footer-social-link svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-nav-link {
+    font-size: 1rem;
+  }
+
+  .footer-brand {
+    font-size: 1.25rem;
+  }
+
+  .footer-social-link svg {
+    width: 24px;
+    height: 24px;
+  }
+}

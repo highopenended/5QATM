@@ -16,7 +16,7 @@ import ClickableProduct from "./clickableProducts/ClickableProduct";
 
 const Products_QatmPro = () => {
     return (
-        <section className="products-qatm-pro-section">
+        <section id="products" className="products-qatm-pro-section">
             <div className="products-header">
                 <h2>Products</h2>
             </div>

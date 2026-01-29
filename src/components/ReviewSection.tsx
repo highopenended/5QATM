@@ -20,6 +20,7 @@ import reviewLady2 from "../assets/review-lady2.png";
 const ReviewSection = () => {
     return (
         <section 
+            id="reviews"
             className="review-section"
             style={{ backgroundImage: `url(${reviewBackground})` }}
         >

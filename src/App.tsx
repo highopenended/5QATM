@@ -8,6 +8,7 @@ import Products_QatmPro_Details from './components/Products_QatmPro_Details';
 import Products_QatmLight from './components/Products_QatmLight';
 import GangParade from './components/GangParade';
 import ReviewSection from './components/ReviewSection';
+import FooterSection from './components/FooterSection';
 import Loader from './components/Loader';
 import { useImagePreloader } from './hooks/useImagePreloader';
 import { allImageUrls } from './utils/imageAssets';
@@ -32,6 +33,7 @@ function App() {
         <Products_QatmLight />
         <GangParade />
         <ReviewSection />
+        <FooterSection />
       </div>
     </div>
   );
