@@ -23,12 +23,15 @@
 }
 
 .navbar-logo {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
   text-decoration: none;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 4.25rem;
+  width: auto;
+  display: block;
 }
 
 .navbar-logo:hover {
@@ -51,8 +54,8 @@
     padding: 0.35rem 1.5rem;
   }
 
-  .navbar-logo {
-    font-size: 1.4rem;
+  .navbar-logo img {
+    height: 1.6rem;
   }
 
   .navbar-hamburger {
@@ -76,7 +79,7 @@
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   cursor: pointer;
   padding: 0.5rem 0;
   white-space: nowrap;
@@ -94,7 +97,8 @@
   border-radius: 0.25rem;
   text-decoration: none;
   font-size: 1.5rem;
-  white-space: nowrap;
+  max-width: 12rem;
+  text-align: center;
   transition: background-color 0.2s;
   font-family: "Poppins", sans-serif;
 }
@@ -147,7 +151,7 @@
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 0.75rem 0;
@@ -170,6 +174,8 @@
   border-radius: 0.25rem;
   text-decoration: none;
   margin-top: 1rem;
+  max-width: 12rem;
+  align-self: center;
   transition: background-color 0.2s;
 }
 

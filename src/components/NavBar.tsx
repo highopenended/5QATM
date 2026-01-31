@@ -2,12 +2,13 @@
  * NavBar Component
  * 
  * Sticky navigation bar with logo, navigation links, and action button.
- * Logo and button link to the Rakuten store page.
+ * Logo links to Rakuten store. Top-right button links to professional/seminar area.
  * Mobile menu slides out from right.
  */
 
 import { useState } from 'react';
 import './NavBar.css';
+import logoImage from '../assets/5QATM-logo.png';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="https://www.rakuten.co.jp/24quantum/" className="navbar-logo">
-          5QATM
+          <img src={logoImage} alt="5QATM" />
         </a>
         
         <div className="navbar-right">
@@ -57,10 +58,10 @@ const NavBar = () => {
             Contact
           </button>
           <a 
-            href="https://www.rakuten.co.jp/24quantum/" 
+            href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
             className="navbar-button"
           >
-            button
+            理美容関係の方はこちら
           </a>
         </div>
 
@@ -109,10 +110,10 @@ const NavBar = () => {
           Contact
         </button>
         <a 
-          href="https://www.rakuten.co.jp/24quantum/" 
+          href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
           className="mobile-menu-button"
         >
-          button
+          理美容関係の方はこちら
         </a>
       </div>
 
