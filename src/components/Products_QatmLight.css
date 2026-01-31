@@ -258,7 +258,7 @@
 }
 
 .light-button-2 {
-    top: 92%;
+    top: 90%;
 }
 
 .light-button-1.rakuten-button-wrapper,
@@ -273,7 +273,7 @@
 
 .refill-packs-header {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -298,7 +298,7 @@
 .refill-products-container {
     position: absolute;
     width: 100%;
-    top: 72%;
+    top: 70%;
     left: 0;
     z-index: 8;
 }
@@ -372,7 +372,7 @@
 .refill-packs-container {
     position: absolute;
     width: 100%;
-    top: 90%;
+    top: 87%;
     left: 0;
     z-index: 8;
 }
