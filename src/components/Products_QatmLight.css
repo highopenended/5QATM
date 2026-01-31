@@ -641,12 +641,15 @@
 
     .light-button-1.rakuten-button-wrapper,
     .light-button-2.rakuten-button-wrapper {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
-    .light-button-1-image-link img,
+    .light-button-1-image-link img {
+        width: 70vw;
+    }
+
     .light-button-2-image-link img {
-        width: 48vw;
+        width: 62vw;
     }
 
     /* =========================
