@@ -10,6 +10,7 @@ import "./WeeklyCare.css";
 import backgroundImage from "../assets/weekly-care-background.png";
 import leftImage from "../assets/weekly-care-left-image.png";
 import newProductImage from "../assets/weekly-care-new-image.png";
+import logoImage from "../assets/5QATM-logo.png";
 import Button_Rakuten from "./Button_Rakuten";
 
 const WeeklyCare = () => {
@@ -31,7 +32,7 @@ const WeeklyCare = () => {
                 <div className="weekly-left-image-wrapper">
                     <img src={leftImage} alt="Rebirth Core Treatment" className="weekly-left-image" />
                     <div className="product-box-content">
-                        <p className="product-label">5<span className="qatm-text">QATM</span></p>
+                        <img src={logoImage} alt="5QATM" className="product-label" />
                         <div className="product-title-wrapper">
                             <h4 className="product-title product-title-rebirth">Rebirth</h4>
                             <h4 className="product-title product-title-core">Core</h4>

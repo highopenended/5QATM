@@ -106,22 +106,13 @@
     padding-top: 0;
 }
 
-/* Product typography - matches DailyCare */
+/* Product label (5QATM logo) */
 .weekly-left-image-wrapper .product-label {
-    font-size: 2.5vw;
-    font-weight: 400;
-    color: #fff;
+    height: 3vw;
+    width: auto;
     margin: 0 0 0.3vw 0;
-    letter-spacing: 0.1em;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 100%;
-}
-
-.weekly-left-image-wrapper .product-label .qatm-text {
-    font-size: 0.75em;
-    font-weight: 700;
-    vertical-align: baseline;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .weekly-left-image-wrapper .product-title-wrapper {
@@ -362,7 +353,7 @@
     }
 
     .weekly-left-image-wrapper .product-label {
-        font-size: 4.5vw;
+        height: 4.5vw;
     }
 
     .weekly-left-image-wrapper .product-title {

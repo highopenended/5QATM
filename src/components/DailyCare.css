@@ -252,20 +252,13 @@
     align-items: flex-start;
   }
   
-  /* Product typography (base) */
+  /* Product label (5QATM logo) */
   .product-label {
-    font-size: 2.5vw;
-    font-weight: 400;
-    color: #fff;
+    height: 3vw;
+    width: auto;
     margin: 0 0 0.3vw 0;
-    letter-spacing: 0.1em;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .product-label .qatm-text {
-    font-size: 0.75em;
-    font-weight: 700;
-    vertical-align: baseline;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
   
   .product-title-wrapper {
@@ -313,9 +306,7 @@
   }
   
   .product-1 .product-label {
-    text-align: center;
-    width: 100%;
-    font-weight: 400;
+    margin-inline: auto;
   }
   
   .product-1 .product-title-shampoo {
@@ -346,20 +337,17 @@
     padding-top: 0;
   }
   
-  .product-2 .product-label,
   .product-2 .product-title {
     text-align: center;
     width: 100%;
-  }
-  
-  .product-2 .product-title {
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
   }
-  
+
   .product-2 .product-label {
-    font-weight: 400;
+    margin-inline: auto;
   }
+  
   
   /* =========================
      DAILY CARE BUTTON PLACEMENT
@@ -454,7 +442,7 @@
     }
   
     .product-label {
-      font-size: 4.5vw;
+      height: 4.5vw;
     }
   
     .product-title {

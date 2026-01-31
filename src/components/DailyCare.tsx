@@ -13,6 +13,7 @@ import tealBox1 from "../assets/daily-care-left-teal-1.png";
 import tealBox2 from "../assets/daily-care-left-teal-2.png";
 import productImage1 from "../assets/daily-care-right-image1.png";
 import productImage2 from "../assets/daily-care-right-image2.png";
+import logoImage from "../assets/5QATM-logo.png";
 import Button_Rakuten from "./Button_Rakuten";
 
 const DailyCare = () => {
@@ -33,7 +34,7 @@ const DailyCare = () => {
             <div className="product-box-wrapper product-1">
                 <img src={productImage1} alt="Shampoo and Treatment" className="product-box-image" />
                 <div className="product-box-content">
-                    <p className="product-label">5<span className="qatm-text">QATM</span></p>
+                    <img src={logoImage} alt="5QATM" className="product-label" />
                     <div className="product-title-wrapper">
                         <h4 className="product-title product-title-shampoo">Shampoo</h4>
                         <h4 className="product-title product-title-treatment">Treatment</h4>
@@ -66,7 +67,7 @@ const DailyCare = () => {
             <div className="product-box-wrapper product-2">
                 <img src={productImage2} alt="Emulsion" className="product-box-image" />
                 <div className="product-box-content">
-                    <p className="product-label">5<span className="qatm-text">QATM</span></p>
+                    <img src={logoImage} alt="5QATM" className="product-label" />
                     <h4 className="product-title">Emulsion</h4>
                     <p className="product-subtitle">5クァンタムエマルジョン<br />洗い流さないトリートメント</p>
                 </div>
