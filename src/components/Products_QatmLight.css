@@ -560,6 +560,14 @@
         margin: 0 24vw;
     }
 
+    /* Override ghostly image styles for Light section specifically */
+    .light-details-left .product-details-block::before,
+    .light-details-right .product-details-block::before {
+        width: 120%;
+        height: 120%;
+        opacity: 0.7;
+    }
+
     .light-details-left .product-name,
     .light-details-right .product-name {
         text-align: center;
