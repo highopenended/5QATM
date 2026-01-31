@@ -1,10 +1,11 @@
 /**
  * HeroSection Styles
- * 
- * Full-width hero image section.
+ *
+ * Full-width hero image section with bottom-right promo image overlay.
  */
 
 .hero-section {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,6 +18,43 @@
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+.hero-image-bottom-wrapper {
+  position: absolute;
+  bottom: 4vw;
+  right: 0;
+  margin: 0;
+  line-height: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-bottom-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.hero-image-bottom-wrapper:active {
+  transform: scale(0.98);
+}
+
+.hero-image-bottom {
+  display: block;
+  width: 22vw;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+@media (max-width: 768px) {
+  .hero-image-bottom-wrapper {
+    bottom: 15vw;
+  }
+  
+  .hero-image-bottom {
+    width: 50vw;
+  }
 }
 
 

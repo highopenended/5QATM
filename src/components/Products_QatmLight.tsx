@@ -20,7 +20,7 @@ import Button_Rakuten from "./Button_Rakuten";
 
 const Products_QatmLight = () => {
     return (
-        <section className="products-qatm-light-section">
+        <section id="qatm-light" className="products-qatm-light-section">
             {/* Main Header */}
             <div className="light-header">
                 <h2><span className="header-bold"><span className="header-number">5</span>QATM</span> <span className="header-light">LIGHT</span></h2>

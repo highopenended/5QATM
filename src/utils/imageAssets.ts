@@ -10,6 +10,8 @@
 // Hero Section
 import heroImage from '../assets/hero-image.png';
 import heroImageMobile from '../assets/hero-image-mobile.png';
+import heroImageBottom from '../assets/hero-image-bottom.png';
+import heroImageBottomMobile from '../assets/hero-image-bottom-mobile.png';
 
 // About Section
 import aboutTopImages from '../assets/about-top-images.png';
@@ -67,6 +69,8 @@ export const imageAssets = {
   // Hero
   heroImage,
   heroImageMobile,
+  heroImageBottom,
+  heroImageBottomMobile,
   
   // About
   aboutTopImages,

@@ -1,13 +1,22 @@
 /**
  * HeroSection Component
- * Hero section displaying the main hero image.
- * Uses mobile-optimized image below 768px, desktop image otherwise.
+ * Hero section displaying the main hero image and bottom-right promo image.
+ * Uses mobile-optimized images below 768px, desktop images otherwise.
+ * Bottom image links to 5QATM Light products section.
  */
 
 import './HeroSection.css';
 import { imageAssets } from '../utils/imageAssets';
 
 const HeroSection = () => {
+  const handleScrollToLight = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById('qatm-light');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="top" className="hero-section">
       <picture>
@@ -21,6 +30,24 @@ const HeroSection = () => {
           className="hero-image"
         />
       </picture>
+      <a 
+        href="#qatm-light" 
+        onClick={handleScrollToLight}
+        className="hero-image-bottom-wrapper"
+        aria-label="Scroll to 5QATM Light Products"
+      >
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcSet={imageAssets.heroImageBottomMobile}
+          />
+          <img
+            src={imageAssets.heroImageBottom}
+            alt="5QATM Light Products"
+            className="hero-image-bottom"
+          />
+        </picture>
+      </a>
     </section>
   );
 };
