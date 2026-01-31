@@ -347,6 +347,7 @@
     width: 100%;
     height: auto;
     display: block;
+    filter: drop-shadow(5px 12px 20px rgba(0, 0, 0, 0.3));
 }
 
 .refill-product:hover {
@@ -395,6 +396,7 @@
     font-weight: 400;
     line-height: 1.3;
     margin-bottom: 0.3vw;
+    white-space: nowrap;
 }
 
 .refill-pack-line-2 {
@@ -402,12 +404,14 @@
     font-weight: 300;
     line-height: 1.3;
     margin-bottom: 0.3vw;
+    white-space: nowrap;
 }
 
 .refill-pack-line-3 {
     font-size: 1.2vw;
     font-weight: 300;
     line-height: 1.3;
+    white-space: nowrap;
 }
 
 /* Individual refill pack positions (left to right) */
@@ -628,7 +632,7 @@
     .refill-circle-2 { left: 66%; top: 20%; }
 
     /* Row 2: 3 items evenly distributed */
-    .refill-circle-3 { left: 20%; top: 100%; }
+    .refill-circle-3 { left: 2gang-parade__cta0%; top: 100%; }
     .refill-circle-4 { left: 50%; top: 100%; }
     .refill-circle-5 { left: 80%; top: 100%; }
 

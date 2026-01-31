@@ -203,6 +203,7 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   z-index: 4;
   position: relative;
+  white-space: nowrap;
 }
 
 .gang-parade__cta:hover,
@@ -237,8 +238,8 @@
   }
 
   .gang-parade__cta {
-    font-size: 1.8rem;
-    padding: 1.5rem 3.5rem;
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
   }
 
   .gang-parade__content-shell {
