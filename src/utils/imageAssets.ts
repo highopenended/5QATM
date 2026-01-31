@@ -16,6 +16,7 @@ import heroImageBottomMobile from '../assets/hero-image-bottom-mobile.png';
 // About Section
 import aboutTopImages from '../assets/about-top-images.png';
 import aboutSection from '../assets/about-section.png';
+import aboutSectionMobile from '../assets/about-section-mobile.png';
 
 // Daily Care Section
 import dailyCareBackground from '../assets/daily-care-background.png';
@@ -75,6 +76,7 @@ export const imageAssets = {
   // About
   aboutTopImages,
   aboutSection,
+  aboutSectionMobile,
   
   // Daily Care
   dailyCareBackground,
