@@ -17,6 +17,7 @@
     align-items: center;
     width: 100%;
     min-height: 130vh;
+    padding-bottom: 18vh;
     background: linear-gradient(to bottom, #bdd9d4,#bdd9d4, #55aaa2);
     box-sizing: border-box;
 }
@@ -598,6 +599,10 @@
         padding: 3vw 5vw;
     }
 
+    .light-button-2 {
+        margin-top: 8vw;
+    }
+
     .light-button-1.rakuten-button-wrapper,
     .light-button-2.rakuten-button-wrapper {
         justify-content: center;
@@ -666,6 +671,7 @@
         position: relative;
         top: auto;
         margin-top: -10vw;
+        min-height: 56vw;
     }
 
     .refill-pack-line-1 { font-size: 4vw; }
