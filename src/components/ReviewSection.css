@@ -308,7 +308,7 @@
 }
 
 .review-white-content-right {
-    align-items: flex-start;
+    align-items: center;
     padding-left: 0vw;
     padding-right: 10vw;
     /* padding-right: 30vw; */
@@ -326,10 +326,11 @@
     color: #4d4d4d;
     margin: 0 0 1vw 0;
     white-space: nowrap;
+    text-align: center;
 }
 
 .review-white-separator {
-    width: 80%;
+    width: 95%;
     height: 1px;
     background-color: #666;
     margin: 0 0 1.5vw 0;
