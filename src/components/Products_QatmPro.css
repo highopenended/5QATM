@@ -26,7 +26,7 @@
   
   .products-header {
     position: absolute;
-    top: 3%;
+    top: 6%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -35,7 +35,7 @@
   
 .products-header h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 400;
   font-style: normal;
   color: #fff;
@@ -50,35 +50,28 @@
 
 .pro-title-header {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   z-index: 10;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6em;
 }
 
-
-.pro-title-5 {
-  font-family: "Inter", sans-serif;
-  font-size: 11.5vw;
-  font-weight: 800;
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
-}
-
-.pro-title-qatm {
-  font-family: "Inter", sans-serif;
-  font-size: 9.5vw;
-  font-weight: 800;
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+.pro-title-logo {
+  height: 15vw;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.3));
 }
 
 .pro-title-pro {
   font-family: "Playfair Display", serif;
   font-size: 9.5vw;
-  font-weight: 100;
+  font-weight: 600;
   color: #fff;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
@@ -262,14 +255,18 @@
     }
 
     .products-header h2 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .pro-title-header {
-        top: 10%;
+        top: 15%;
+        gap: 0.95em;
     }
 
-    .pro-title-qatm,
+    .pro-title-logo {
+        height: 11vw;
+    }
+
     .pro-title-pro {
         font-size: 7vw;
     }

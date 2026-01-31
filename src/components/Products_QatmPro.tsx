@@ -7,6 +7,7 @@
  */
 
 import "./Products_QatmPro.css";
+import logoImage from "../assets/5QATM-logo.png";
 import emulsionImage from "../assets/pro-product-emission.png";
 import shampooImage from "../assets/pro-product-shampoo.png";
 import treatmentImage from "../assets/pro-product-treatment.png";
@@ -21,8 +22,7 @@ const Products_QatmPro = () => {
                 <h2>Products</h2>
             </div>
             <div className="pro-title-header">
-                <span className="pro-title-5">5</span>
-                <span className="pro-title-qatm">QATM</span>
+                <img src={logoImage} alt="5QATM" className="pro-title-logo" />
                 <span className="pro-title-pro"> PRO</span>
             </div>
             <div className="products-container">
