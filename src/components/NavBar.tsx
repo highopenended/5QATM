@@ -51,12 +51,6 @@ const NavBar = () => {
           >
             Reviews
           </button>
-          <button 
-            className="navbar-link" 
-            onClick={() => handleNavClick('contact')}
-          >
-            Contact
-          </button>
           <a 
             href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
             className="navbar-button"
@@ -102,12 +96,6 @@ const NavBar = () => {
           onClick={() => handleNavClick('reviews')}
         >
           Reviews
-        </button>
-        <button 
-          className="mobile-menu-link" 
-          onClick={() => handleNavClick('contact')}
-        >
-          Contact
         </button>
         <a 
           href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
