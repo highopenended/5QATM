@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem clamp(1rem, 3vw, 2rem);
 }
 
 .navbar-logo {
@@ -71,7 +71,7 @@
 
 @media (min-width: 769px) {
   .navbar-right {
-    gap: 3rem;
+    gap: clamp(1rem, 3vw, 3rem);
   }
 }
 
@@ -79,7 +79,7 @@
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.75rem;
+  font-size: clamp(1rem, 2vw, 1.75rem);
   cursor: pointer;
   padding: 0.5rem 0;
   white-space: nowrap;
@@ -96,8 +96,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   text-decoration: none;
-  font-size: 1.5rem;
-  max-width: 12rem;
+  font-size: clamp(0.875rem, 1.75vw, 1.5rem);
+  width: clamp(10rem, 14vw, 12rem);
   text-align: center;
   transition: background-color 0.2s;
   font-family: "Poppins", sans-serif;
