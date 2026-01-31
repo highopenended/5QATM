@@ -356,6 +356,7 @@
   .daily-care-button {
     grid-column: 1 / 3;
     grid-row: 4;
+    margin-top: 5vw;
   }
 
   /* =========================
@@ -487,6 +488,7 @@
 
     .daily-care-button {
       order: 6;
+      margin-top: 5vw;
     }
   }
   
