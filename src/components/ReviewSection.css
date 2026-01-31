@@ -59,18 +59,19 @@
 
 .review-title-line2 {
     font-family: "Dancing Script", cursive;
-    font-size: 5vw;
+    font-size: 4.2vw;
     font-weight: 600;
     font-style: normal;
     color: #fff;
-    margin: 0;
+    margin: -1.8vw 0 0 0;
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
 .staff-excite-image {
     position: absolute;
-    right: 8%;
-    width: 22vw;
+    right: 2%;
+    top: 4vw;
+    width: 31vw;
     height: auto;
     display: block;
     z-index: 1;
