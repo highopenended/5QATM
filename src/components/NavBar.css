@@ -45,6 +45,25 @@
   .navbar-right {
     display: none;
   }
+
+  /* ~30% smaller navbar height: container padding, logo, hamburger */
+  .navbar-container {
+    padding: 0.35rem 1.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+
+  .navbar-hamburger {
+    padding: 0.25rem;
+    padding-right: 0;
+  }
+
+  .navbar-hamburger svg {
+    width: 2.45rem;
+    height: 2.45rem;
+  }
 }
 
 @media (min-width: 769px) {

@@ -8,10 +8,11 @@
  */
 
 // Hero Section
-import section1 from '../assets/section1.png';
+import heroImage from '../assets/hero-image.png';
+import heroImageMobile from '../assets/hero-image-mobile.png';
 
 // About Section
-import section2 from '../assets/section2.png';
+import aboutTopImages from '../assets/about-top-images.png';
 import aboutSection from '../assets/about-section.png';
 
 // Daily Care Section
@@ -64,10 +65,11 @@ import reviewLady2 from '../assets/review-lady2.png';
  */
 export const imageAssets = {
   // Hero
-  section1,
+  heroImage,
+  heroImageMobile,
   
   // About
-  section2,
+  aboutTopImages,
   aboutSection,
   
   // Daily Care

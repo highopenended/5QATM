@@ -600,7 +600,7 @@
 
     .light-button-1.rakuten-button-wrapper,
     .light-button-2.rakuten-button-wrapper {
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     /* =========================

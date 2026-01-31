@@ -7,14 +7,14 @@
  */
 
 import "./About.css";
-import section2Image from "../assets/section2.png";
+import aboutTopImages from "../assets/about-top-images.png";
 import aboutSectionImage from "../assets/about-section.png";
 
 const About = () => {
     return (
         <section id="about" className="about-section">
             <div className="about-left">
-                <img src={section2Image} alt="Product showcase" className="about-image about-image2" />
+                <img src={aboutTopImages} alt="Product showcase" className="about-image about-image2" />
             </div>
 
             <div className="about-right">

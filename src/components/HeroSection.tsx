@@ -1,19 +1,26 @@
 /**
  * HeroSection Component
  * Hero section displaying the main hero image.
+ * Uses mobile-optimized image below 768px, desktop image otherwise.
  */
 
 import './HeroSection.css';
-import section1Image from '../assets/section1.png';
+import { imageAssets } from '../utils/imageAssets';
 
 const HeroSection = () => {
   return (
     <section id="top" className="hero-section">
-      <img 
-        src={section1Image} 
-        alt="Hero" 
-        className="hero-image"
-      />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcSet={imageAssets.heroImageMobile}
+        />
+        <img
+          src={imageAssets.heroImage}
+          alt="Hero"
+          className="hero-image"
+        />
+      </picture>
     </section>
   );
 };
