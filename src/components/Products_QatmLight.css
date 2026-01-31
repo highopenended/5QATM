@@ -44,6 +44,17 @@
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15em;
+}
+
+.light-header-logo {
+    height: 10.5vw;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.3));
 }
 
 .light-header h2 .header-light {
@@ -446,14 +457,8 @@
         font-weight: 400;
     }
 
-    .light-header h2 .header-bold {
-        font-weight: 600;
-    }
-
-    .light-header h2 .header-number {
-        font-size: 1.3em;
-        font-style: italic;
-        margin-right: 0.1em;
+    .light-header-logo {
+        height: 18vw;
     }
 
     .light-header h2 .header-light {

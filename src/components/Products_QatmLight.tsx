@@ -7,6 +7,7 @@
  */
 
 import "./Products_QatmLight.css";
+import logoImage from "../assets/5QATM-logo.png";
 import shampooImage from "../assets/light-products-shampoo.png";
 import treatmentImage from "../assets/light-products-treatment.png";
 import refillShampooImage from "../assets/refillpack-shampoo.png";
@@ -23,7 +24,7 @@ const Products_QatmLight = () => {
         <section id="qatm-light" className="products-qatm-light-section">
             {/* Main Header */}
             <div className="light-header">
-                <h2><span className="header-bold"><span className="header-number">5</span>QATM</span> <span className="header-light">LIGHT</span></h2>
+                <h2><img src={logoImage} alt="5QATM" className="light-header-logo" /><span className="header-light"> Light</span></h2>
             </div>
 
             {/* Products Container */}
