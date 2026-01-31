@@ -19,9 +19,9 @@ const ProductDetailsBlock = ({ name, amount, details, image }: ProductDetailsBlo
     const style = image ? { '--product-image': `url(${image})` } as React.CSSProperties : {};
     
     return (
-        <div className="product-details-block">
+        <div className="product-details-block" style={style}>
             <h3 className="product-name">{name}</h3>
-            <div className="product-content-wrapper" style={style}>
+            <div className="product-content-wrapper">
                 <p className="product-amount">{amount}</p>
                 <p className="product-details">{details}</p>
             </div>

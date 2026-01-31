@@ -15,6 +15,8 @@ import refillTreatmentImage from "../assets/refillpack-treatment.png";
 import refillRebirthImage from "../assets/refillpack-rebirth.png";
 import refillCoreImage from "../assets/refillpack-core.png";
 import refillEmulsionImage from "../assets/refillpack-emulsion.png";
+import lightShampooImage from "./light-shampoo.png";
+import lightTreatmentImage from "./light-treatment.png";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 import ProductDetailsBlock from "./productDetailsBlock/ProductDetailsBlock";
 import Button_Rakuten from "./Button_Rakuten";
@@ -57,7 +59,8 @@ const Products_QatmLight = () => {
                     <ProductDetailsBlock
                         name="ライトシャンプー"
                         amount={<>100ml<span className="amount-slash">/</span>500ml<span className="amount-slash">/</span>1000ml</>}
-                        details="4アクアミストを使用したバージン毛～ライトダメージ毛向け速乾シャンプー 髪の乾く時間を約40％短縮"
+                        details="24アクアミストを使用したバージン毛～ライトダメージ毛向け速乾シャンプー 髪の乾く時間を約40％短縮"
+                        image={lightShampooImage}
                     />
                 </div>
                 <div className="light-details-right">
@@ -65,6 +68,7 @@ const Products_QatmLight = () => {
                         name="ライトトリートメント"
                         amount={<>100g<span className="amount-slash">/</span>480g<span className="amount-slash">/</span>1000g</>}
                         details="シャンプーと合わせてご使用ください。うねりや癖毛、パサついた髪もサラサラふわっとまとまる美髪へ導きます。"
+                        image={lightTreatmentImage}
                     />
                 </div>
             </div>

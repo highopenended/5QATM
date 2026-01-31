@@ -545,7 +545,7 @@
         bottom: -1.5rem; /* centered in the gap between blocks */
         left: 50%;
         transform: translateX(-50%);
-        width: 100%;
+        width: 75%;
         height: 1px;
         background-color: #fff;
     }
@@ -670,8 +670,8 @@
     .refill-pack-line-3 { font-size: 3vw; }
 
     /* Row 1 text positions */
-    .refill-pack-1 { left: 32%; top: -25vw; }
-    .refill-pack-2 { left: 68%; top: -25vw; }
+    .refill-pack-1 { left: 32%; top: -22vw; }
+    .refill-pack-2 { left: 68%; top: -22vw; }
 
     /* Row 2 text positions */
     .refill-pack-3 { left: 20%; top: 42vw; }

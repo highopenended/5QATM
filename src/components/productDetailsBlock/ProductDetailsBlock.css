@@ -108,30 +108,39 @@
         flex: 1;
         max-width: 100%;
         position: relative;
+        overflow: visible;
+    }
+
+    /* Show background images on mobile only - moved to outer container */
+    .product-details-block::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        background-image: var(--product-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Ensure text content is above background image */
+    .product-name,
+    .product-amount,
+    .product-details {
+        position: relative;
+        z-index: 1;
     }
 
     /* Restore width constraint for mobile */
     .product-details {
         width: var(--product-details-width);
         text-align: left; /* Left align for mobile */
-    }
-
-    /* Show background images on mobile only */
-    .product-content-wrapper::before {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: var(--product-image);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0.35;
-        pointer-events: none;
-        z-index: 0;
     }
 
     /* Add centered separator line after each block except the last */
