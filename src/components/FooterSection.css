@@ -31,14 +31,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .footer-nav-link {
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   cursor: pointer;
@@ -61,10 +61,25 @@
 }
 
 .footer-brand {
-  color: #fff;
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.footer-brand a {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.footer-brand a:hover {
+  opacity: 0.8;
+}
+
+.footer-brand-logo {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-social {
@@ -98,15 +113,26 @@
   }
 
   .footer-nav {
-    gap: 1.5rem;
+    gap: 2.5rem;
+    justify-content: flex-end;
   }
 
-  .footer-nav-link {
-    font-size: 1.2rem;
+  /* Mobile: show only TOP > button */
+  .footer-nav-link:not(.footer-nav-link-top) {
+    display: none;
   }
 
-  .footer-brand {
+  .footer-nav-link-top {
     font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .footer-nav-link-top::after {
+    content: ' \00a0>';
+  }
+
+  .footer-brand-logo {
+    height: 2.5rem;
   }
 
   .footer-social {
@@ -126,15 +152,15 @@
 
   .footer-nav {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .footer-nav-link {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
-  .footer-brand {
-    font-size: 1.25rem;
+  .footer-brand-logo {
+    height: 2rem;
   }
 
   .footer-social-link svg {

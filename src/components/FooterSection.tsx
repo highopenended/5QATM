@@ -7,6 +7,7 @@
  */
 
 import './FooterSection.css';
+import logoImg from '../assets/5QATM-logo.png';
 
 const FooterSection = () => {
   /**
@@ -26,7 +27,7 @@ const FooterSection = () => {
         {/* Navigation Links Row */}
         <nav className="footer-nav">
           <button 
-            className="footer-nav-link" 
+            className="footer-nav-link footer-nav-link-top" 
             onClick={() => handleNavClick('top')}
           >
             Top
@@ -53,7 +54,16 @@ const FooterSection = () => {
 
         {/* Bottom Row: Brand + Social Icons */}
         <div className="footer-bottom">
-          <div className="footer-brand">5QATM</div>
+          <div className="footer-brand">
+            <a
+              href="https://www.rakuten.co.jp/24quantum/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="5QATM 楽天市場店"
+            >
+              <img src={logoImg} alt="5QATM" className="footer-brand-logo" />
+            </a>
+          </div>
           
           <div className="footer-social">
             <a 
