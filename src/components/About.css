@@ -34,6 +34,7 @@
 }
 
 .about-heading {
+  display: none;
   position: absolute;
   top: 2rem;
   left: 50%;
@@ -69,6 +70,7 @@
   }
 
   .about-heading {
+    display: block;
     font-size: 1.8rem;
     top: 1.5rem;
   }
