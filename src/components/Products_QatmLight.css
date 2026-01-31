@@ -387,6 +387,7 @@
     font-family: "Poppins", sans-serif;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
 }
 
 .refill-pack-line-1 {
@@ -410,30 +411,11 @@
 }
 
 /* Individual refill pack positions (left to right) */
-.refill-pack-1 {
-    left: 8%;
-    top: 0;
-}
-
-.refill-pack-2 {
-    left: 25%;
-    top: 0;
-}
-
-.refill-pack-3 {
-    left: 42%;
-    top: 0;
-}
-
-.refill-pack-4 {
-    left: 58%;
-    top: 0;
-}
-
-.refill-pack-5 {
-    left: 74%;
-    top: 0;
-}
+.refill-pack-1 { left: 15%; }
+.refill-pack-2 { left: 31.5%; }
+.refill-pack-3 { left: 54%; }
+.refill-pack-4 { left: 71%; }
+.refill-pack-5 { left: 87%; }
 
 /* =========================
    RESPONSIVE: MOBILE
@@ -637,31 +619,31 @@
     }
 
     .refill-circle {
-        width: 32vw;
-        height: 32vw;
+        width: 38vw;
+        height: 38vw;
     }
 
     /* Row 1: 2 items centered */
-    .refill-circle-1 { left: 32%; top: 10%; }
-    .refill-circle-2 { left: 68%; top: 10%; }
+    .refill-circle-1 { left: 34%; top: 20%; }
+    .refill-circle-2 { left: 66%; top: 20%; }
 
     /* Row 2: 3 items evenly distributed */
-    .refill-circle-3 { left: 20%; top: 58%; }
-    .refill-circle-4 { left: 50%; top: 58%; }
-    .refill-circle-5 { left: 80%; top: 58%; }
+    .refill-circle-3 { left: 20%; top: 100%; }
+    .refill-circle-4 { left: 50%; top: 100%; }
+    .refill-circle-5 { left: 80%; top: 100%; }
 
     .refill-product {
         width: 22vw;
     }
 
     /* Row 1 products */
-    .refill-product-1 { left: 32%; top: 10%; width: 28vw; }
-    .refill-product-2 { left: 68%; top: 10%; width: 24vw; }
+    .refill-product-1 { left: 34%; top: 20%; width: 28vw; }
+    .refill-product-2 { left: 66%; top: 20%; width: 24vw; }
 
     /* Row 2 products */
-    .refill-product-3 { left: 20%; top: 58%; }
-    .refill-product-4 { left: 50%; top: 58%; }
-    .refill-product-5 { left: 80%; top: 58%; }
+    .refill-product-3 { left: 20%; top: 100%; }
+    .refill-product-4 { left: 50%; top: 100%; }
+    .refill-product-5 { left: 80%; top: 100%; }
 
     /* =========================
        REFILL PACK TEXT - MOBILE
@@ -679,11 +661,11 @@
     .refill-pack-line-3 { font-size: 3vw; }
 
     /* Row 1 text positions */
-    .refill-pack-1 { left: 18%; top: 0; }
-    .refill-pack-2 { left: 55%; top: 0; }
+    .refill-pack-1 { left: 32%; top: -25vw; }
+    .refill-pack-2 { left: 68%; top: -25vw; }
 
     /* Row 2 text positions */
-    .refill-pack-3 { left: 6%; top: 48vw; }
-    .refill-pack-4 { left: 37%; top: 48vw; }
-    .refill-pack-5 { left: 67%; top: 48vw; }
+    .refill-pack-3 { left: 20%; top: 42vw; }
+    .refill-pack-4 { left: 50%; top: 42vw; }
+    .refill-pack-5 { left: 80%; top: 42vw; }
 }
