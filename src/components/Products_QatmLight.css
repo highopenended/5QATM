@@ -259,17 +259,18 @@
 .light-button-1,
 .light-button-2 {
     position: absolute;
-    right: 10%;
+    right: 6%;
     width: auto;
     z-index: 10;
 }
 
 .light-button-1 {
-    top: 40%;
+    top: 34%;
 }
 
 .light-button-2 {
-    top: 90%;
+    top: 84%;
+    right: 8%;
 }
 
 .light-button-1.rakuten-button-wrapper,
@@ -278,13 +279,49 @@
     padding-right: 0;
 }
 
+/* First button: image CTA (5QATM-light-button.png) */
+.light-button-1-image-link {
+    display: block;
+    line-height: 0;
+}
+
+.light-button-1-image-link img {
+    display: block;
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.light-button-1-image-link:hover img {
+    transform: scale(1.05);
+}
+
+/* Second button: image CTA (button-text-white.png) */
+.light-button-2-image-link {
+    display: block;
+    line-height: 0;
+}
+
+.light-button-2-image-link img {
+    display: block;
+    width: 28vw;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.light-button-2-image-link:hover img {
+    transform: scale(1.05);
+}
+
 /* =========================
    REFILL PACKS HEADER
    ========================= */
 
 .refill-packs-header {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -309,7 +346,7 @@
 .refill-products-container {
     position: absolute;
     width: 100%;
-    top: 70%;
+    top: 62%;
     left: 0;
     z-index: 8;
 }
@@ -384,7 +421,7 @@
 .refill-packs-container {
     position: absolute;
     width: 100%;
-    top: 87%;
+    top: 78%;
     left: 0;
     z-index: 8;
 }
@@ -605,6 +642,11 @@
     .light-button-1.rakuten-button-wrapper,
     .light-button-2.rakuten-button-wrapper {
         justify-content: center;
+    }
+
+    .light-button-1-image-link img,
+    .light-button-2-image-link img {
+        width: 48vw;
     }
 
     /* =========================

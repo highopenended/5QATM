@@ -17,9 +17,10 @@ import refillCoreImage from "../assets/refillpack-core.png";
 import refillEmulsionImage from "../assets/refillpack-emulsion.png";
 import lightShampooImage from "./light-shampoo.png";
 import lightTreatmentImage from "./light-treatment.png";
+import lightButtonImage from "../assets/5QATM-light-button.png";
+import lightButton2Image from "../assets/button-text-white.png";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 import ProductDetailsBlock from "./productDetailsBlock/ProductDetailsBlock";
-import Button_Rakuten from "./Button_Rakuten";
 
 const Products_QatmLight = () => {
     return (
@@ -73,8 +74,18 @@ const Products_QatmLight = () => {
                 </div>
             </div>
 
-            {/* First Button */}
-            <Button_Rakuten wrapperClassName="light-button-1" />
+            {/* First Button: image CTA, same link as Rakuten button */}
+            <div className="rakuten-button-wrapper light-button-1">
+                <a
+                    href="https://www.rakuten.co.jp/24quantum/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="light-button-1-image-link"
+                    aria-label="To the purchase page"
+                >
+                    <img src={lightButtonImage} alt="To the purchase page" />
+                </a>
+            </div>
 
             {/* Refill Packs Header */}
             <div className="refill-packs-header">
@@ -155,8 +166,18 @@ const Products_QatmLight = () => {
                 </div>
             </div>
 
-            {/* Second Button */}
-            <Button_Rakuten wrapperClassName="light-button-2" />
+            {/* Second Button: image CTA (button-text-white.png), same link as Rakuten button */}
+            <div className="rakuten-button-wrapper light-button-2">
+                <a
+                    href="https://www.rakuten.co.jp/24quantum/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="light-button-2-image-link"
+                    aria-label="To the purchase page"
+                >
+                    <img src={lightButton2Image} alt="To the purchase page" />
+                </a>
+            </div>
         </section>
     );
 };
