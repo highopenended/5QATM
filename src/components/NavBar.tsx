@@ -33,24 +33,27 @@ const NavBar = () => {
         </a>
         
         <div className="navbar-right">
-          <button 
+          <a 
+            href="#about"
             className="navbar-link" 
-            onClick={() => handleNavClick('about')}
+            onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
           >
             About
-          </button>
-          <button 
+          </a>
+          <a 
+            href="#products"
             className="navbar-link" 
-            onClick={() => handleNavClick('products')}
+            onClick={(e) => { e.preventDefault(); handleNavClick('products'); }}
           >
             Products
-          </button>
-          <button 
+          </a>
+          <a 
+            href="#reviews"
             className="navbar-link" 
-            onClick={() => handleNavClick('reviews')}
+            onClick={(e) => { e.preventDefault(); handleNavClick('reviews'); }}
           >
             Reviews
-          </button>
+          </a>
           <a 
             href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
             className="navbar-button"
@@ -79,24 +82,27 @@ const NavBar = () => {
       </div>
 
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-        <button 
+        <a 
+          href="#about"
           className="mobile-menu-link" 
-          onClick={() => handleNavClick('about')}
+          onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
         >
           About
-        </button>
-        <button 
+        </a>
+        <a 
+          href="#products"
           className="mobile-menu-link" 
-          onClick={() => handleNavClick('products')}
+          onClick={(e) => { e.preventDefault(); handleNavClick('products'); }}
         >
           Products
-        </button>
-        <button 
+        </a>
+        <a 
+          href="#reviews"
           className="mobile-menu-link" 
-          onClick={() => handleNavClick('reviews')}
+          onClick={(e) => { e.preventDefault(); handleNavClick('reviews'); }}
         >
           Reviews
-        </button>
+        </a>
         <a 
           href="https://24quantum.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E8%B3%87%E6%96%99?password-protected=login&redirect_to=https%3A%2F%2F24quantum.jp%2F%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC%25E8%25B3%2587%25E6%2596%2599%2F" 
           className="mobile-menu-button"

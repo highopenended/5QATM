@@ -30,7 +30,7 @@ const ReviewSection = () => {
                     <h2 className="review-title-line1">Reviews</h2>
                     <h3 className="review-title-line2">Professionals</h3>
                 </div>
-                <img src={staffExciteText} alt="" className="staff-excite-image" />
+                <img src={staffExciteText} alt="" aria-hidden="true" className="staff-excite-image" />
             </div>
 
             {/* Review 1: Teal box left, staff-1 overlapping right */}
@@ -116,8 +116,8 @@ const ReviewSection = () => {
 
             {/* Review Excite Text */}
             <div className="review-white-section">
-                <img src={reviewExciteText} alt="" className="review-excite-image review-excite-image-desktop" />
-                <img src={reviewExciteTextWrap} alt="" className="review-excite-image review-excite-image-mobile" />
+                <img src={reviewExciteText} alt="" aria-hidden="true" className="review-excite-image review-excite-image-desktop" />
+                <img src={reviewExciteTextWrap} alt="" aria-hidden="true" className="review-excite-image review-excite-image-mobile" />
 
                 {/* White Review Box 1: Left image overlap */}
                 <div className="review-white-item review-white-item-1">

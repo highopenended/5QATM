@@ -16,10 +16,9 @@ interface ProductDetailsBlockProps {
 }
 
 const ProductDetailsBlock = ({ name, amount, details, image }: ProductDetailsBlockProps) => {
-    const style = image ? { '--product-image': `url(${image})` } as React.CSSProperties : {};
-    
     return (
-        <div className="product-details-block" style={style}>
+        <div className="product-details-block">
+            {image && <img src={image} alt={name} className="product-details-image" />}
             <h3 className="product-name">{name}</h3>
             <div className="product-content-wrapper">
                 <p className="product-amount">{amount}</p>

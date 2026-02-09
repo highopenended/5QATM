@@ -13,7 +13,7 @@ import FooterSection from './components/FooterSection';
 function App() {
   return (
     <div className="viewport-shell">
-      <div className="viewport-app">
+      <main className="viewport-app">
         <NavBar />
         <HeroSection />
         <About />
@@ -25,7 +25,7 @@ function App() {
         <GangParade />
         <ReviewSection />
         <FooterSection />
-      </div>
+      </main>
     </div>
   );
 }

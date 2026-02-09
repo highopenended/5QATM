@@ -19,6 +19,7 @@ const HeroSection = () => {
 
   return (
     <section id="top" className="hero-section">
+      <h1 className="visually-hidden">5QATM - Premium Japanese Hair Care Products</h1>
       <picture>
         <source
           media="(max-width: 768px)"
@@ -26,7 +27,7 @@ const HeroSection = () => {
         />
         <img
           src={imageAssets.heroImage}
-          alt="Hero"
+          alt="5QATM Professional Hair Care Products - Premium Japanese Treatment Solutions"
           className="hero-image"
         />
       </picture>

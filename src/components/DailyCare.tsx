@@ -45,7 +45,7 @@ const DailyCare = () => {
 
             {/* Teal Box 1 - Order 3 on mobile */}
             <div className="teal-box-wrapper teal-1">
-                <img src={tealBox1} alt="" className="teal-box-image" />
+                <img src={tealBox1} alt="" aria-hidden="true" className="teal-box-image" />
                 <div className="teal-box-content">
                     <h3 className="teal-box-header">速乾<span className="header-x">×</span>美髪</h3>
                     <p className="teal-box-subheader">毎日のドライヤー時間を</p>
@@ -75,7 +75,7 @@ const DailyCare = () => {
 
             {/* Teal Box 2 - Order 5 on mobile */}
             <div className="teal-box-wrapper teal-2">
-                <img src={tealBox2} alt="" className="teal-box-image" />
+                <img src={tealBox2} alt="" aria-hidden="true" className="teal-box-image" />
                 <div className="teal-box-content">
                     <h3 className="teal-box-header">
                         <span className="highlight">髪</span>
