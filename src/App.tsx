@@ -9,17 +9,8 @@ import Products_QatmLight from './components/Products_QatmLight';
 import GangParade from './components/GangParade';
 import ReviewSection from './components/ReviewSection';
 import FooterSection from './components/FooterSection';
-import Loader from './components/Loader';
-import { useImagePreloader } from './hooks/useImagePreloader';
-import { allImageUrls } from './utils/imageAssets';
 
 function App() {
-  const { isLoading } = useImagePreloader(allImageUrls);
-
-  if (isLoading) {
-    return <Loader />;
-  }
-
   return (
     <div className="viewport-shell">
       <div className="viewport-app">
