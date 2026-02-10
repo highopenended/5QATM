@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://24quantum.jp/sitemap.xml
+Sitemap: https://qatm5-landing-page.web.app/sitemap.xml
