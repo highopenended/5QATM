@@ -7,7 +7,14 @@ html, body {
 }
 
 body {
-  background: #bce8e3; /* side bars */
+  /* Bold gradient pattern with strong white and teal variations */
+  background: 
+    radial-gradient(circle at 20% 20%, #ffffff 0%, rgba(255, 255, 255, 0) 50%),
+    radial-gradient(circle at 80% 45%, #ffffff 0%, rgba(255, 255, 255, 0) 55%),
+    radial-gradient(ellipse 120% 80% at 50% 70%, #8fd4cc 0%, rgba(143, 212, 204, 0) 50%),
+    radial-gradient(circle at 10% 90%, #ffffff 0%, rgba(255, 255, 255, 0) 48%),
+    radial-gradient(circle at 90% 10%, #a8ddd7 0%, rgba(168, 221, 215, 0) 52%),
+    linear-gradient(180deg, #e8f7f5 0%, #bce8e3 25%, #8fd4cc 50%, #bce8e3 75%, #d4f1ee 100%);
 }
 
 /* Scale down on ultrawide so vw-based designs don't blow up */
