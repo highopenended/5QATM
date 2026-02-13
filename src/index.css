@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background: #000; /* side bars */
+  background: #bce8e3; /* side bars */
 }
 
 /* Scale down on ultrawide so vw-based designs don't blow up */
@@ -34,7 +34,7 @@ body {
   scale       = min(1, targetWidth / 100vw)
 */
 .viewport-app {
-  --targetWidth: calc(100vh * 14/ 9);
+  --targetWidth: calc(120vh * 14/ 9);
   --scale: min(1, calc(var(--targetWidth) / 100vw));
 
   transform: scale(var(--scale));
