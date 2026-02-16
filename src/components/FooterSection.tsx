@@ -61,7 +61,14 @@ const FooterSection = () => {
               rel="noopener noreferrer"
               aria-label="5QATM 楽天市場店"
             >
-              <img src={logoImg} alt="5QATM" className="footer-brand-logo" />
+              <img 
+                src={logoImg} 
+                alt="5QATM" 
+                className="footer-brand-logo"
+                width="572"
+                height="224"
+                loading="lazy"
+              />
             </a>
           </div>
           

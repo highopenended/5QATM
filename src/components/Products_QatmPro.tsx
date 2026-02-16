@@ -22,7 +22,14 @@ const Products_QatmPro = () => {
                 <h2>Products</h2>
             </div>
             <div className="pro-title-header">
-                <img src={logoImage} alt="5QATM" className="pro-title-logo" />
+                <img 
+                    src={logoImage} 
+                    alt="5QATM" 
+                    className="pro-title-logo"
+                    width="572"
+                    height="224"
+                    loading="lazy"
+                />
                 <span className="pro-title-pro"> PRO</span>
             </div>
             <div className="products-container">
@@ -33,6 +40,8 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/24emulsion200g/"
                     className="pro-product pro-product-emulsion"
                     scale={1.3}
+                    width={282}
+                    height={927}
                 />
                 <span className="pro-label pro-label-emulsion">Emulsion</span>
 
@@ -42,6 +51,8 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5shampoo300ml/"
                     className="pro-product pro-product-shampoo"
                     scale={1.5}
+                    width={344}
+                    height={834}
                 />
                 <span className="pro-label pro-label-shampoo">Shampoo</span>
 
@@ -51,6 +62,8 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5treatment300g/"
                     className="pro-product pro-product-treatment"
                     scale={1.6}
+                    width={341}
+                    height={892}
                 />
                 <span className="pro-label pro-label-treatment">Treatment</span>
 
@@ -60,6 +73,8 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5rebirth200g/"
                     className="pro-product pro-product-rebirth"
                     scale={1.0}
+                    width={240}
+                    height={888}
                 />
                 <span className="pro-label pro-label-rebirth">Rebirth</span>
 
@@ -69,6 +84,8 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5core200g/"
                     className="pro-product pro-product-core"
                     scale={1.2}
+                    width={277}
+                    height={876}
                 />
                 <span className="pro-label pro-label-core">Core</span>
             </div>

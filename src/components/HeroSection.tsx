@@ -29,6 +29,8 @@ const HeroSection = () => {
           src={imageAssets.heroImage}
           alt="5QATM Professional Hair Care Products - Premium Japanese Treatment Solutions"
           className="hero-image"
+          width="2732"
+          height="1787"
         />
       </picture>
       <a 
@@ -46,6 +48,9 @@ const HeroSection = () => {
             src={imageAssets.heroImageBottom}
             alt="5QATM Light Products"
             className="hero-image-bottom"
+            width="2732"
+            height="1787"
+            loading="lazy"
           />
         </picture>
       </a>

@@ -32,9 +32,23 @@ const DailyCare = () => {
 
             {/* Product 1: Shampoo/Treatment - Order 2 on mobile */}
             <div className="product-box-wrapper product-1">
-                <img src={productImage1} alt="Shampoo and Treatment" className="product-box-image" />
+                <img 
+                    src={productImage1} 
+                    alt="Shampoo and Treatment" 
+                    className="product-box-image"
+                    width="1309"
+                    height="976"
+                    loading="lazy"
+                />
                 <div className="product-box-content">
-                    <img src={logoImage} alt="5QATM" className="product-label" />
+                    <img 
+                        src={logoImage} 
+                        alt="5QATM" 
+                        className="product-label"
+                        width="572"
+                        height="224"
+                        loading="lazy"
+                    />
                     <div className="product-title-wrapper">
                         <h4 className="product-title product-title-shampoo">Shampoo</h4>
                         <h4 className="product-title product-title-treatment">Treatment</h4>
@@ -45,7 +59,15 @@ const DailyCare = () => {
 
             {/* Teal Box 1 - Order 3 on mobile */}
             <div className="teal-box-wrapper teal-1">
-                <img src={tealBox1} alt="" aria-hidden="true" className="teal-box-image" />
+                <img 
+                    src={tealBox1} 
+                    alt="" 
+                    aria-hidden="true" 
+                    className="teal-box-image"
+                    width="1381"
+                    height="1555"
+                    loading="lazy"
+                />
                 <div className="teal-box-content">
                     <h3 className="teal-box-header">速乾<span className="header-x">×</span>美髪</h3>
                     <p className="teal-box-subheader">毎日のドライヤー時間を</p>
@@ -65,9 +87,23 @@ const DailyCare = () => {
 
             {/* Product 2: Emulsion - Order 4 on mobile */}
             <div className="product-box-wrapper product-2">
-                <img src={productImage2} alt="Emulsion" className="product-box-image" />
+                <img 
+                    src={productImage2} 
+                    alt="Emulsion" 
+                    className="product-box-image"
+                    width="1250"
+                    height="1000"
+                    loading="lazy"
+                />
                 <div className="product-box-content">
-                    <img src={logoImage} alt="5QATM" className="product-label" />
+                    <img 
+                        src={logoImage} 
+                        alt="5QATM" 
+                        className="product-label"
+                        width="572"
+                        height="224"
+                        loading="lazy"
+                    />
                     <h4 className="product-title">Emulsion</h4>
                     <p className="product-subtitle">5クァンタムエマルジョン<br />洗い流さないトリートメント</p>
                 </div>
@@ -75,7 +111,15 @@ const DailyCare = () => {
 
             {/* Teal Box 2 - Order 5 on mobile */}
             <div className="teal-box-wrapper teal-2">
-                <img src={tealBox2} alt="" aria-hidden="true" className="teal-box-image" />
+                <img 
+                    src={tealBox2} 
+                    alt="" 
+                    aria-hidden="true" 
+                    className="teal-box-image"
+                    width="1387"
+                    height="1160"
+                    loading="lazy"
+                />
                 <div className="teal-box-content">
                     <h3 className="teal-box-header">
                         <span className="highlight">髪</span>

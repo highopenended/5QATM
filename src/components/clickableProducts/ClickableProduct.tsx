@@ -7,6 +7,8 @@ type ClickableProductProps = {
   href: string;
   className?: string;
   alphaThreshold?: number;
+  width?: number;
+  height?: number;
 
   // base scale system (maps to CSS vars used by your .pro-product rules)
   scale?: number;           // --scale
@@ -27,6 +29,8 @@ export default function ClickableProduct({
   href,
   className,
   alphaThreshold = 10,
+  width,
+  height,
   scale,
   hoverMultiplier,
 }: ClickableProductProps) {
@@ -138,7 +142,7 @@ export default function ClickableProduct({
       aria-label={alt}
       style={styleVars}
     >
-      <img ref={imgRef} src={src} alt={alt} draggable={false} />
+      <img ref={imgRef} src={src} alt={alt} draggable={false} width={width} height={height} loading="lazy" />
     </a>
   );
 }

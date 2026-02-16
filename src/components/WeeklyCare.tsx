@@ -30,9 +30,23 @@ const WeeklyCare = () => {
             {/* Product Row: Left Image + Right Teal Box */}
             <div className="weekly-product-row">
                 <div className="weekly-left-image-wrapper">
-                    <img src={leftImage} alt="Rebirth Core Treatment" className="weekly-left-image" />
+                    <img 
+                        src={leftImage} 
+                        alt="Rebirth Core Treatment" 
+                        className="weekly-left-image"
+                        width="1313"
+                        height="1062"
+                        loading="lazy"
+                    />
                     <div className="product-box-content">
-                        <img src={logoImage} alt="5QATM" className="product-label" />
+                        <img 
+                            src={logoImage} 
+                            alt="5QATM" 
+                            className="product-label"
+                            width="572"
+                            height="224"
+                            loading="lazy"
+                        />
                         <div className="product-title-wrapper">
                             <h4 className="product-title product-title-rebirth">Rebirth</h4>
                             <h4 className="product-title product-title-core">Core</h4>
@@ -87,7 +101,14 @@ const WeeklyCare = () => {
 
             {/* New Product Splash */}
             <div className="new-product-splash">
-                <img src={newProductImage} alt="New 5QATM Light Products" className="new-product-image" />
+                <img 
+                    src={newProductImage} 
+                    alt="New 5QATM Light Products" 
+                    className="new-product-image"
+                    width="2414"
+                    height="1889"
+                    loading="lazy"
+                />
             </div>
 
             {/* CTA Button */}

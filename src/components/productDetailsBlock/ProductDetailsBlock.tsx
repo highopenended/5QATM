@@ -13,12 +13,21 @@ interface ProductDetailsBlockProps {
     amount: string | ReactNode;
     details: string;
     image?: string;
+    imageWidth?: number;
+    imageHeight?: number;
 }
 
-const ProductDetailsBlock = ({ name, amount, details, image }: ProductDetailsBlockProps) => {
+const ProductDetailsBlock = ({ name, amount, details, image, imageWidth, imageHeight }: ProductDetailsBlockProps) => {
     return (
         <div className="product-details-block">
-            {image && <img src={image} alt={name} className="product-details-image" />}
+            {image && <img 
+                src={image} 
+                alt={name} 
+                className="product-details-image"
+                width={imageWidth}
+                height={imageHeight}
+                loading="lazy"
+            />}
             <h3 className="product-name">{name}</h3>
             <div className="product-content-wrapper">
                 <p className="product-amount">{amount}</p>

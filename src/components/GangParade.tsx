@@ -14,6 +14,9 @@ const GangParade = () => {
           className="gang-parade__text-image" 
           src={gangParadeTextImage} 
           alt="GANG PARADE による 24アクアミスト & 5QATM 紹介動画"
+          width="2321"
+          height="983"
+          loading="lazy"
         />
 
         <div className="gang-parade__iframe-wrapper">

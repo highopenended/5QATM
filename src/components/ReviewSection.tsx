@@ -30,7 +30,15 @@ const ReviewSection = () => {
                     <h2 className="review-title-line1">Reviews</h2>
                     <h3 className="review-title-line2">Professionals</h3>
                 </div>
-                <img src={staffExciteText} alt="" aria-hidden="true" className="staff-excite-image" />
+                <img 
+                    src={staffExciteText} 
+                    alt="" 
+                    aria-hidden="true" 
+                    className="staff-excite-image"
+                    width="857"
+                    height="442"
+                    loading="lazy"
+                />
             </div>
 
             {/* Review 1: Teal box left, staff-1 overlapping right */}
@@ -61,7 +69,14 @@ const ReviewSection = () => {
                         </div>
                     </div>
                 </div>
-                <img src={staff1Image} alt="Professional review" className="staff-image staff-image-1" />
+                <img 
+                    src={staff1Image} 
+                    alt="Professional review" 
+                    className="staff-image staff-image-1"
+                    width="846"
+                    height="778"
+                    loading="lazy"
+                />
             </div>
 
             {/* Review 2: Teal box right, staff-2 overlapping left */}
@@ -88,7 +103,14 @@ const ReviewSection = () => {
                         </div>
                     </div>
                 </div>
-                <img src={staff2Image} alt="Professional review" className="staff-image staff-image-2" />
+                <img 
+                    src={staff2Image} 
+                    alt="Professional review" 
+                    className="staff-image staff-image-2"
+                    width="852"
+                    height="774"
+                    loading="lazy"
+                />
             </div>
 
             {/* Review 3: Teal box left, staff-3 overlapping right */}
@@ -111,13 +133,36 @@ const ReviewSection = () => {
                         </div>
                     </div>
                 </div>
-                <img src={staff3Image} alt="Professional review" className="staff-image staff-image-3" />
+                <img 
+                    src={staff3Image} 
+                    alt="Professional review" 
+                    className="staff-image staff-image-3"
+                    width="852"
+                    height="766"
+                    loading="lazy"
+                />
             </div>
 
             {/* Review Excite Text */}
             <div className="review-white-section">
-                <img src={reviewExciteText} alt="" aria-hidden="true" className="review-excite-image review-excite-image-desktop" />
-                <img src={reviewExciteTextWrap} alt="" aria-hidden="true" className="review-excite-image review-excite-image-mobile" />
+                <img 
+                    src={reviewExciteText} 
+                    alt="" 
+                    aria-hidden="true" 
+                    className="review-excite-image review-excite-image-desktop"
+                    width="1751"
+                    height="196"
+                    loading="lazy"
+                />
+                <img 
+                    src={reviewExciteTextWrap} 
+                    alt="" 
+                    aria-hidden="true" 
+                    className="review-excite-image review-excite-image-mobile"
+                    width="654"
+                    height="87"
+                    loading="lazy"
+                />
 
                 {/* White Review Box 1: Left image overlap */}
                 <div className="review-white-item review-white-item-1">
@@ -132,7 +177,14 @@ const ReviewSection = () => {
                             </div>
                         </div>
                     </div>
-                    <img src={reviewLady1} alt="Customer review" className="review-white-image review-white-image-1" />
+                    <img 
+                        src={reviewLady1} 
+                        alt="Customer review" 
+                        className="review-white-image review-white-image-1"
+                        width="427"
+                        height="638"
+                        loading="lazy"
+                    />
                 </div>
 
                 {/* White Review Box 2: Right image overlap */}
@@ -150,7 +202,14 @@ const ReviewSection = () => {
                             </div>
                         </div>
                     </div>
-                    <img src={reviewLady2} alt="Customer review" className="review-white-image review-white-image-2" />
+                    <img 
+                        src={reviewLady2} 
+                        alt="Customer review" 
+                        className="review-white-image review-white-image-2"
+                        width="544"
+                        height="668"
+                        loading="lazy"
+                    />
                 </div>
             </div>
         </section>

@@ -27,7 +27,14 @@ const Products_QatmLight = () => {
         <section id="qatm-light" className="products-qatm-light-section">
             {/* Main Header */}
             <div className="light-header">
-                <h2><img src={logoImage} alt="5QATM" className="light-header-logo" /><span className="header-light"> Light</span></h2>
+                <h2><img 
+                    src={logoImage} 
+                    alt="5QATM" 
+                    className="light-header-logo"
+                    width="572"
+                    height="224"
+                    loading="lazy"
+                /><span className="header-light"> Light</span></h2>
             </div>
 
             {/* Products Container */}
@@ -39,6 +46,8 @@ const Products_QatmLight = () => {
                     href="https://item.rakuten.co.jp/24quantum/qatmlightshampoo100ml/"
                     className="light-product light-product-shampoo"
                     scale={1.4}
+                    width={601}
+                    height={874}
                 />
 
                 <ClickableProduct
@@ -47,6 +56,8 @@ const Products_QatmLight = () => {
                     href="https://item.rakuten.co.jp/24quantum/qatmlighttreatment100g/"
                     className="light-product light-product-treatment"
                     scale={1.4}
+                    width={671}
+                    height={906}
                 />
 
                 {/* Product Labels */}
@@ -62,6 +73,8 @@ const Products_QatmLight = () => {
                         amount={<>100ml<span className="amount-slash">/</span>500ml<span className="amount-slash">/</span>1000ml</>}
                         details="24アクアミストを使用したバージン毛～ライトダメージ毛向け速乾シャンプー 髪の乾く時間を約40％短縮"
                         image={lightShampooImage}
+                        imageWidth={114}
+                        imageHeight={185}
                     />
                 </div>
                 <div className="light-details-right">
@@ -70,6 +83,8 @@ const Products_QatmLight = () => {
                         amount={<>100g<span className="amount-slash">/</span>480g<span className="amount-slash">/</span>1000g</>}
                         details="シャンプーと合わせてご使用ください。うねりや癖毛、パサついた髪もサラサラふわっとまとまる美髪へ導きます。"
                         image={lightTreatmentImage}
+                        imageWidth={122}
+                        imageHeight={201}
                     />
                 </div>
             </div>
@@ -83,7 +98,13 @@ const Products_QatmLight = () => {
                     className="light-button-1-image-link"
                     aria-label="To the purchase page"
                 >
-                    <img src={lightButtonImage} alt="To the purchase page" />
+                    <img 
+                        src={lightButtonImage} 
+                        alt="To the purchase page"
+                        width="396"
+                        height="136"
+                        loading="lazy"
+                    />
                 </a>
             </div>
 
@@ -106,6 +127,8 @@ const Products_QatmLight = () => {
                     href="https://google.com"
                     className="refill-product refill-product-1"
                     scale={1.0}
+                    width={432}
+                    height={670}
                 />
                 <ClickableProduct
                     src={refillTreatmentImage}
@@ -113,6 +136,8 @@ const Products_QatmLight = () => {
                     href="https://google.com"
                     className="refill-product refill-product-2"
                     scale={1.0}
+                    width={370}
+                    height={646}
                 />
                 <ClickableProduct
                     src={refillRebirthImage}
@@ -120,6 +145,8 @@ const Products_QatmLight = () => {
                     href="https://google.com"
                     className="refill-product refill-product-3"
                     scale={1.0}
+                    width={320}
+                    height={602}
                 />
                 <ClickableProduct
                     src={refillCoreImage}
@@ -127,6 +154,8 @@ const Products_QatmLight = () => {
                     href="https://google.com"
                     className="refill-product refill-product-4"
                     scale={1.0}
+                    width={306}
+                    height={600}
                 />
                 <ClickableProduct
                     src={refillEmulsionImage}
@@ -134,6 +163,8 @@ const Products_QatmLight = () => {
                     href="https://google.com"
                     className="refill-product refill-product-5"
                     scale={1.0}
+                    width={291}
+                    height={586}
                 />
             </div>
 
@@ -175,7 +206,13 @@ const Products_QatmLight = () => {
                     className="light-button-2-image-link"
                     aria-label="To the purchase page"
                 >
-                    <img src={lightButton2Image} alt="To the purchase page" />
+                    <img 
+                        src={lightButton2Image} 
+                        alt="To the purchase page"
+                        width="732"
+                        height="214"
+                        loading="lazy"
+                    />
                 </a>
             </div>
         </section>
