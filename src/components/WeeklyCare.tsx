@@ -7,10 +7,10 @@
  */
 
 import "./WeeklyCare.css";
-import backgroundImage from "../assets/weekly-care-background.png";
-import leftImage from "../assets/weekly-care-left-image.png";
-import newProductImage from "../assets/weekly-care-new-image.png";
-import logoImage from "../assets/5QATM-logo.png";
+import backgroundImage from "../assets/weekly-care-background.webp";
+import leftImage from "../assets/weekly-care-left-image.webp";
+import newProductImage from "../assets/weekly-care-new-image.webp";
+import logoImage from "../assets/5QATM-logo.webp";
 import Button_Rakuten from "./Button_Rakuten";
 
 const WeeklyCare = () => {

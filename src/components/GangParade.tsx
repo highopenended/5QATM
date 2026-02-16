@@ -4,7 +4,7 @@
  */
 
 import './GangParade.css';
-import gangParadeTextImage from '../assets/gang-parade-text-image.png';
+import gangParadeTextImage from '../assets/gang-parade-text-image.webp';
 
 const GangParade = () => {
   return (

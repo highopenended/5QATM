@@ -7,7 +7,7 @@
  */
 
 import './FooterSection.css';
-import logoImg from '../assets/5QATM-logo.png';
+import logoImg from '../assets/5QATM-logo.webp';
 
 const FooterSection = () => {
   /**

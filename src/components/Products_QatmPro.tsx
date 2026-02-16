@@ -7,12 +7,12 @@
  */
 
 import "./Products_QatmPro.css";
-import logoImage from "../assets/5QATM-logo.png";
-import emulsionImage from "../assets/pro-product-emission.png";
-import shampooImage from "../assets/pro-product-shampoo.png";
-import treatmentImage from "../assets/pro-product-treatment.png";
-import rebirthImage from "../assets/pro-product-rebirth.png";
-import coreImage from "../assets/pro-product-core.png";
+import logoImage from "../assets/5QATM-logo.webp";
+import emulsionImage from "../assets/pro-product-emission.webp";
+import shampooImage from "../assets/pro-product-shampoo.webp";
+import treatmentImage from "../assets/pro-product-treatment.webp";
+import rebirthImage from "../assets/pro-product-rebirth.webp";
+import coreImage from "../assets/pro-product-core.webp";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 
 const Products_QatmPro = () => {

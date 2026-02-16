@@ -7,18 +7,18 @@
  */
 
 import "./Products_QatmLight.css";
-import logoImage from "../assets/5QATM-logo.png";
-import shampooImage from "../assets/light-products-shampoo.png";
-import treatmentImage from "../assets/light-products-treatment.png";
-import refillShampooImage from "../assets/refillpack-shampoo.png";
-import refillTreatmentImage from "../assets/refillpack-treatment.png";
-import refillRebirthImage from "../assets/refillpack-rebirth.png";
-import refillCoreImage from "../assets/refillpack-core.png";
-import refillEmulsionImage from "../assets/refillpack-emulsion.png";
-import lightShampooImage from "./light-shampoo.png";
-import lightTreatmentImage from "./light-treatment.png";
-import lightButtonImage from "../assets/5QATM-light-button.png";
-import lightButton2Image from "../assets/button-text-white.png";
+import logoImage from "../assets/5QATM-logo.webp";
+import shampooImage from "../assets/light-products-shampoo.webp";
+import treatmentImage from "../assets/light-products-treatment.webp";
+import refillShampooImage from "../assets/refillpack-shampoo.webp";
+import refillTreatmentImage from "../assets/refillpack-treatment.webp";
+import refillRebirthImage from "../assets/refillpack-rebirth.webp";
+import refillCoreImage from "../assets/refillpack-core.webp";
+import refillEmulsionImage from "../assets/refillpack-emulsion.webp";
+import lightShampooImage from "./light-shampoo.webp";
+import lightTreatmentImage from "./light-treatment.webp";
+import lightButtonImage from "../assets/5QATM-light-button.webp";
+import lightButton2Image from "../assets/button-text-white.webp";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 import ProductDetailsBlock from "./productDetailsBlock/ProductDetailsBlock";
 

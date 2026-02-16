@@ -8,7 +8,7 @@
 
 import { useState } from 'react';
 import './NavBar.css';
-import logoImage from '../assets/5QATM-logo.png';
+import logoImage from '../assets/5QATM-logo.webp';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -7,15 +7,15 @@
  */
 
 import "./ReviewSection.css";
-import reviewBackground from "../assets/review-background.png";
-import staffExciteText from "../assets/staff-excite-text.png";
-import staff1Image from "../assets/staff-1.png";
-import staff2Image from "../assets/staff-2.png";
-import staff3Image from "../assets/staff-3.png";
-import reviewExciteText from "../assets/review-excite-text.png";
-import reviewExciteTextWrap from "../assets/review-excite-text-wrap.png";
-import reviewLady1 from "../assets/review-lady1.png";
-import reviewLady2 from "../assets/review-lady2.png";
+import reviewBackground from "../assets/review-background.webp";
+import staffExciteText from "../assets/staff-excite-text.webp";
+import staff1Image from "../assets/staff-1.webp";
+import staff2Image from "../assets/staff-2.webp";
+import staff3Image from "../assets/staff-3.webp";
+import reviewExciteText from "../assets/review-excite-text.webp";
+import reviewExciteTextWrap from "../assets/review-excite-text-wrap.webp";
+import reviewLady1 from "../assets/review-lady1.webp";
+import reviewLady2 from "../assets/review-lady2.webp";
 
 const ReviewSection = () => {
     return (

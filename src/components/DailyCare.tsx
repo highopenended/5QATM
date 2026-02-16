@@ -8,12 +8,12 @@
  */
 
 import "./DailyCare.css";
-import backgroundImage from "../assets/daily-care-background.png";
-import tealBox1 from "../assets/daily-care-left-teal-1.png";
-import tealBox2 from "../assets/daily-care-left-teal-2.png";
-import productImage1 from "../assets/daily-care-right-image1.png";
-import productImage2 from "../assets/daily-care-right-image2.png";
-import logoImage from "../assets/5QATM-logo.png";
+import backgroundImage from "../assets/daily-care-background.webp";
+import tealBox1 from "../assets/daily-care-left-teal-1.webp";
+import tealBox2 from "../assets/daily-care-left-teal-2.webp";
+import productImage1 from "../assets/daily-care-right-image1.webp";
+import productImage2 from "../assets/daily-care-right-image2.webp";
+import logoImage from "../assets/5QATM-logo.webp";
 import Button_Rakuten from "./Button_Rakuten";
 
 const DailyCare = () => {

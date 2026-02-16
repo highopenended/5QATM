@@ -8,11 +8,11 @@
 
 import "./Products_QatmPro_Details.css";
 import ProductDetailsBlock from "./productDetailsBlock/ProductDetailsBlock";
-import emissionImage from "../assets/pro-product-emission.png";
-import shampooImage from "../assets/pro-product-shampoo.png";
-import treatmentImage from "../assets/pro-product-treatment.png";
-import rebirthImage from "../assets/pro-product-rebirth.png";
-import coreImage from "../assets/pro-product-core.png";
+import emissionImage from "../assets/pro-product-emission.webp";
+import shampooImage from "../assets/pro-product-shampoo.webp";
+import treatmentImage from "../assets/pro-product-treatment.webp";
+import rebirthImage from "../assets/pro-product-rebirth.webp";
+import coreImage from "../assets/pro-product-core.webp";
 
 const Products_QatmPro_Details = () => {
     return (
