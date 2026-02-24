@@ -1,8 +1,8 @@
 /**
  * HeroSection Component
- * Hero section displaying the main hero image and bottom-right promo image.
- * Uses mobile-optimized images below 768px, desktop images otherwise.
- * Bottom image links to 5QATM Light products section.
+ * Hero section with full-bleed background (desktop) or main image (mobile).
+ * Desktop: hero-image-background fills the section; content overlays on top.
+ * Mobile: hero-image-mobile displayed as img. Bottom promo links to 5QATM Light.
  */
 
 import './HeroSection.css';
@@ -20,7 +20,12 @@ const HeroSection = () => {
   return (
     <section id="top" className="hero-section">
       <h1 className="visually-hidden">5QATM - Premium Japanese Hair Care Products</h1>
-      <picture>
+      <div
+        className="hero-background"
+        style={{ backgroundImage: `url(${imageAssets.heroImageBackground})` }}
+        aria-hidden
+      />
+      <picture className="hero-image-wrapper">
         <source
           media="(max-width: 768px)"
           srcSet={imageAssets.heroImageMobile}

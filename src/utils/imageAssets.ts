@@ -9,6 +9,7 @@
 
 // Hero Section
 import heroImage from '../assets/hero-image.webp';
+import heroImageBackground from '../assets/hero-image-background.webp';
 import heroImageMobile from '../assets/hero-image-mobile.webp';
 import heroImageBottom from '../assets/hero-image-bottom.webp';
 import heroImageBottomMobile from '../assets/hero-image-bottom-mobile.webp';
@@ -69,6 +70,7 @@ import reviewLady2 from '../assets/review-lady2.webp';
 export const imageAssets = {
   // Hero
   heroImage,
+  heroImageBackground,
   heroImageMobile,
   heroImageBottom,
   heroImageBottomMobile,
