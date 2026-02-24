@@ -18,6 +18,13 @@
   display: none;
 }
 
+/* Desktop: overlay images hidden by default; shown only on desktop */
+.hero-overlay-hair1,
+.hero-overlay-hair2,
+.hero-overlay-circle {
+  display: none;
+}
+
 /* Desktop: background fills section; mobile: img visible */
 .hero-image-wrapper {
   width: 100%;
@@ -49,6 +56,44 @@
   .hero-image-wrapper {
     display: none;
   }
+
+  /* Hero overlay images - positioned absolutely on desktop */
+  .hero-overlay-hair2 {
+    display: block;
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    width: 21vw;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    transform: rotate(-2deg);
+    filter: drop-shadow(5px 12px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  .hero-overlay-hair1 {
+    display: block;
+    position: absolute;
+    right: 12%;
+    top: 20%;
+    width: 22vw;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+    transform: rotate(3deg);
+    filter: drop-shadow(5px 12px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  .hero-overlay-circle {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 12%;
+    width: 14vw;
+    height: auto;
+    object-fit: contain;
+    z-index: 3;
+  }
 }
 
 .hero-image-bottom-wrapper {
@@ -60,7 +105,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.3s ease;
-  z-index: 1;
+  z-index: 4;
 }
 
 .hero-image-bottom-wrapper:hover {

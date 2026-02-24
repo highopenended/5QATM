@@ -13,6 +13,9 @@ import heroImageBackground from '../assets/hero-image-background.webp';
 import heroImageMobile from '../assets/hero-image-mobile.webp';
 import heroImageBottom from '../assets/hero-image-bottom.webp';
 import heroImageBottomMobile from '../assets/hero-image-bottom-mobile.webp';
+import heroImageHair1 from '../assets/hero-image-hair1.webp';
+import heroImageHair2 from '../assets/hero-image-hair2.webp';
+import heroImageCircleRight from '../assets/hero-image-circle-right.webp';
 
 // About Section
 import aboutTopImages from '../assets/about-top-images.webp';
@@ -74,6 +77,9 @@ export const imageAssets = {
   heroImageMobile,
   heroImageBottom,
   heroImageBottomMobile,
+  heroImageHair1,
+  heroImageHair2,
+  heroImageCircleRight,
   
   // About
   aboutTopImages,

@@ -38,6 +38,33 @@ const HeroSection = () => {
           height="1787"
         />
       </picture>
+      <img
+        src={imageAssets.heroImageHair2}
+        alt=""
+        className="hero-overlay-hair2"
+        width="800"
+        height="1000"
+        loading="lazy"
+        aria-hidden
+      />
+      <img
+        src={imageAssets.heroImageHair1}
+        alt=""
+        className="hero-overlay-hair1"
+        width="800"
+        height="1000"
+        loading="lazy"
+        aria-hidden
+      />
+      <img
+        src={imageAssets.heroImageCircleRight}
+        alt=""
+        className="hero-overlay-circle"
+        width="500"
+        height="500"
+        loading="lazy"
+        aria-hidden
+      />
       <a 
         href="#qatm-light" 
         onClick={handleScrollToLight}
