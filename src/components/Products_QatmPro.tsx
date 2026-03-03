@@ -54,7 +54,7 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5shampoo300ml/"
                     className="pro-product pro-product-shampoo"
                     scale={1.5}
-                    width={345}
+                    width={344}
                     height={834}
                 />
                 <span className="pro-label pro-label-shampoo">Shampoo</span>
@@ -77,7 +77,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-rebirth"
                     scale={1.0}
                     width={240}
-                    height={888}
+                    height={889}
                 />
                 <span className="pro-label pro-label-rebirth">Rebirth</span>
 
