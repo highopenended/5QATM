@@ -1,6 +1,7 @@
 /**
  * Products_QatmPro Component
- *
+ * 
+ * 
  * Displays the 5QATM PRO product lineup with clickable product images
  * positioned over a circular background.
  * Each product uses pixel-perfect click detection via ClickableProduct component.
@@ -15,6 +16,8 @@ import rebirthImage from "../assets/pro-product-rebirth.webp";
 import coreImage from "../assets/pro-product-core.webp";
 import ClickableProduct from "./clickableProducts/ClickableProduct";
 
+
+// This is the QatmPro section
 const Products_QatmPro = () => {
     return (
         <section id="products" className="products-qatm-pro-section">
@@ -51,7 +54,7 @@ const Products_QatmPro = () => {
                     href="https://item.rakuten.co.jp/24quantum/5shampoo300ml/"
                     className="pro-product pro-product-shampoo"
                     scale={1.5}
-                    width={344}
+                    width={345}
                     height={834}
                 />
                 <span className="pro-label pro-label-shampoo">Shampoo</span>
