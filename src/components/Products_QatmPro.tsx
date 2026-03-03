@@ -77,7 +77,7 @@ const Products_QatmPro = () => {
                     className="pro-product pro-product-rebirth"
                     scale={1.0}
                     width={240}
-                    height={889}
+                    height={888}
                 />
                 <span className="pro-label pro-label-rebirth">Rebirth</span>
 
