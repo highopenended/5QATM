@@ -197,7 +197,7 @@ const Products_QatmLight = () => {
                 </div>
             </div>
 
-            {/* Second Button: image CTA (button-text-white.png), same link as Rakuten button */}
+            {/* Second Button: image CTA (button-text-white.webp), same link as Rakuten button */}
             <div className="rakuten-button-wrapper light-button-2">
                 <a
                     href="https://www.rakuten.co.jp/24quantum/"

@@ -279,7 +279,7 @@
     padding-right: 0;
 }
 
-/* First button: image CTA (5QATM-light-button.png) */
+/* First button: image CTA (5QATM-light-button.webp) */
 .light-button-1-image-link {
     display: block;
     line-height: 0;
@@ -297,7 +297,7 @@
     transform: scale(1.05);
 }
 
-/* Second button: image CTA (button-text-white.png) */
+/* Second button: image CTA (button-text-white.webp) */
 .light-button-2-image-link {
     display: block;
     line-height: 0;
