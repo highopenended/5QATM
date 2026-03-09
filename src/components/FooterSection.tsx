@@ -74,7 +74,7 @@ const FooterSection = () => {
           
           <div className="footer-social">
             <a 
-              href="https://www.instagram.com/" 
+              href="https://www.instagram.com/5qatm.jp/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-social-link"
@@ -93,7 +93,8 @@ const FooterSection = () => {
               </svg>
             </a>
             
-            <a 
+            {/*  Disabled because no facebook */}
+            {/* <a 
               href="https://www.facebook.com/" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -114,7 +115,7 @@ const FooterSection = () => {
                   fill="white"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
