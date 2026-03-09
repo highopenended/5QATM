@@ -94,6 +94,7 @@ const WeeklyCare = () => {
                     <iframe
                         src="https://www.youtube.com/embed/ISvHb1abnJc"
                         title="How to use 5QATM Weekly Care"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
@@ -114,6 +115,7 @@ const WeeklyCare = () => {
                     <iframe
                         src="https://www.youtube.com/embed/TK7oUDaf7tY"
                         title="ドライヤー時間 30%短縮 比較検証動画"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
