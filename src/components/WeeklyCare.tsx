@@ -2,7 +2,7 @@
  * WeeklyCare Component
  *
  * Single-column layout featuring weekly special care products.
- * Structure: Section title, product image + teal info box, how-to video, new product splash, CTA button.
+ * Structure: Section title, product image + teal info box, how-to video, comparison video, new product splash, CTA button.
  * Styling mirrors DailyCare patterns for consistency.
  */
 
@@ -10,6 +10,7 @@ import "./WeeklyCare.css";
 import backgroundImage from "../assets/weekly-care-background.webp";
 import leftImage from "../assets/weekly-care-left-image.webp";
 import newProductImage from "../assets/weekly-care-new-image.webp";
+import newVideoTitle from "../assets/new-video-title.webp";
 import logoImage from "../assets/5QATM-logo.webp";
 import Button_Rakuten from "./Button_Rakuten";
 
@@ -93,6 +94,26 @@ const WeeklyCare = () => {
                     <iframe
                         src="https://www.youtube.com/embed/ISvHb1abnJc"
                         title="How to use 5QATM Weekly Care"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </div>
+
+            {/* Comparison/Verification Video Section */}
+            <div className="video-section">
+                <img 
+                    src={newVideoTitle} 
+                    alt="ドライヤー時間 30%短縮!? 比較検証してみました" 
+                    className="video-section-title-image"
+                    width="967"
+                    height="2338"
+                    loading="lazy"
+                />
+                <div className="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/TK7oUDaf7tY"
+                        title="ドライヤー時間 30%短縮 比較検証動画"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>

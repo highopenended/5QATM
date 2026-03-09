@@ -290,6 +290,26 @@
 }
 
 /* =========================
+   VIDEO SECTION (SHARED)
+   ========================= */
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.video-section-title-image {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 4vw auto;
+}
+
+/* =========================
    NEW PRODUCT SPLASH
    ========================= */
 
@@ -409,6 +429,12 @@
     /* Video */
     .video-container {
         width: 90%;
+        margin-bottom: 6vw;
+    }
+
+    /* Video section title image */
+    .video-section-title-image {
+        width: 95%;
         margin-bottom: 6vw;
     }
 
