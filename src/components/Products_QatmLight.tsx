@@ -124,7 +124,7 @@ const Products_QatmLight = () => {
                 <ClickableProduct
                     src={refillShampooImage}
                     alt="5QATM Refill Shampoo"
-                    href="https://google.com"
+                    href="https://item.rakuten.co.jp/24quantum/5shampoo1000ml/"
                     className="refill-product refill-product-1"
                     scale={1.0}
                     width={432}
@@ -133,7 +133,7 @@ const Products_QatmLight = () => {
                 <ClickableProduct
                     src={refillTreatmentImage}
                     alt="5QATM Refill Treatment"
-                    href="https://google.com"
+                    href="https://item.rakuten.co.jp/24quantum/5treatment1000g/"
                     className="refill-product refill-product-2"
                     scale={1.0}
                     width={370}
@@ -142,7 +142,7 @@ const Products_QatmLight = () => {
                 <ClickableProduct
                     src={refillRebirthImage}
                     alt="5QATM Refill Rebirth"
-                    href="https://google.com"
+                    href="https://search.rakuten.co.jp/search/mall/?sid=430489"
                     className="refill-product refill-product-3"
                     scale={1.0}
                     width={320}
@@ -151,7 +151,7 @@ const Products_QatmLight = () => {
                 <ClickableProduct
                     src={refillCoreImage}
                     alt="5QATM Refill Core"
-                    href="https://google.com"
+                    href="https://search.rakuten.co.jp/search/mall/?sid=430489"
                     className="refill-product refill-product-4"
                     scale={1.0}
                     width={306}
@@ -160,7 +160,7 @@ const Products_QatmLight = () => {
                 <ClickableProduct
                     src={refillEmulsionImage}
                     alt="5QATM Refill Emulsion"
-                    href="https://google.com"
+                    href="https://search.rakuten.co.jp/search/mall/?sid=430489"
                     className="refill-product refill-product-5"
                     scale={1.0}
                     width={291}
