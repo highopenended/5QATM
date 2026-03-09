@@ -29,6 +29,8 @@ const HeroSection = () => {
         <source
           media="(max-width: 768px)"
           srcSet={imageAssets.heroImageMobile}
+          width="800"
+          height="1000"
         />
         <img
           src={imageAssets.heroImage}

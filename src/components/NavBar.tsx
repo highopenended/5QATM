@@ -29,7 +29,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="https://www.rakuten.co.jp/24quantum/" className="navbar-logo">
-          <img src={logoImage} alt="5QATM" />
+          <img src={logoImage} alt="5QATM" width="572" height="224" loading="lazy" />
         </a>
         
         <div className="navbar-right">
