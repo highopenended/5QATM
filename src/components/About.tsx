@@ -7,14 +7,16 @@
  */
 
 import "./About.css";
-import { imageAssets } from "../utils/imageAssets";
+import aboutTopImages from "../assets/about-top-images.webp";
+import aboutSectionMobile from "../assets/about-section-mobile.webp";
+import aboutSection from "../assets/about-section.webp";
 
 const About = () => {
     return (
         <section id="about" className="about-section">
             <div className="about-left">
                 <img 
-                    src={imageAssets.aboutTopImages} 
+                    src={aboutTopImages} 
                     alt="5QATM hair care product collection featuring shampoo, treatment, and styling products" 
                     className="about-image about-image2"
                     width="1390"
@@ -29,10 +31,10 @@ const About = () => {
                     <picture>
                         <source
                             media="(max-width: 768px)"
-                            srcSet={imageAssets.aboutSectionMobile}
+                            srcSet={aboutSectionMobile}
                         />
                         <img
-                            src={imageAssets.aboutSection}
+                            src={aboutSection}
                             alt="5QATM professional hair care technology and product benefits"
                             className="about-image"
                             width="749"

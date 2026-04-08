@@ -6,7 +6,14 @@
  */
 
 import './HeroSection.css';
-import { imageAssets } from '../utils/imageAssets';
+import heroImageBackground from '../assets/hero-image-background.webp';
+import heroImageMobile from '../assets/hero-image-mobile.webp';
+import heroImage from '../assets/hero-image.webp';
+import heroImageHair2 from '../assets/hero-image-hair2.webp';
+import heroImageHair1 from '../assets/hero-image-hair1.webp';
+import heroImageCircleRight from '../assets/hero-image-circle-right.webp';
+import heroImageBottomMobile from '../assets/hero-image-bottom-mobile.webp';
+import heroImageBottom from '../assets/hero-image-bottom.webp';
 
 const HeroSection = () => {
   const handleScrollToLight = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -22,18 +29,18 @@ const HeroSection = () => {
       <h1 className="visually-hidden">5QATM - Premium Japanese Hair Care Products</h1>
       <div
         className="hero-background"
-        style={{ backgroundImage: `url(${imageAssets.heroImageBackground})` }}
+        style={{ backgroundImage: `url(${heroImageBackground})` }}
         aria-hidden
       />
       <picture className="hero-image-wrapper">
         <source
           media="(max-width: 768px)"
-          srcSet={imageAssets.heroImageMobile}
+          srcSet={heroImageMobile}
           width="800"
           height="1000"
         />
         <img
-          src={imageAssets.heroImage}
+          src={heroImage}
           alt="5QATM Professional Hair Care Products - Premium Japanese Treatment Solutions"
           className="hero-image"
           width="2732"
@@ -41,7 +48,7 @@ const HeroSection = () => {
         />
       </picture>
       <img
-        src={imageAssets.heroImageHair2}
+        src={heroImageHair2}
         alt=""
         className="hero-overlay-hair2"
         width="800"
@@ -50,7 +57,7 @@ const HeroSection = () => {
         aria-hidden
       />
       <img
-        src={imageAssets.heroImageHair1}
+        src={heroImageHair1}
         alt=""
         className="hero-overlay-hair1"
         width="800"
@@ -59,7 +66,7 @@ const HeroSection = () => {
         aria-hidden
       />
       <img
-        src={imageAssets.heroImageCircleRight}
+        src={heroImageCircleRight}
         alt=""
         className="hero-overlay-circle"
         width="500"
@@ -76,10 +83,10 @@ const HeroSection = () => {
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet={imageAssets.heroImageBottomMobile}
+            srcSet={heroImageBottomMobile}
           />
           <img
-            src={imageAssets.heroImageBottom}
+            src={heroImageBottom}
             alt="5QATM Light Products"
             className="hero-image-bottom"
             width="2732"
