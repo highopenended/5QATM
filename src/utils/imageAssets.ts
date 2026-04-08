@@ -1,10 +1,7 @@
 /**
  * Centralized Image Assets Registry
- * 
- * All image imports for the application are centralized here for:
- * - Easy preloading of all images before app render
- * - Consistent import paths
- * - Type safety
+ *
+ * Shared image imports for components that use this module, for consistent paths and typing.
  */
 
 // Hero Section
@@ -68,7 +65,7 @@ import reviewLady1 from '../assets/review-lady1.webp';
 import reviewLady2 from '../assets/review-lady2.webp';
 
 /**
- * Complete collection of all application images
+ * Images available via this registry (Hero and About import from here; other sections may import assets directly).
  */
 export const imageAssets = {
   // Hero
@@ -131,10 +128,3 @@ export const imageAssets = {
   reviewLady1,
   reviewLady2,
 };
-
-/**
- * Array of all image URLs for preloading
- */
-export const allImageUrls = Object.values(imageAssets);
-
-export default imageAssets;
