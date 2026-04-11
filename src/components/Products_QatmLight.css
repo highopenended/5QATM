@@ -69,6 +69,8 @@
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
+    /* Shared with .light-product and label hover pop (siblings inherit) */
+    --hover-multiplier: 1.08;
 }
 
 /* =========================
@@ -97,8 +99,7 @@
     height: auto;
 
     /* ---- transform system ---- */
-    --scale: 1;
-    --hover-multiplier: 1.08;
+    --scale: 1; /* --hover-multiplier from .light-products-container */
 
     transform-origin: center;
     transform: translate(-50%, -50%) scale(var(--scale));
@@ -150,6 +151,9 @@
     font-weight: 200;
     font-size: clamp(1.2rem, 2vw, 2.5rem);
     z-index: 10;
+    pointer-events: none;
+    transform-origin: center;
+    transition: transform 0.2s ease;
 }
 
 /* Light Shampoo - Below and left of shampoo product */
@@ -162,6 +166,17 @@
 .light-label-treatment {
     left: 58%;
     top: 14%;
+}
+
+/* Labels scale with their product on product hover (sibling pairing via :has) */
+.light-products-container:has(.light-product-shampoo:hover) .light-label-shampoo {
+    transform: scale(var(--hover-multiplier));
+    z-index: 21;
+}
+
+.light-products-container:has(.light-product-treatment:hover) .light-label-treatment {
+    transform: scale(var(--hover-multiplier));
+    z-index: 21;
 }
 
 /* =========================
