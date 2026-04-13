@@ -40,17 +40,6 @@ body {
   targetWidth = 100vh * (16/9)
   scale       = min(1, targetWidth / 100vw)
 */
-/* =========================
-   LABEL SLIDE UTILITIES
-   Applied to product labels for directional shift on hover-pop.
-   --slide-x / --slide-y default to 0em on each label base class;
-   these utilities override one or both. Combinable (e.g. slide-left slide-up).
-   ========================= */
-.slide-left  { --slide-x: -0.4em; }
-.slide-right { --slide-x:  0.4em; }
-.slide-up    { --slide-y: -0.4em; }
-.slide-down  { --slide-y:  0.4em; }
-
 .viewport-app {
   --targetWidth: calc(120vh * 14/ 9);
   --scale: min(1, calc(var(--targetWidth) / 100vw));

@@ -46,7 +46,7 @@ const Products_QatmPro = () => {
                     width={282}
                     height={927}
                 />
-                <span className="pro-label pro-label-emulsion slide-left">Emulsion</span>
+                <span className="pro-label pro-label-emulsion">Emulsion</span>
 
                 <ClickableProduct
                     src={shampooImage}
@@ -57,7 +57,7 @@ const Products_QatmPro = () => {
                     width={344}
                     height={834}
                 />
-                <span className="pro-label pro-label-shampoo slide-left slide-up">Shampoo</span>
+                <span className="pro-label pro-label-shampoo">Shampoo</span>
 
                 <ClickableProduct
                     src={treatmentImage}
@@ -68,7 +68,7 @@ const Products_QatmPro = () => {
                     width={341}
                     height={892}
                 />
-                <span className="pro-label pro-label-treatment slide-down">Treatment</span>
+                <span className="pro-label pro-label-treatment">Treatment</span>
 
                 <ClickableProduct
                     src={rebirthImage}
@@ -79,7 +79,7 @@ const Products_QatmPro = () => {
                     width={240}
                     height={888}
                 />
-                <span className="pro-label pro-label-rebirth slide-right slide-up">Rebirth</span>
+                <span className="pro-label pro-label-rebirth">Rebirth</span>
 
                 <ClickableProduct
                     src={coreImage}
@@ -90,7 +90,7 @@ const Products_QatmPro = () => {
                     width={277}
                     height={876}
                 />
-                <span className="pro-label pro-label-core slide-right">Core</span>
+                <span className="pro-label pro-label-core">Core</span>
             </div>
         </section>
     );

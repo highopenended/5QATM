@@ -204,8 +204,6 @@
     pointer-events: none;
     transform-origin: center;
     transition: transform 0.2s ease;
-    --slide-x: 0em;
-    --slide-y: 0em;
   }
   
   /* Emulsion - Left side */
@@ -248,32 +246,30 @@
     padding-left: 1.5vw;
   }
 
-  /* Labels scale with their product on hover (sibling pairing via :has).
-     Base translate anchors are preserved; --slide-x/--slide-y (from utility classes
-     in index.css) shift the label in the configured direction during the pop.
+  /* Labels scale with their product on product hover (sibling pairing via :has).
      Mobile uses the same transforms; only left/top differ in the media query below. */
   .products-container:has(.pro-product-emulsion:hover) .pro-label-emulsion {
-    transform: translate(calc(-100% + var(--slide-x)), calc(-50% + var(--slide-y))) scale(var(--hover-multiplier));
+    transform: translate(-100%, -50%) scale(var(--hover-multiplier));
     z-index: 21;
   }
 
   .products-container:has(.pro-product-shampoo:hover) .pro-label-shampoo {
-    transform: translate(calc(-100% + var(--slide-x)), calc(-50% + var(--slide-y))) scale(var(--hover-multiplier));
+    transform: translate(-100%, -50%) scale(var(--hover-multiplier));
     z-index: 21;
   }
 
   .products-container:has(.pro-product-treatment:hover) .pro-label-treatment {
-    transform: translate(calc(-50% + var(--slide-x)), var(--slide-y)) scale(var(--hover-multiplier));
+    transform: translate(-50%, 0) scale(var(--hover-multiplier));
     z-index: 21;
   }
 
   .products-container:has(.pro-product-rebirth:hover) .pro-label-rebirth {
-    transform: translate(var(--slide-x), calc(-50% + var(--slide-y))) scale(var(--hover-multiplier));
+    transform: translate(0, -50%) scale(var(--hover-multiplier));
     z-index: 21;
   }
 
   .products-container:has(.pro-product-core:hover) .pro-label-core {
-    transform: translate(var(--slide-x), calc(-50% + var(--slide-y))) scale(var(--hover-multiplier));
+    transform: translate(0, -50%) scale(var(--hover-multiplier));
     z-index: 21;
   }
 
