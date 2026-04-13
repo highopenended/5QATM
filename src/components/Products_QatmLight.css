@@ -154,6 +154,8 @@
     pointer-events: none;
     transform-origin: center;
     transition: transform 0.2s ease;
+    --slide-x: 0em;
+    --slide-y: 0em;
 }
 
 /* Light Shampoo - Below and left of shampoo product */
@@ -168,14 +170,16 @@
     top: 14%;
 }
 
-/* Labels scale with their product on product hover (sibling pairing via :has) */
+/* Labels scale with their product on hover (sibling pairing via :has).
+   --slide-x/--slide-y (from utility classes in index.css) shift the label
+   in the configured direction during the pop. */
 .light-products-container:has(.light-product-shampoo:hover) .light-label-shampoo {
-    transform: scale(var(--hover-multiplier));
+    transform: translate(var(--slide-x), var(--slide-y)) scale(var(--hover-multiplier));
     z-index: 21;
 }
 
 .light-products-container:has(.light-product-treatment:hover) .light-label-treatment {
-    transform: scale(var(--hover-multiplier));
+    transform: translate(var(--slide-x), var(--slide-y)) scale(var(--hover-multiplier));
     z-index: 21;
 }
 
